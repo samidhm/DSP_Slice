@@ -1,0 +1,1795 @@
+design_vision -64bit -f synth.cmd
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+               Version K-2015.06-SP4 for linux64 - Dec 01, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/ecelrc/students/aarora1/.synopsys_dv_prefs.tcl
+analyze -format verilog {
+../Slice_combined_1.v
+../Pre_adder_combined.v
+../Multiplier_combined.v
+}
+Running PRESTO HDLC
+Compiling source file ../Slice_combined_1.v
+Information:  ../Slice_combined_1.v:230: List () of one, unnamed, port is ignored. (VER-988)
+Compiling source file ../Pre_adder_combined.v
+Warning:  ../Slice_combined_1.v:269: The statements in initial blocks are ignored. (VER-281)
+Warning:  ../Slice_combined_1.v:274: The statements in initial blocks are ignored. (VER-281)
+Warning:  ../Slice_combined_1.v:278: The statements in initial blocks are ignored. (VER-281)
+Compiling source file ../Multiplier_combined.v
+Presto compilation completed successfully.
+Loading db file '/home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Loading db file '/usr/local/packages/synopsys_2015/syn/libraries/syn/dw_foundation.sldb'
+1
+elaborate dsp_slice_combined -architecture verilog -library DEFAULT
+Loading db file '/usr/local/packages/synopsys_2015/syn/libraries/syn/gtech.db'
+Loading db file '/usr/local/packages/synopsys_2015/syn/libraries/syn/standard.sldb'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 79 in file
+		'../Slice_combined_1.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| internal_coeffa_flopped_1_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| internal_coeffb_flopped_1_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    loadconst_flopped_1_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   accumulate_flopped_1_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     negate_flopped_1_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mode_flopped_1_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     stream_flopped_1_reg      | Flip-flop |  116  |  Y  | N  | N  | N  | N  | N  | N  |
+|   mux9_select_flopped_1_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 104 in file
+		'../Slice_combined_1.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| internal_coeffa_flopped_2_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| internal_coeffb_flopped_2_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    loadconst_flopped_2_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   accumulate_flopped_2_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     negate_flopped_2_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mode_flopped_2_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     stream_flopped_2_reg      | Flip-flop |  116  |  Y  | N  | N  | N  | N  | N  | N  |
+|   mux9_select_flopped_2_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 129 in file
+		'../Slice_combined_1.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| internal_coeffa_flopped_3_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| internal_coeffb_flopped_3_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    loadconst_flopped_3_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   accumulate_flopped_3_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     negate_flopped_3_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mode_flopped_3_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     stream_flopped_3_reg      | Flip-flop |  116  |  Y  | N  | N  | N  | N  | N  | N  |
+|   mux9_select_flopped_3_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 161 in file
+		'../Slice_combined_1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   coeffbank_b_reg   | Flip-flop |  144  |  Y  | N  | N  | N  | N  | N  | N  |
+|   coeffbank_a_reg   | Flip-flop |  144  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 214 in file
+		'../Slice_combined_1.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+|  double_acc_flopped_reg  | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+| output_register_bank_reg | Flip-flop |  100  |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+Statistics for MUX_OPs
+============================================================
+|    block name/line     | Inputs | Outputs | # sel inputs |
+============================================================
+| dsp_slice_combined/177 |   8    |   18    |      3       |
+| dsp_slice_combined/178 |   8    |   18    |      3       |
+============================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'dsp_slice_combined'.
+Information: Building the design 'pre_adder_combined'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplier_combined'. (HDL-193)
+
+Inferred memory devices in process
+	in routine Multiplier_combined line 36 in file
+		'../Multiplier_combined.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     mult9_a_reg     | Latch |   9   |  Y  | N  | N  | N  | -  | -  | -  |
+|     mult9_b_reg     | Latch |   9   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'pre_adder_building'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'multiplier_basic_1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'multiplier_basic_2'. (HDL-193)
+Presto compilation completed successfully.
+1
+#set_dont_touch [get_cells "*coeff*"] true
+link
+
+  Linking design 'dsp_slice_combined'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  gscl45nm (library)          /home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db
+  dw_foundation.sldb (library) /usr/local/packages/synopsys_2015/syn/libraries/syn/dw_foundation.sldb
+
+1
+#set_implementation pparch u_add
+#set_implementation pparch u_mult
+set_dp_smartgen_options -all_options auto -hierarchy -smart_compare true -optimize_for speed -sop2pos_transformation false
+1
+create_clock -name "clk" -period 3 -waveform { 0 1.5 }  { clk  }
+1
+#set_operating_conditions -library gscl45nm typical
+remove_wire_load_model
+1
+compile -exact_map
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.4 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.4 |     *     |
+============================================================================
+
+
+Information: There are 72 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'multiplier_basic_1_0'
+  Processing 'multiplier_basic_2_0'
+  Processing 'Multiplier_combined'
+  Processing 'pre_adder_building_0'
+  Processing 'pre_adder_combined'
+  Processing 'dsp_slice_combined'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'dsp_slice_combined_DW01_add_0'
+  Processing 'dsp_slice_combined_DW01_add_1'
+  Processing 'dsp_slice_combined_DW01_sub_0'
+  Processing 'dsp_slice_combined_DW01_add_2'
+  Processing 'dsp_slice_combined_DW01_sub_1'
+  Processing 'Multiplier_combined_DW01_add_0'
+  Processing 'pre_adder_building_1_DW01_add_0'
+  Processing 'pre_adder_building_0_DW01_add_0'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width37' (rpl)
+  Processing 'DW01_add_width37'
+  Building model 'DW01_add_width29' (rpl)
+  Processing 'DW01_add_width29'
+  Building model 'DW01_add_width47' (rpl)
+  Processing 'DW01_add_width47'
+  Building model 'DW01_add_width55' (rpl)
+  Processing 'DW01_add_width55'
+  Mapping 'multiplier_basic_1_1_DW_mult_uns_0'
+  Mapping 'multiplier_basic_1_2_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_3_DW_mult_uns_0'
+  Mapping 'multiplier_basic_1_0_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_0_DW_mult_uns_0'
+  Mapping 'multiplier_basic_1_3_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_1_DW_mult_uns_0'
+  Mapping 'multiplier_basic_1_4_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_2_DW_mult_uns_0'
+  Processing 'Multiplier_combined_DW01_add_1'
+  Processing 'Multiplier_combined_DW01_add_2'
+  Processing 'Multiplier_combined_DW01_add_3'
+  Processing 'Multiplier_combined_DW01_add_4'
+  Processing 'Multiplier_combined_DW01_add_5'
+  Processing 'Multiplier_combined_DW01_add_6'
+  Processing 'Multiplier_combined_DW01_add_7'
+  Processing 'Multiplier_combined_DW01_add_8'
+  Processing 'Multiplier_combined_DW01_add_9'
+  Processing 'Multiplier_combined_DW01_add_10'
+  Processing 'Multiplier_combined_DW01_add_11'
+  Processing 'Multiplier_combined_DW01_add_12'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+  Mapping Optimization (Phase 11)
+  Mapping Optimization (Phase 12)
+  Mapping Optimization (Phase 13)
+  Mapping Optimization (Phase 14)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:08   41341.6      1.40     161.5      25.1                          
+    0:01:08   41341.6      1.40     161.5      25.1                          
+    0:01:08   41341.6      1.40     161.5      25.1                          
+    0:01:08   41341.6      1.40     161.5      25.1                          
+    0:01:08   41341.6      1.40     161.5      25.1                          
+    0:01:11   39313.7      1.58     179.4      23.3                          
+    0:01:12   39327.8      1.48     169.1      23.3                          
+    0:01:12   39326.4      1.49     167.7      23.3                          
+    0:01:12   39333.0      1.47     166.7      23.3                          
+    0:01:12   39331.6      1.47     166.6      23.3                          
+    0:01:12   39330.6      1.47     166.6      23.3                          
+    0:01:13   39331.6      1.47     166.6      23.3                          
+    0:01:13   39330.6      1.47     166.6      23.3                          
+    0:01:13   39331.6      1.47     166.6      23.3                          
+    0:01:13   39330.6      1.47     166.6      23.3                          
+    0:01:13   39330.6      1.47     166.6      23.3                          
+    0:01:13   39330.6      1.47     166.6      23.3                          
+    0:01:13   39330.6      1.47     166.6      23.3                          
+    0:01:19   40183.3      1.69     188.5      20.8                          
+    0:01:25   40817.4      1.70     189.2      19.1                          
+    0:01:29   41369.7      1.69     188.9      17.8                          
+    0:01:31   41822.6      1.72     191.1      16.7                          
+    0:01:33   42196.6      1.73     192.2      15.8                          
+    0:01:34   42412.5      1.73     192.5      15.3                          
+    0:01:35   42610.6      1.73     192.8      15.0                          
+    0:01:36   42747.1      1.73     193.0      14.7                          
+    0:01:36   42830.2      1.73     193.9      14.5                          
+    0:01:36   42830.2      1.73     193.9      14.5                          
+    0:01:37   42881.3      1.56     174.9      14.5 output_register_bank_reg[63]/D
+    0:01:38   42924.1      1.53     172.8      14.5 output_register_bank_reg[56]/D
+    0:01:38   42933.9      1.52     171.9      14.6 output_register_bank_reg[60]/D
+    0:01:39   42948.5      1.49     170.1      14.6 output_register_bank_reg[60]/D
+    0:01:39   42960.2      1.47     166.1      14.6 output_register_bank_reg[63]/D
+    0:01:40   42960.7      1.46     166.0      14.6 output_register_bank_reg[56]/D
+    0:01:40   42963.0      1.45     164.6      14.6 output_register_bank_reg[56]/D
+    0:01:40   42961.1      1.45     163.9      14.6 output_register_bank_reg[63]/D
+    0:01:41   42970.0      1.43     161.2      14.6 output_register_bank_reg[63]/D
+    0:01:41   42970.5      1.43     161.1      14.6                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:41   42970.5      1.43     161.1      14.6                          
+    0:01:41   42969.1      1.42     159.4      14.6 output_register_bank_reg[56]/D
+    0:01:42   42981.3      1.40     157.7      14.6 output_register_bank_reg[60]/D
+    0:01:42   42986.5      1.40     157.1      14.6 output_register_bank_reg[56]/D
+    0:01:43   42995.4      1.39     155.9      14.6 output_register_bank_reg[56]/D
+    0:01:43   42993.5      1.38     155.8      14.6 output_register_bank_reg[56]/D
+    0:01:43   43008.1      1.38     155.7      14.6 output_register_bank_reg[56]/D
+    0:01:44   43014.6      1.36     153.3      14.6 output_register_bank_reg[56]/D
+    0:01:44   43022.6      1.36     153.2      14.6 output_register_bank_reg[56]/D
+    0:01:44   43025.9      1.35     152.0      14.7 output_register_bank_reg[63]/D
+    0:01:45   43025.9      1.34     150.4      14.7 output_register_bank_reg[49]/D
+    0:01:45   43039.0      1.33     149.8      14.7 output_register_bank_reg[52]/D
+    0:01:46   43040.0      1.33     149.2      14.7 output_register_bank_reg[52]/D
+    0:01:46   43051.7      1.32     149.0      14.7 output_register_bank_reg[60]/D
+    0:01:46   43043.3      1.32     148.8      14.7 output_register_bank_reg[53]/D
+    0:01:46   43046.5      1.31     148.4      14.7 output_register_bank_reg[60]/D
+    0:01:47   43046.5      1.31     147.7      14.7 output_register_bank_reg[46]/D
+    0:01:47   43047.9      1.31     147.1      14.7 output_register_bank_reg[56]/D
+    0:01:47   43050.8      1.31     146.8      14.7 output_register_bank_reg[56]/D
+    0:01:47   43069.5      1.30     146.5      14.7 output_register_bank_reg[47]/D
+    0:01:48   43089.7      1.29     145.2      14.7 output_register_bank_reg[56]/D
+    0:01:48   43099.1      1.29     145.0      14.7 output_register_bank_reg[56]/D
+    0:01:48   43108.0      1.29     144.7      14.7 output_register_bank_reg[63]/D
+    0:01:49   43121.2      1.28     144.4      14.7 output_register_bank_reg[56]/D
+    0:01:49   43120.7      1.28     144.2      14.7 output_register_bank_reg[56]/D
+    0:01:49   43118.8      1.28     144.0      14.7 output_register_bank_reg[56]/D
+    0:01:49   43122.1      1.27     143.8      14.7 output_register_bank_reg[56]/D
+    0:01:50   43135.2      1.27     143.6      14.7 output_register_bank_reg[62]/D
+    0:01:50   43162.0      1.27     143.3      14.7 output_register_bank_reg[56]/D
+    0:01:50   43193.0      1.26     142.8      14.7 output_register_bank_reg[47]/D
+    0:01:51   43216.0      1.26     142.8      14.7 output_register_bank_reg[56]/D
+    0:01:51   43238.0      1.26     142.5      14.6 output_register_bank_reg[47]/D
+    0:01:51   43257.3      1.26     142.0      14.7 output_register_bank_reg[56]/D
+    0:01:52   43258.2      1.25     140.4      14.7 output_register_bank_reg[62]/D
+    0:01:52   43262.9      1.25     140.1      14.7 output_register_bank_reg[56]/D
+    0:01:52   43266.2      1.24     139.4      14.7 output_register_bank_reg[56]/D
+    0:01:53   43274.6      1.23     138.6      14.7 output_register_bank_reg[62]/D
+    0:01:53   43281.2      1.23     138.2      14.7 output_register_bank_reg[47]/D
+    0:01:53   43287.3      1.22     138.1      14.7 output_register_bank_reg[62]/D
+    0:01:53   43288.2      1.22     137.5      14.7 output_register_bank_reg[62]/D
+    0:01:54   43287.8      1.22     136.7      14.7 output_register_bank_reg[62]/D
+    0:01:54   43308.9      1.21     136.6      14.7 output_register_bank_reg[56]/D
+    0:01:54   43317.8      1.21     135.6      14.7 output_register_bank_reg[56]/D
+    0:01:54   43320.1      1.21     134.9      14.7 output_register_bank_reg[56]/D
+    0:01:54   43321.6      1.20     134.3      14.7 output_register_bank_reg[62]/D
+    0:01:55   43320.1      1.19     134.0      14.7 output_register_bank_reg[46]/D
+    0:01:55   43346.0      1.19     133.3      14.7 output_register_bank_reg[62]/D
+    0:01:55   43362.4      1.18     133.1      14.7 output_register_bank_reg[47]/D
+    0:01:55   43361.4      1.18     133.0      14.7 output_register_bank_reg[63]/D
+    0:01:56   43368.5      1.18     133.0      14.7 output_register_bank_reg[55]/D
+    0:01:56   43382.1      1.17     132.8      14.7 output_register_bank_reg[62]/D
+    0:01:56   43384.0      1.17     132.8      14.7 output_register_bank_reg[55]/D
+    0:01:57   43394.8      1.17     132.6      14.7 output_register_bank_reg[48]/D
+    0:01:57   43436.1      1.16     132.1      14.7 output_register_bank_reg[62]/D
+    0:01:57   43436.1      1.16     131.8      14.7 output_register_bank_reg[48]/D
+    0:01:58   43454.4      1.16     131.7      14.7 output_register_bank_reg[57]/D
+    0:01:58   43450.1      1.15     131.2      14.7 output_register_bank_reg[48]/D
+    0:01:58   43462.8      1.15     130.2      14.7 output_register_bank_reg[35]/D
+    0:01:58   43475.5      1.15     130.1      14.7 output_register_bank_reg[62]/D
+    0:01:59   43476.0      1.14     129.9      14.7 output_register_bank_reg[35]/D
+    0:01:59   43484.4      1.14     129.9      14.7 output_register_bank_reg[55]/D
+    0:01:59   43482.5      1.14     129.5      14.7 output_register_bank_reg[48]/D
+    0:01:59   43489.1      1.14     129.2      14.7 output_register_bank_reg[62]/D
+    0:01:59   43496.1      1.13     128.9      14.7 output_register_bank_reg[62]/D
+    0:02:00   43509.3      1.13     128.5      14.7 output_register_bank_reg[41]/D
+    0:02:00   43514.4      1.13     128.5      14.7 output_register_bank_reg[48]/D
+    0:02:00   43517.2      1.13     128.4      14.7 output_register_bank_reg[55]/D
+    0:02:00   43525.7      1.12     128.3      14.7 output_register_bank_reg[62]/D
+    0:02:01   43530.9      1.12     128.2      14.7 output_register_bank_reg[41]/D
+    0:02:01   43540.2      1.12     128.2      14.7 output_register_bank_reg[41]/D
+    0:02:01   43545.9      1.12     128.0      14.7 output_register_bank_reg[55]/D
+    0:02:01   43558.1      1.12     127.9      14.7 output_register_bank_reg[48]/D
+    0:02:02   43560.9      1.11     127.9      14.7 output_register_bank_reg[41]/D
+    0:02:02   43555.3      1.11     127.8      14.7 output_register_bank_reg[48]/D
+    0:02:02   43557.6      1.11     127.7      14.7 output_register_bank_reg[46]/D
+    0:02:02   43543.1      1.11     127.5      14.7 output_register_bank_reg[55]/D
+    0:02:03   43545.4      1.10     126.9      14.7 output_register_bank_reg[55]/D
+    0:02:03   43541.7      1.10     126.9      14.7 output_register_bank_reg[55]/D
+    0:02:03   43543.5      1.10     126.8      14.7 output_register_bank_reg[56]/D
+    0:02:03   43543.5      1.10     126.7      14.7 output_register_bank_reg[56]/D
+    0:02:04   43549.2      1.10     126.7      14.7 output_register_bank_reg[56]/D
+    0:02:04   43548.2      1.10     126.5      14.7 output_register_bank_reg[56]/D
+    0:02:04   43548.2      1.09     126.0      14.7 output_register_bank_reg[56]/D
+    0:02:05   43561.8      1.09     125.0      14.8 output_register_bank_reg[56]/D
+    0:02:05   43554.3      1.08     124.2      14.8 output_register_bank_reg[56]/D
+    0:02:06   43571.7      1.08     123.4      14.8 output_register_bank_reg[56]/D
+    0:02:07   43575.0      1.07     122.7      14.8 output_register_bank_reg[56]/D
+    0:02:07   43592.8      1.07     122.7      14.8 output_register_bank_reg[56]/D
+    0:02:07   43593.3      1.06     122.0      14.8 output_register_bank_reg[56]/D
+    0:02:07   43595.6      1.06     122.0      14.8 output_register_bank_reg[56]/D
+    0:02:08   43596.6      1.06     121.3      14.8 output_register_bank_reg[56]/D
+    0:02:08   43604.5      1.06     121.3      14.8 output_register_bank_reg[56]/D
+    0:02:08   43625.2      1.05     120.9      14.8 output_register_bank_reg[56]/D
+    0:02:08   43626.1      1.05     120.4      14.8 output_register_bank_reg[36]/D
+    0:02:09   43632.7      1.05     120.4      14.8 output_register_bank_reg[52]/D
+    0:02:09   43644.0      1.05     120.2      14.8 output_register_bank_reg[55]/D
+    0:02:09   43648.7      1.04     119.9      14.8 output_register_bank_reg[55]/D
+    0:02:09   43654.8      1.04     119.9      14.8 output_register_bank_reg[55]/D
+    0:02:10   43665.1      1.04     119.8      14.8 output_register_bank_reg[55]/D
+    0:02:10   43676.8      1.04     119.7      14.8 output_register_bank_reg[55]/D
+    0:02:10   43678.2      1.04     119.7      14.8 output_register_bank_reg[55]/D
+    0:02:10   43690.4      1.04     119.6      14.8 output_register_bank_reg[48]/D
+    0:02:11   43698.9      1.03     119.5      14.8 output_register_bank_reg[60]/D
+    0:02:11   43702.2      1.03     119.4      14.8 output_register_bank_reg[38]/D
+    0:02:11   43711.1      1.03     119.3      14.8 output_register_bank_reg[52]/D
+    0:02:11   43718.6      1.03     119.2      14.8 output_register_bank_reg[55]/D
+    0:02:12   43733.6      1.03     119.1      14.8 output_register_bank_reg[55]/D
+    0:02:12   43743.5      1.03     118.9      14.8 output_register_bank_reg[55]/D
+    0:02:12   43747.2      1.02     118.5      14.8 output_register_bank_reg[55]/D
+    0:02:13   43747.2      1.02     118.2      14.8 output_register_bank_reg[55]/D
+    0:02:13   43781.5      1.02     118.1      14.8 output_register_bank_reg[55]/D
+    0:02:13   43794.1      1.02     118.0      14.8 output_register_bank_reg[57]/D
+    0:02:13   43803.5      1.02     117.5      14.8 output_register_bank_reg[56]/D
+    0:02:14   43809.6      1.02     117.5      14.8 output_register_bank_reg[63]/D
+    0:02:14   43811.0      1.01     117.4      14.8 output_register_bank_reg[63]/D
+    0:02:14   43818.5      1.01     117.0      14.8 output_register_bank_reg[57]/D
+    0:02:14   43826.0      1.01     116.9      14.8 output_register_bank_reg[39]/D
+    0:02:15   43822.3      1.01     116.5      14.8 output_register_bank_reg[61]/D
+    0:02:15   43838.7      1.01     116.4      14.8 output_register_bank_reg[57]/D
+    0:02:15   43858.9      1.00     116.0      14.8 output_register_bank_reg[61]/D
+    0:02:15   43859.8      1.00     115.8      14.8 output_register_bank_reg[61]/D
+    0:02:15   43871.6      1.00     115.6      14.8 output_register_bank_reg[53]/D
+    0:02:16   43861.7      1.00     115.3      14.8 output_register_bank_reg[53]/D
+    0:02:16   43854.7      1.00     115.2      14.8 output_register_bank_reg[51]/D
+    0:02:16   43865.9      0.99     115.0      14.8 output_register_bank_reg[61]/D
+    0:02:16   43872.0      0.99     114.8      14.8 output_register_bank_reg[58]/D
+    0:02:17   43881.0      0.99     114.8      14.8 output_register_bank_reg[61]/D
+    0:02:17   43885.2      0.99     114.6      14.8 output_register_bank_reg[40]/D
+    0:02:18   43888.9      0.99     114.2      14.8 output_register_bank_reg[52]/D
+    0:02:18   43898.3      0.99     114.1      14.8 output_register_bank_reg[52]/D
+    0:02:18   43904.0      0.98     114.0      14.8 output_register_bank_reg[60]/D
+    0:02:18   43903.0      0.98     113.8      14.8 output_register_bank_reg[61]/D
+    0:02:18   43905.4      0.98     113.7      14.8 output_register_bank_reg[61]/D
+    0:02:19   43912.4      0.98     113.6      14.8 output_register_bank_reg[40]/D
+    0:02:19   43925.5      0.98     113.4      14.8 output_register_bank_reg[53]/D
+    0:02:19   43928.4      0.98     113.4      14.8 output_register_bank_reg[48]/D
+    0:02:19   43942.0      0.98     113.2      14.9 output_register_bank_reg[52]/D
+    0:02:19   43957.0      0.97     113.1      14.9 output_register_bank_reg[53]/D
+    0:02:20   43962.1      0.97     113.0      14.8 output_register_bank_reg[48]/D
+    0:02:20   43970.1      0.97     113.0      14.9 output_register_bank_reg[40]/D
+    0:02:20   43972.9      0.97     113.0      14.9 output_register_bank_reg[60]/D
+    0:02:20   43986.1      0.97     112.8      14.9 output_register_bank_reg[43]/D
+    0:02:20   43995.0      0.97     112.8      14.9 output_register_bank_reg[60]/D
+    0:02:20   44003.0      0.97     112.7      14.9 output_register_bank_reg[52]/D
+    0:02:21   44014.2      0.97     112.6      14.9 output_register_bank_reg[53]/D
+    0:02:21   44038.6      0.97     112.6      14.9 output_register_bank_reg[53]/D
+    0:02:21   44044.3      0.97     112.5      14.9 output_register_bank_reg[40]/D
+    0:02:22   44049.0      0.97     112.4      14.9 output_register_bank_reg[53]/D
+    0:02:22   44052.7      0.97     112.4      14.9 output_register_bank_reg[53]/D
+    0:02:22   44062.1      0.96     111.6      14.9 output_register_bank_reg[63]/D
+    0:02:22   44059.8      0.96     111.0      14.9 output_register_bank_reg[60]/D
+    0:02:23   44064.0      0.96     111.0      14.9 output_register_bank_reg[60]/D
+    0:02:23   44077.1      0.95     109.8      14.9 output_register_bank_reg[52]/D
+    0:02:23   44087.0      0.95     109.7      14.9 output_register_bank_reg[60]/D
+    0:02:23   44084.2      0.94     108.7      14.9 output_register_bank_reg[60]/D
+    0:02:24   44093.1      0.94     108.5      14.9 output_register_bank_reg[60]/D
+    0:02:24   44106.2      0.93     108.4      14.9 output_register_bank_reg[60]/D
+    0:02:24   44115.1      0.93     108.4      14.9 output_register_bank_reg[60]/D
+    0:02:24   44121.7      0.93     108.2      14.9 output_register_bank_reg[60]/D
+    0:02:24   44131.6      0.93     108.0      14.9 output_register_bank_reg[60]/D
+    0:02:24   44137.7      0.93     107.9      14.9 output_register_bank_reg[41]/D
+    0:02:25   44133.9      0.93     107.8      14.9 output_register_bank_reg[60]/D
+    0:02:25   44134.4      0.93     107.8      14.9 output_register_bank_reg[52]/D
+    0:02:25   44139.5      0.93     107.4      14.9 output_register_bank_reg[60]/D
+    0:02:25   44154.6      0.93     107.1      14.9 output_register_bank_reg[52]/D
+    0:02:25   44160.2      0.93     107.1      14.9 output_register_bank_reg[40]/D
+    0:02:26   44168.6      0.92     107.2      14.9 output_register_bank_reg[60]/D
+    0:02:26   44171.5      0.92     107.0      14.9 output_register_bank_reg[60]/D
+    0:02:26   44175.7      0.92     107.0      14.9 output_register_bank_reg[40]/D
+    0:02:26   44189.3      0.92     106.9      14.9 output_register_bank_reg[61]/D
+    0:02:26   44193.0      0.92     106.5      14.9 output_register_bank_reg[58]/D
+    0:02:26   44205.2      0.92     106.5      14.9 output_register_bank_reg[60]/D
+    0:02:27   44209.0      0.92     106.5      14.9 output_register_bank_reg[61]/D
+    0:02:27   44215.6      0.92     106.3      14.9 output_register_bank_reg[61]/D
+    0:02:27   44221.2      0.92     106.3      14.9 output_register_bank_reg[60]/D
+    0:02:27   44229.6      0.92     106.3      14.9 output_register_bank_reg[61]/D
+    0:02:27   44236.7      0.92     106.1      14.9 output_register_bank_reg[60]/D
+    0:02:27   44238.6      0.92     106.0      14.9 output_register_bank_reg[59]/D
+    0:02:28   44238.6      0.92     106.0      14.9 output_register_bank_reg[61]/D
+    0:02:28   44237.6      0.91     105.9      14.9 output_register_bank_reg[61]/D
+    0:02:28   44247.5      0.91     105.9      14.9 output_register_bank_reg[40]/D
+    0:02:28   44251.2      0.91     105.9      14.9 output_register_bank_reg[61]/D
+    0:02:28   44255.0      0.91     105.9      14.9 output_register_bank_reg[61]/D
+    0:02:28   44262.5      0.91     105.8      14.9 output_register_bank_reg[52]/D
+    0:02:29   44268.6      0.91     105.8      14.9 output_register_bank_reg[61]/D
+    0:02:29   44268.6      0.91     105.7      14.9 output_register_bank_reg[39]/D
+    0:02:29   44272.8      0.91     105.7      14.9 output_register_bank_reg[61]/D
+    0:02:29   44278.0      0.91     105.7      14.9 output_register_bank_reg[40]/D
+    0:02:30   44282.2      0.91     105.6      14.9 output_register_bank_reg[59]/D
+    0:02:30   44285.0      0.91     105.5      14.9 output_register_bank_reg[49]/D
+    0:02:30   44289.7      0.91     105.3      14.9 output_register_bank_reg[61]/D
+    0:02:30   44292.5      0.91     105.0      14.9 output_register_bank_reg[40]/D
+    0:02:30   44291.1      0.91     105.2      14.9 output_register_bank_reg[48]/D
+    0:02:31   44291.1      0.91     104.9      14.9 output_register_bank_reg[48]/D
+    0:02:31   44292.1      0.90     104.9      14.9 output_register_bank_reg[46]/D
+    0:02:31   44291.6      0.90     104.7      14.9 output_register_bank_reg[48]/D
+    0:02:31   44296.8      0.90     104.7      15.0 output_register_bank_reg[55]/D
+    0:02:31   44296.8      0.90     104.7      15.0 output_register_bank_reg[55]/D
+    0:02:31   44299.6      0.90     104.7      15.0 output_register_bank_reg[52]/D
+    0:02:31   44304.3      0.90     104.7      15.0 output_register_bank_reg[58]/D
+    0:02:32   44318.3      0.90     104.7      15.0 output_register_bank_reg[57]/D
+    0:02:32   44315.5      0.90     104.5      15.0 output_register_bank_reg[53]/D
+    0:02:32   44324.0      0.90     104.5      14.9 output_register_bank_reg[57]/D
+    0:02:32   44326.8      0.90     104.5      14.9 output_register_bank_reg[61]/D
+    0:02:32   44329.6      0.90     104.5      14.9 output_register_bank_reg[55]/D
+    0:02:32   44335.7      0.90     104.4      14.9 output_register_bank_reg[46]/D
+    0:02:33   44336.2      0.90     104.3      14.9 output_register_bank_reg[53]/D
+    0:02:33   44340.4      0.90     104.3      14.9 output_register_bank_reg[60]/D
+    0:02:33   44347.4      0.90     104.3      14.9 output_register_bank_reg[37]/D
+    0:02:33   44360.1      0.90     104.3      14.9 output_register_bank_reg[55]/D
+    0:02:33   44381.2      0.90     104.3      14.9 output_register_bank_reg[46]/D
+    0:02:34   44388.7      0.89     104.2      14.9 output_register_bank_reg[37]/D
+    0:02:34   44395.3      0.89     104.1      14.9 output_register_bank_reg[54]/D
+    0:02:34   44399.5      0.89     104.1      14.9 output_register_bank_reg[57]/D
+    0:02:34   44399.5      0.89     103.9      14.9 output_register_bank_reg[60]/D
+    0:02:35   44407.0      0.89     103.9      14.9 output_register_bank_reg[60]/D
+    0:02:35   44409.9      0.89     103.9      14.9 output_register_bank_reg[60]/D
+    0:02:35   44421.6      0.89     103.4      14.9 output_register_bank_reg[60]/D
+    0:02:35   44433.3      0.89     103.3      14.9 output_register_bank_reg[60]/D
+    0:02:36   44440.8      0.89     103.2      14.9 output_register_bank_reg[60]/D
+    0:02:36   44437.5      0.88     103.0      14.9 output_register_bank_reg[60]/D
+    0:02:36   44446.9      0.88     102.9      14.9 output_register_bank_reg[57]/D
+    0:02:36   44447.9      0.88     102.7      14.9 output_register_bank_reg[60]/D
+    0:02:37   44456.3      0.88     102.3      15.0 output_register_bank_reg[46]/D
+    0:02:37   44461.0      0.88     102.3      14.9 output_register_bank_reg[60]/D
+    0:02:37   44462.4      0.88     102.2      14.9 output_register_bank_reg[60]/D
+    0:02:37   44462.0      0.88     102.1      15.0 output_register_bank_reg[60]/D
+    0:02:38   44475.1      0.88     101.9      15.0 output_register_bank_reg[60]/D
+    0:02:38   44480.7      0.88     101.8      15.0 output_register_bank_reg[60]/D
+    0:02:38   44476.5      0.88     101.7      15.0 output_register_bank_reg[52]/D
+    0:02:38   44480.7      0.88     101.7      15.0 output_register_bank_reg[46]/D
+    0:02:38   44483.1      0.88     101.7      15.0 output_register_bank_reg[60]/D
+    0:02:39   44484.9      0.87     101.4      15.0 output_register_bank_reg[60]/D
+    0:02:39   44487.3      0.87     101.4      15.0 output_register_bank_reg[60]/D
+    0:02:39   44497.1      0.87     100.9      15.0 output_register_bank_reg[60]/D
+    0:02:40   44497.1      0.87     100.8      15.0 output_register_bank_reg[60]/D
+    0:02:40   44501.4      0.87     100.4      15.0 output_register_bank_reg[60]/D
+    0:02:40   44515.5      0.86     100.1      15.0 output_register_bank_reg[60]/D
+    0:02:40   44526.2      0.86     100.0      15.0 output_register_bank_reg[60]/D
+    0:02:41   44523.4      0.86      99.8      15.0 output_register_bank_reg[58]/D
+    0:02:41   44530.5      0.86      99.8      15.0 output_register_bank_reg[60]/D
+    0:02:41   44532.8      0.86      99.8      15.0 output_register_bank_reg[60]/D
+    0:02:41   44551.1      0.86      99.8      15.0 output_register_bank_reg[60]/D
+    0:02:42   44550.6      0.86      99.6      15.0 output_register_bank_reg[60]/D
+    0:02:42   44550.2      0.86      99.6      15.0 output_register_bank_reg[52]/D
+    0:02:42   44554.4      0.86      99.6      15.0 output_register_bank_reg[58]/D
+    0:02:42   44557.2      0.86      99.5      15.0 output_register_bank_reg[52]/D
+    0:02:42   44555.3      0.86      99.5      15.0 output_register_bank_reg[53]/D
+    0:02:42   44560.5      0.86      99.5      15.0 output_register_bank_reg[52]/D
+    0:02:43   44562.4      0.86      99.4      15.0 output_register_bank_reg[55]/D
+    0:02:43   44564.7      0.86      99.4      15.0 output_register_bank_reg[55]/D
+    0:02:43   44573.2      0.85      99.0      15.0 output_register_bank_reg[60]/D
+    0:02:43   44575.5      0.85      98.8      15.0 output_register_bank_reg[46]/D
+    0:02:43   44575.1      0.85      98.6      15.0 output_register_bank_reg[55]/D
+    0:02:44   44577.9      0.85      98.6      15.0 output_register_bank_reg[55]/D
+    0:02:44   44577.4      0.85      98.6      15.0 output_register_bank_reg[60]/D
+    0:02:44   44580.7      0.85      98.1      15.0 output_register_bank_reg[53]/D
+    0:02:44   44579.7      0.85      98.1      15.0 output_register_bank_reg[46]/D
+    0:02:44   44582.6      0.85      97.8      15.0 output_register_bank_reg[55]/D
+    0:02:44   44586.8      0.85      97.8      15.1 output_register_bank_reg[52]/D
+    0:02:44   44594.3      0.85      97.8      15.1 output_register_bank_reg[45]/D
+    0:02:45   44599.0      0.84      97.8      15.1 output_register_bank_reg[60]/D
+    0:02:45   44602.3      0.84      97.6      15.1 output_register_bank_reg[60]/D
+    0:02:45   44600.9      0.84      97.6      15.1 output_register_bank_reg[50]/D
+    0:02:45   44599.0      0.84      97.6      15.1 output_register_bank_reg[50]/D
+    0:02:46   44607.9      0.84      97.4      15.1 output_register_bank_reg[50]/D
+    0:02:46   44611.2      0.84      97.4      15.1 output_register_bank_reg[55]/D
+    0:02:46   44628.6      0.84      97.3      15.1 output_register_bank_reg[50]/D
+    0:02:46   44630.0      0.84      97.3      15.1 output_register_bank_reg[50]/D
+    0:02:46   44633.7      0.84      97.0      15.1 output_register_bank_reg[52]/D
+    0:02:46   44635.6      0.84      96.9      15.1 output_register_bank_reg[46]/D
+    0:02:47   44645.4      0.84      96.7      15.1 output_register_bank_reg[47]/D
+    0:02:47   44657.6      0.83      96.7      15.1 output_register_bank_reg[55]/D
+    0:02:47   44665.2      0.83      96.3      15.1 output_register_bank_reg[50]/D
+    0:02:47   44670.8      0.83      96.3      15.1 output_register_bank_reg[55]/D
+    0:02:47   44672.7      0.83      96.1      15.1 output_register_bank_reg[51]/D
+    0:02:47   44672.2      0.83      96.1      15.1 output_register_bank_reg[58]/D
+    0:02:48   44675.0      0.83      96.0      15.1 output_register_bank_reg[55]/D
+    0:02:48   44679.2      0.83      96.0      15.1 output_register_bank_reg[63]/D
+    0:02:48   44676.4      0.83      95.9      15.1 output_register_bank_reg[51]/D
+    0:02:48   44683.5      0.83      95.9      15.1 output_register_bank_reg[60]/D
+    0:02:49   44689.1      0.83      95.8      15.1 output_register_bank_reg[60]/D
+    0:02:49   44693.8      0.83      95.8      15.1 output_register_bank_reg[56]/D
+    0:02:49   44700.4      0.83      95.8      15.1 output_register_bank_reg[51]/D
+    0:02:49   44700.4      0.83      95.8      15.1 output_register_bank_reg[52]/D
+    0:02:49   44704.1      0.83      95.7      15.1 output_register_bank_reg[53]/D
+    0:02:49   44710.7      0.83      95.6      15.1 output_register_bank_reg[56]/D
+    0:02:50   44714.4      0.83      95.6      15.1 output_register_bank_reg[63]/D
+    0:02:50   44715.8      0.83      95.6      15.1 output_register_bank_reg[63]/D
+    0:02:51   44718.7      0.83      95.3      15.1 output_register_bank_reg[63]/D
+    0:02:51   44736.5      0.82      94.7      15.1 output_register_bank_reg[63]/D
+    0:02:51   44766.5      0.81      93.6      15.1 output_register_bank_reg[63]/D
+    0:02:52   44779.7      0.81      93.2      15.1 output_register_bank_reg[63]/D
+    0:02:52   44790.5      0.81      92.8      15.1 output_register_bank_reg[63]/D
+    0:02:53   44813.9      0.80      92.2      15.0 output_register_bank_reg[60]/D
+    0:02:53   44820.0      0.80      91.8      15.0 output_register_bank_reg[63]/D
+    0:02:54   44829.9      0.79      91.5      15.0 output_register_bank_reg[63]/D
+    0:02:54   44851.0      0.79      90.9      15.0 output_register_bank_reg[55]/D
+    0:02:55   44857.1      0.79      90.8      15.0 output_register_bank_reg[63]/D
+    0:02:55   44878.2      0.79      90.7      15.0 output_register_bank_reg[63]/D
+    0:02:55   44887.1      0.79      90.5      15.0 output_register_bank_reg[63]/D
+    0:02:56   44891.4      0.78      90.3      15.0 output_register_bank_reg[63]/D
+    0:02:56   44917.6      0.78      90.1      15.0 output_register_bank_reg[54]/D
+    0:02:56   44922.8      0.78      90.0      15.0 output_register_bank_reg[57]/D
+    0:02:56   44926.6      0.78      90.0      15.0 output_register_bank_reg[63]/D
+    0:02:57   44938.8      0.78      89.7      15.0 output_register_bank_reg[63]/D
+    0:02:57   44952.8      0.78      89.6      15.0 output_register_bank_reg[63]/D
+    0:02:57   44965.5      0.78      89.0      15.0 output_register_bank_reg[63]/D
+    0:02:58   44981.9      0.77      88.8      15.0 output_register_bank_reg[63]/D
+    0:02:58   44992.7      0.77      88.6      15.0 output_register_bank_reg[63]/D
+    0:02:58   45005.9      0.77      88.5      15.0 output_register_bank_reg[63]/D
+    0:02:59   45017.6      0.77      88.2      15.0 output_register_bank_reg[63]/D
+    0:02:59   45028.4      0.77      88.0      15.0 output_register_bank_reg[63]/D
+    0:02:59   45038.7      0.77      88.0      15.0 output_register_bank_reg[63]/D
+    0:03:00   45046.2      0.77      88.0      15.0 output_register_bank_reg[63]/D
+    0:03:00   45045.8      0.77      87.9      15.0 output_register_bank_reg[63]/D
+    0:03:00   45055.1      0.76      87.7      15.0 output_register_bank_reg[63]/D
+    0:03:00   45065.9      0.76      87.7      15.0 output_register_bank_reg[63]/D
+    0:03:00   45063.6      0.76      87.7      15.0 output_register_bank_reg[63]/D
+    0:03:01   45074.9      0.76      87.6      15.0 output_register_bank_reg[63]/D
+    0:03:01   45080.0      0.76      87.4      15.0 output_register_bank_reg[63]/D
+    0:03:01   45101.1      0.76      87.3      15.0 output_register_bank_reg[60]/D
+    0:03:02   45117.6      0.76      87.2      15.0 output_register_bank_reg[63]/D
+    0:03:02   45125.1      0.76      87.1      15.0 output_register_bank_reg[63]/D
+    0:03:02   45136.3      0.76      86.8      15.0 output_register_bank_reg[63]/D
+    0:03:03   45147.6      0.75      86.6      15.0 output_register_bank_reg[63]/D
+    0:03:03   45167.3      0.75      86.5      15.0 output_register_bank_reg[63]/D
+    0:03:03   45188.9      0.75      86.3      15.0 output_register_bank_reg[63]/D
+    0:03:04   45196.9      0.75      86.1      15.0 output_register_bank_reg[60]/D
+    0:03:04   45200.6      0.75      86.1      15.0 output_register_bank_reg[63]/D
+    0:03:04   45207.2      0.75      86.0      15.0 output_register_bank_reg[63]/D
+    0:03:04   45221.7      0.75      86.0      15.1 output_register_bank_reg[63]/D
+    0:03:05   45227.4      0.75      85.9      15.1 output_register_bank_reg[63]/D
+    0:03:05   45231.6      0.75      85.6      15.1 output_register_bank_reg[63]/D
+    0:03:05   45243.8      0.75      85.5      15.1 output_register_bank_reg[63]/D
+    0:03:05   45250.4      0.74      85.4      15.1 output_register_bank_reg[63]/D
+    0:03:06   45255.1      0.74      85.3      15.1 output_register_bank_reg[63]/D
+    0:03:06   45276.2      0.74      85.0      15.0 output_register_bank_reg[63]/D
+    0:03:06   45282.3      0.74      85.0      15.0 output_register_bank_reg[63]/D
+    0:03:07   45302.9      0.74      84.8      15.0 output_register_bank_reg[63]/D
+    0:03:07   45314.2      0.74      84.7      15.0 output_register_bank_reg[63]/D
+    0:03:07   45326.9      0.74      84.6      15.0 output_register_bank_reg[63]/D
+    0:03:08   45342.8      0.74      84.3      15.0 output_register_bank_reg[63]/D
+    0:03:08   45356.4      0.74      84.1      15.0 output_register_bank_reg[63]/D
+    0:03:08   45365.4      0.73      84.0      15.0 output_register_bank_reg[63]/D
+    0:03:09   45379.0      0.73      83.9      15.0 output_register_bank_reg[63]/D
+    0:03:09   45386.0      0.73      83.9      15.0 output_register_bank_reg[48]/D
+    0:03:09   45400.1      0.73      83.8      15.0 output_register_bank_reg[63]/D
+    0:03:10   45411.8      0.73      83.9      15.0 output_register_bank_reg[51]/D
+    0:03:10   45413.7      0.73      83.8      15.0 output_register_bank_reg[63]/D
+    0:03:10   45420.7      0.73      83.8      15.0 output_register_bank_reg[52]/D
+    0:03:10   45425.4      0.73      83.8      15.0 output_register_bank_reg[53]/D
+    0:03:10   45432.0      0.73      83.8      15.0 output_register_bank_reg[63]/D
+    0:03:11   45443.7      0.73      83.7      15.0 output_register_bank_reg[52]/D
+    0:03:11   45446.5      0.73      83.7      15.0 output_register_bank_reg[63]/D
+    0:03:11   45444.2      0.73      83.6      15.0 output_register_bank_reg[48]/D
+    0:03:12   45459.7      0.73      83.3      15.0 output_register_bank_reg[48]/D
+    0:03:13   45460.6      0.72      83.0      15.0 output_register_bank_reg[51]/D
+    0:03:13   45462.0      0.72      83.0      15.0 output_register_bank_reg[63]/D
+    0:03:14   45469.5      0.72      83.0      15.0 output_register_bank_reg[51]/D
+    0:03:14   45466.7      0.72      82.9      15.0 output_register_bank_reg[51]/D
+    0:03:14   45475.2      0.72      82.8      15.0 output_register_bank_reg[63]/D
+    0:03:15   45472.4      0.72      82.7      15.0 output_register_bank_reg[51]/D
+    0:03:15   45477.5      0.72      82.6      15.0 output_register_bank_reg[51]/D
+    0:03:15   45485.5      0.72      82.6      15.0 output_register_bank_reg[33]/D
+    0:03:16   45489.7      0.72      82.6      15.0 output_register_bank_reg[48]/D
+    0:03:16   45489.2      0.72      82.6      15.0 output_register_bank_reg[54]/D
+    0:03:16   45490.7      0.72      82.6      15.0 output_register_bank_reg[43]/D
+    0:03:16   45493.0      0.72      82.6      15.0 output_register_bank_reg[63]/D
+    0:03:17   45493.0      0.72      82.6      15.0 output_register_bank_reg[60]/D
+    0:03:18   45496.8      0.72      82.5      15.0 output_register_bank_reg[51]/D
+    0:03:18   45501.0      0.72      82.5      15.0 output_register_bank_reg[63]/D
+    0:03:19   45499.6      0.72      82.5      15.0 output_register_bank_reg[63]/D
+    0:03:19   45507.1      0.72      82.4      15.0 output_register_bank_reg[63]/D
+    0:03:19   45504.3      0.72      82.4      15.0 output_register_bank_reg[53]/D
+    0:03:20   45512.2      0.72      82.4      15.0 output_register_bank_reg[63]/D
+    0:03:20   45524.4      0.72      82.3      15.0 output_register_bank_reg[53]/D
+    0:03:20   45529.1      0.72      82.3      15.0 output_register_bank_reg[53]/D
+    0:03:21   45537.6      0.72      82.2      15.0 output_register_bank_reg[53]/D
+    0:03:21   45542.7      0.72      82.1      15.0 output_register_bank_reg[51]/D
+    0:03:21   45541.8      0.72      82.1      15.0 output_register_bank_reg[63]/D
+    0:03:21   45548.4      0.72      82.1      15.0 output_register_bank_reg[53]/D
+    0:03:22   45549.8      0.71      82.1      15.0 output_register_bank_reg[52]/D
+    0:03:22   45548.4      0.71      82.1      15.0 output_register_bank_reg[53]/D
+    0:03:22   45556.8      0.71      82.0      15.0 output_register_bank_reg[53]/D
+    0:03:23   45560.6      0.71      82.0      15.0 output_register_bank_reg[53]/D
+    0:03:23   45574.2      0.71      82.0      15.0 output_register_bank_reg[63]/D
+    0:03:23   45581.2      0.71      82.0      15.0 output_register_bank_reg[52]/D
+    0:03:23   45598.1      0.71      81.8      15.0 output_register_bank_reg[63]/D
+    0:03:24   45603.8      0.71      81.8      15.0 output_register_bank_reg[63]/D
+    0:03:24   45608.9      0.71      81.7      15.0 output_register_bank_reg[63]/D
+    0:03:24   45616.0      0.71      81.7      15.0 output_register_bank_reg[42]/D
+    0:03:24   45615.5      0.71      81.7      15.0 output_register_bank_reg[49]/D
+    0:03:24   45633.3      0.71      81.7      15.0 output_register_bank_reg[60]/D
+    0:03:25   45639.4      0.71      81.7      15.0 output_register_bank_reg[63]/D
+    0:03:25   45651.2      0.71      81.7      15.0 output_register_bank_reg[63]/D
+    0:03:25   45661.0      0.71      81.3      15.0 output_register_bank_reg[53]/D
+    0:03:25   45664.8      0.71      81.3      15.0 output_register_bank_reg[53]/D
+    0:03:25   45669.5      0.71      81.3      15.0 output_register_bank_reg[37]/D
+    0:03:25   45671.8      0.71      81.3      15.0 output_register_bank_reg[60]/D
+    0:03:26   45669.9      0.71      81.3      15.0 output_register_bank_reg[53]/D
+    0:03:26   45680.3      0.71      81.2      15.0 output_register_bank_reg[52]/D
+    0:03:26   45691.5      0.71      81.2      15.0 output_register_bank_reg[52]/D
+    0:03:26   45695.3      0.71      81.1      15.0 output_register_bank_reg[63]/D
+    0:03:26   45705.1      0.71      81.1      15.0 output_register_bank_reg[62]/D
+    0:03:27   45707.5      0.71      81.1      15.0 output_register_bank_reg[63]/D
+    0:03:27   45712.6      0.71      81.0      15.0 output_register_bank_reg[50]/D
+    0:03:27   45717.8      0.71      81.0      15.0 output_register_bank_reg[63]/D
+    0:03:27   45722.5      0.71      81.0      15.0 output_register_bank_reg[62]/D
+    0:03:27   45722.5      0.71      81.0      15.0 output_register_bank_reg[63]/D
+    0:03:28   45724.8      0.71      81.0      15.0 output_register_bank_reg[62]/D
+    0:03:28   45728.1      0.71      81.0      15.0 output_register_bank_reg[63]/D
+    0:03:28   45728.6      0.71      81.0      15.0 output_register_bank_reg[50]/D
+    0:03:28   45730.9      0.71      81.0      15.0 output_register_bank_reg[62]/D
+    0:03:29   45737.5      0.71      81.0      15.0 output_register_bank_reg[48]/D
+    0:03:29   45737.5      0.70      81.0      15.0 output_register_bank_reg[63]/D
+    0:03:29   45736.6      0.70      81.0      15.0 output_register_bank_reg[52]/D
+    0:03:29   45741.7      0.70      81.0      15.0 output_register_bank_reg[59]/D
+    0:03:29   45747.4      0.70      80.9      15.1 output_register_bank_reg[62]/D
+    0:03:30   45757.7      0.70      80.9      15.1 output_register_bank_reg[59]/D
+    0:03:30   45755.3      0.70      80.9      15.1 output_register_bank_reg[60]/D
+    0:03:30   45760.0      0.70      80.9      15.1 output_register_bank_reg[63]/D
+    0:03:30   45764.7      0.70      80.9      15.1 output_register_bank_reg[63]/D
+    0:03:31   45767.5      0.70      80.9      15.1 output_register_bank_reg[63]/D
+    0:03:33   45767.5      0.70      80.9      15.1 output_register_bank_reg[63]/D
+    0:03:34   45766.6      0.70      80.9      15.1                          
+    0:03:34   45766.6      0.70      80.9      15.1                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:34   45766.6      0.70      80.9      15.1                          
+    0:03:34   45853.9      0.70      80.9      14.8 multiplier/M8/mult_133/net29967
+    0:03:34   45938.4      0.70      80.9      14.6 multiplier/M6/mult_133/net30921
+    0:03:34   46009.7      0.70      80.9      14.5 multiplier/net100065     
+    0:03:35   46051.0      0.70      80.9      14.4 multiplier/M5/mult_125/n167
+    0:03:35   46122.8      0.70      80.9      14.3 multiplier/net80482      
+    0:03:35   46178.2      0.70      80.9      14.2 preadder/u_add2/add_1_root_add_49_2/n140
+    0:03:35   46234.0      0.70      80.8      14.1 multiplier/net81033      
+    0:03:35   46280.0      0.70      80.8      14.1 multiplier/net95612      
+    0:03:35   46333.0      0.70      80.8      14.0 add_192/n193             
+    0:03:35   46380.4      0.70      80.8      13.9 multiplier/add_0_root_add_0_root_add_112_3/n134
+    0:03:35   46415.6      0.70      80.8      13.9 multiplier/add_0_root_add_0_root_add_113_8/n160
+    0:03:36   46447.6      0.70      80.8      13.8 multiplier/add_0_root_add_0_root_add_112_3/n173
+    0:03:36   46480.9      0.70      80.8      13.8 add_192/n225             
+    0:03:36   46528.3      0.70      80.8      13.7 multiplier/net81245      
+    0:03:36   46556.0      0.70      80.8      13.7 multiplier/add_0_root_add_0_root_add_113_8/n296
+    0:03:36   46600.1      0.70      80.8      13.7 multiplier/M5/mult_125/n320
+    0:03:36   46614.2      0.70      80.8      13.7 multiplier/M7/mult_125/n50
+    0:03:36   46633.4      0.70      80.8      13.6 sub_192/n396             
+    0:03:36   46635.7      0.70      80.8      13.6 multiplier/net100758     
+    0:03:36   46653.6      0.70      80.8      13.6 add_207_2/n689           
+    0:03:37   46665.8      0.70      80.8      13.6 sub_192/n331             
+    0:03:37   46723.5      0.70      80.8      13.5 multiplier/add_1_root_add_0_root_add_113_8/n166
+    0:03:37   46744.2      0.70      80.8      13.5 multiplier/M7/mult_125/n107
+    0:03:37   46762.9      0.70      80.8      13.4 multiplier/M6/mult_133/net31125
+    0:03:37   46776.5      0.70      80.8      13.4 multiplier/net99472      
+    0:03:37   46906.5      0.70      80.4      13.1 multiplier/M1/mult_125/n131
+    0:03:37   46956.3      0.70      80.4      13.1 multiplier/M4/mult_133/net27417
+    0:03:37   47007.0      0.70      80.4      13.0 multiplier/net98660      
+    0:03:37   47027.1      0.70      80.4      13.0 multiplier/net81070      
+    0:03:37   47088.2      0.70      80.4      12.9 multiplier/M2/mult_133/n402
+    0:03:38   47119.1      0.70      80.4      12.8 add_192/n107             
+    0:03:38   47150.6      0.70      80.3      12.8 add_207/n634             
+    0:03:38   47181.1      0.70      80.3      12.8 add_192/n10              
+    0:03:38   47190.0      0.70      80.3      12.7 sub_192/n252             
+    0:03:38   47233.6      0.70      80.1      12.7 add_207/net99227         
+    0:03:38   47273.1      0.70      80.1      12.6 preadder/u_add2/add_1_root_add_49_2/n136
+    0:03:38   47347.2      0.70      80.1      12.6 multiplier/M5/mult_125/n41
+    0:03:38   47407.7      0.70      80.1      12.5 add_207_2/n344           
+    0:03:38   47429.8      0.70      80.1      12.5 add_207/n463             
+    0:03:39   47484.2      0.70      80.1      12.5 add_207_2/n370           
+    0:03:39   47527.4      0.70      80.1      12.4 add_207_2/n330           
+    0:03:39   47544.8      0.70      80.1      12.4 sub_add_200_b0/n200      
+    0:03:39   47586.1      0.70      80.1      12.4 multiplier/net81472      
+    0:03:39   47605.3      0.70      80.1      12.4 multiplier/net99166      
+    0:03:39   47622.7      0.70      80.1      12.4 multiplier/M8/mult_133/net29910
+    0:03:39   47647.1      0.70      80.1      12.3 multiplier/add_0_root_add_0_root_add_112_3/n207
+    0:03:39   47670.1      0.70      80.1      12.3 add_192/n192             
+    0:03:39   47684.2      0.70      80.0      12.3 add_207_2/n506           
+    0:03:39   47704.3      0.70      80.0      12.3 sub_192/n374             
+    0:03:39   47718.0      0.70      80.0      12.2 multiplier/M7/mult_125/n50
+    0:03:40   47752.2      0.70      80.0      12.2 add_192/n294             
+    0:03:40   47766.8      0.70      80.0      12.2 preadder/u_add1/add_1_root_add_49_2/n110
+    0:03:40   47783.2      0.70      80.0      12.2 add_207/n392             
+    0:03:40   47826.8      0.70      80.0      12.1 multiplier/M8/mult_133/net29912
+    0:03:40   47878.9      0.70      80.0      12.1 multiplier/M5/mult_125/n126
+    0:03:40   47924.4      0.70      80.0      12.1 multiplier/add_0_root_add_0_root_add_112_3/n171
+    0:03:40   47985.5      0.70      80.0      12.0 multiplier/M1/mult_125/n197
+    0:03:40   47987.3      0.70      80.0      12.0 multiplier/net80840      
+    0:03:40   48011.3      0.70      80.0      12.0 multiplier/add_1_root_add_0_root_add_113_8/n87
+    0:03:40   48036.6      0.70      80.0      12.0 preadder/u_add2/add_1_root_add_49_2/n193
+    0:03:40   48073.7      0.70      80.0      12.0 multiplier/M8/mult_133/net29563
+    0:03:40   48070.4      0.70      80.0      12.0 sub_add_200_b0/net99967  
+    0:03:41   48083.1      0.70      80.0      11.9 add_207/n322             
+    0:03:41   48087.3      0.70      80.0      11.9 multiplier/M5/mult_125/net89606
+    0:03:41   48101.8      0.70      79.9      11.9 multiplier/M5/mult_125/n43
+    0:03:41   48153.0      0.70      79.9      11.9 preadder/u_add2/add_1_root_add_49_2/n109
+    0:03:41   48176.5      0.70      79.9      11.9 add_192/n323             
+    0:03:41   48183.0      0.70      79.9      11.9 multiplier/add_1_root_add_0_root_add_113_8/n51
+    0:03:41   48215.9      0.70      79.9      11.8 add_207/n754             
+    0:03:41   48218.7      0.70      79.9      11.8 multiplier/net80802      
+    0:03:41   48240.8      0.70      79.9      11.8 multiplier/M6/mult_133/net30657
+    0:03:41   48250.1      0.70      79.9      11.8 multiplier/net80860      
+    0:03:41   48257.2      0.70      79.9      11.8 multiplier/net80547      
+    0:03:41   48267.5      0.70      79.9      11.8 multiplier/M6/mult_133/net30646
+    0:03:41   48287.7      0.70      79.9      11.8 multiplier/net80652      
+    0:03:41   48290.0      0.70      79.9      11.8 multiplier/M1/mult_125/n27
+    0:03:42   48296.6      0.70      79.9      11.7 sub_192/n217             
+    0:03:42   48312.1      0.70      79.9      11.7 multiplier/M7/mult_125/n50
+    0:03:42   48310.2      0.70      79.9      11.7 multiplier/net80733      
+    0:03:42   48315.4      0.70      79.9      11.7 multiplier/M1/mult_125/n1
+    0:03:42   48432.7      0.70      79.9      11.6 multiplier/add_0_root_add_0_root_add_113_8/n15
+    0:03:42   48586.6      0.70      79.9      11.4 multiplier/M4/mult_133/net27382
+    0:03:42   48742.0      0.70      79.9      11.2 sub_192/n30              
+    0:03:42   48881.3      0.70      79.8      11.0 multiplier/M3/mult_125/n10
+    0:03:42   48902.5      0.70      79.8      11.0 multiplier/add_0_root_add_0_root_add_112_3/n191
+    0:03:43   48922.2      0.70      79.8      11.0 multiplier/M9/mult_125/net26227
+    0:03:43   48937.2      0.70      79.8      11.0 multiplier/M9/mult_125/net26338
+    0:03:43   48947.5      0.70      79.8      11.0 multiplier/M9/mult_125/net26298
+    0:03:43   48970.0      0.70      79.8      11.0 multiplier/M2/mult_133/n3
+    0:03:43   49012.3      0.70      79.8      10.9 multiplier/net81328      
+    0:03:43   49081.3      0.70      79.8      10.9 multiplier/M4/mult_133/net102782
+    0:03:43   49138.5      0.70      79.8      10.9 multiplier/add_1_root_add_0_root_add_113_8/n101
+    0:03:43   49141.3      0.70      79.8      10.9 multiplier/net80551      
+    0:03:43   49154.5      0.70      79.8      10.8 multiplier/M4/mult_133/net27344
+    0:03:43   49261.5      0.70      79.8      10.8 multiplier/add_0_root_add_0_root_add_112_3/n117
+    0:03:43   49302.8      0.70      79.8      10.8 multiplier/add_1_root_add_0_root_add_113_8/n76
+    0:03:44   49369.4      0.70      79.7      10.7 add_207_2/n776           
+    0:03:44   49432.8      0.70      79.7      10.7 add_207/n644             
+    0:03:44   49468.4      0.70      79.7      10.7 preadder/u_add2/add_1_root_add_49_2/n93
+    0:03:44   49529.9      0.70      79.7      10.6 multiplier/add_0_root_add_0_root_add_113_8/n163
+    0:03:44   49537.0      0.70      79.7      10.6 add_192/n38              
+    0:03:44   49539.8      0.70      79.7      10.6 multiplier/net80930      
+    0:03:44   49586.2      0.70      79.7      10.6 multiplier/M8/mult_133/net29595
+    0:03:44   49620.5      0.70      79.7      10.6 preadder/u_add2/add_1_root_add_49_2/net102986
+    0:03:44   49641.6      0.70      79.7      10.6 sub_add_200_b0/net99914  
+    0:03:44   49659.0      0.70      79.7      10.6 add_207/n316             
+    0:03:44   49685.7      0.70      79.7      10.6 multiplier/M9/mult_125/net26229
+    0:03:45   49707.3      0.70      79.7      10.6 preadder/u_add2/add_1_root_add_49_2/n92
+    0:03:45   49738.3      0.70      79.7      10.5 preadder/u_add2/add_1_root_add_49_2/net103694
+    0:03:45   49790.4      0.70      79.7      10.5 sub_add_200_b0/n195      
+    0:03:45   49798.8      0.70      79.8      10.5 multiplier/M1/mult_125/net95960
+    0:03:45   49860.8      0.70      79.8      10.5 preadder/u_add2/add_1_root_add_49_2/net103695
+    0:03:45   49876.3      0.70      79.8      10.5 multiplier/net100043     
+    0:03:45   49899.3      0.70      79.8      10.5 sub_192/n197             
+    0:03:45   49949.5      0.70      79.8      10.5 multiplier/add_1_root_add_0_root_add_113_8/n70
+    0:03:45   50060.7      0.70      79.8      10.4 multiplier/M2/mult_133/n113
+    0:03:45   50094.5      0.70      79.8      10.4 sub_192/n225             
+    0:03:45   50137.2      0.70      79.8      10.4 multiplier/add_0_root_add_0_root_add_113_8/n124
+    0:03:45   50166.8      0.70      79.8      10.4 add_207_2/n674           
+    0:03:46   50196.3      0.70      79.8      10.4 add_207/n638             
+    0:03:46   50328.7      0.70      79.8      10.4 multiplier/M4/mult_133/net27716
+    0:03:46   50356.8      0.70      79.8      10.4 multiplier/M6/mult_133/net30948
+    0:03:46   50370.9      0.70      79.8      10.4 multiplier/M8/mult_133/net29719
+    0:03:46   50436.1      0.70      79.8      10.4 add_207_2/n459           
+    0:03:46   50538.0      0.70      79.8      10.4 add_207/n586             
+    0:03:46   50608.4      0.70      79.8      10.4 multiplier/M7/mult_125/n237
+    0:03:46   50666.1      0.70      79.8      10.4 multiplier/net81318      
+    0:03:46   50676.4      0.70      79.8      10.4 multiplier/M5/mult_125/n284
+    0:03:46   50692.8      0.70      79.8      10.3 multiplier/M2/mult_133/n328
+    0:03:46   50744.0      0.70      79.8      10.3 multiplier/M1/mult_125/n16
+    0:03:47   50747.3      0.70      79.8      10.3 multiplier/M2/mult_133/n314
+    0:03:47   50750.6      0.70      79.8      10.3 multiplier/M6/mult_133/net31061
+    0:03:47   50753.9      0.70      79.8      10.3 multiplier/M8/mult_133/net29793
+    0:03:47   50752.9      0.70      79.8      10.3 preadder/u_add2/add_1_root_add_49_2/n185
+    0:03:47   50755.3      0.70      79.8      10.3 multiplier/add_0_root_add_0_root_add_112_3/n20
+    0:03:47   50751.0      0.70      79.8      10.3 add_192/net102313        
+    0:03:47   50755.7      0.70      79.8      10.3 multiplier/net95008      
+    0:03:47   50758.1      0.70      79.8      10.3 multiplier/add_0_root_add_0_root_add_113_8/n291
+    0:03:47   50758.1      0.70      79.8      10.3 add_207_2/n539           
+    0:03:48   50758.1      0.70      79.8      10.3 multiplier/add_0_root_add_0_root_add_112_3/n196
+    0:03:48   50753.9      0.70      79.8      10.3 multiplier/net98660      
+    0:03:48   50754.3      0.70      79.8      10.3 add_207/n613             
+    0:03:49   50752.9      0.70      79.8      10.3 net101141                
+    0:03:49   50771.2      0.70      79.8      10.3 N448                     
+    0:03:49   50884.3      0.70      79.8      10.2 N436                     
+    0:03:49   50988.5      0.70      79.8      10.2 net97057                 
+    0:03:49   51001.2      0.70      79.8      10.2 N956                     
+    0:03:49   51026.5      0.70      79.8      10.2 N969                     
+    0:03:49   51037.8      0.70      79.8      10.2 net81877                 
+    0:03:49   51104.4      0.70      79.7      10.1 net81927                 
+    0:03:50   51190.3      0.70      79.7      10.1 net81818                 
+    0:03:50   51319.4      0.70      79.7      10.0 alt756/net80153          
+    0:03:50   51363.5      0.70      79.7      10.0 net81859                 
+    0:03:50   51393.5      0.70      79.7      10.0 net82324                 
+    0:03:50   51469.1      0.70      79.7      10.0 net82222                 
+    0:03:50   51474.7      0.70      79.7      10.0 net82321                 
+    0:03:51   51552.6      0.70      79.7      10.0 net82273                 
+    0:03:51   51636.6      0.70      79.7      10.0 net82197                 
+    0:03:51   51640.8      0.70      79.7      10.0 N943                     
+    0:03:51   51684.0      0.70      79.7       9.9 alt753/net80248          
+    0:03:51   51771.8      0.70      79.7       9.9 net31616                 
+    0:03:52   51766.1      0.70      79.7       9.9 net31639                 
+    0:03:52   51762.9      0.70      79.7       9.9 net81867                 
+    0:03:52   51766.1      0.70      79.7       9.9 multiplier/net81533      
+    0:03:52   51772.7      0.70      79.7       9.9 multiplier/M3/mult_125/n264
+    0:03:52   51772.2      0.70      79.7       9.9 multiplier/M6/mult_133/net31124
+    0:03:53   51776.0      0.70      79.7       9.9 multiplier/add_0_root_add_0_root_add_112_3/n189
+    0:03:53   51784.4      0.70      79.7       9.9 add_192/n63              
+    0:03:53   51786.3      0.70      79.7       9.9 multiplier/net81612      
+    0:03:53   51794.3      0.70      79.7       9.9 multiplier/add_0_root_add_0_root_add_113_8/n30
+    0:03:53   51797.1      0.70      79.7       9.9 add_207/n700             
+    0:03:54   51801.8      0.70      79.7       9.9 multiplier/M6/mult_133/net30655
+    0:03:54   51804.6      0.70      79.7       9.9 multiplier/net80589      
+    0:03:54   51810.3      0.70      79.7       9.8 add_207/n344             
+    0:03:54   51823.9      0.70      79.7       9.8 add_207_2/n657           
+    0:03:54   51824.8      0.70      79.7       9.8 sub_192/net101818        
+    0:03:55   51830.4      0.70      79.7       9.8 multiplier/M8/mult_133/net29834
+    0:03:55   51830.4      0.70      79.7       9.8 multiplier/net81346      
+    0:03:55   51828.1      0.70      79.7       9.8 preadder/u_add1/add_1_root_add_49_2/net102069
+    0:03:55   51827.6      0.70      79.7       9.8 multiplier/net80658      
+    0:03:55   51830.4      0.70      79.7       9.8 multiplier/net80501      
+    0:03:55   51837.0      0.70      79.7       9.8 sub_add_200_b0/net99959  
+    0:03:56   51837.9      0.70      79.7       9.8 multiplier/net101312     
+    0:03:56   51840.8      0.70      79.7       9.8 multiplier/add_0_root_add_0_root_add_112_3/n103
+    0:03:56   51849.2      0.70      79.7       9.8 multiplier/add_0_root_add_0_root_add_113_8/net98401
+    0:03:56   51853.4      0.70      79.7       9.8 sub_add_200_b0/n207      
+    0:03:56   51853.4      0.70      79.7       9.8 preadder/u_add1/add_1_root_add_49_2/n42
+    0:03:56   51860.0      0.70      79.7       9.8 multiplier/net80994      
+    0:03:56   51852.5      0.70      79.7       9.8 add_207_2/n744           
+    0:03:57   51839.3      0.70      79.7       9.8 add_207_2/n430           
+    0:03:57   51836.1      0.70      79.7       9.8 add_192/n315             
+    0:03:57   51836.1      0.70      79.7       9.8 add_207_2/net101820      
+    0:03:57   51835.1      0.70      79.7       9.8 add_207/net98832         
+    0:03:57   51832.8      0.70      79.7       9.8 multiplier/net103069     
+    0:03:57   51835.6      0.70      79.7       9.8 multiplier/add_1_root_add_0_root_add_113_8/n25
+    0:03:57   51831.8      0.70      79.7       9.8 sub_192/n276             
+    0:03:57   51819.6      0.70      79.7       9.8 multiplier/M5/mult_125/net98761
+    0:03:58   51823.4      0.70      79.7       9.8 multiplier/net103853     
+    0:03:58   51820.6      0.70      79.7       9.8 multiplier/M4/mult_133/net27640
+    0:03:58   51816.4      0.70      79.7       9.8 preadder/u_add2/add_1_root_add_49_2/net96692
+    0:03:58   51812.6      0.70      79.7       9.8 multiplier/net103602     
+    0:03:58   51810.7      0.70      79.7       9.8 multiplier/M7/mult_125/net42334
+    0:03:58   51807.4      0.70      79.7       9.8 multiplier/M6/mult_133/net30711
+    0:03:58   51808.4      0.70      79.7       9.8 multiplier/net81380      
+    0:03:59   51806.0      0.70      79.7       9.8 multiplier/add_0_root_add_0_root_add_113_8/net98401
+    0:03:59   51802.3      0.70      79.7       9.8 multiplier/M3/mult_125/net103639
+    0:03:59   51800.4      0.70      79.7       9.8 preadder/u_add1/add_1_root_add_49_2/n107
+    0:03:59   51800.9      0.70      79.7       9.8 multiplier/net96888      
+    0:03:59   51798.5      0.70      79.7       9.8 multiplier/add_0_root_add_0_root_add_113_8/n248
+    0:03:59   51796.6      0.70      79.7       9.8 add_207_2/n641           
+    0:03:59   51794.8      0.70      79.7       9.8 add_207/net104222        
+    0:04:00   51792.9      0.70      79.7       9.8 preadder/u_add1/add_1_root_add_49_2/net103810
+    0:04:01   51791.5      0.70      79.7       9.8 net98987                 
+    0:04:01   51790.1      0.70      79.7       9.8 net81881                 
+    0:04:01   51790.1      0.70      79.7       9.8 net108017                
+    0:04:03   51789.6      0.70      79.7       9.8 output_register_bank_reg[62]/D
+    0:04:04   51791.9      0.70      79.7       9.8 output_register_bank_reg[62]/D
+    0:04:04   51781.2      0.70      79.5       9.8 output_register_bank_reg[51]/D
+    0:04:04   51784.0      0.70      79.5       9.8 output_register_bank_reg[51]/D
+    0:04:04   51785.8      0.70      79.4       9.8 output_register_bank_reg[51]/D
+    0:04:05   51784.9      0.70      79.3       9.8 output_register_bank_reg[51]/D
+    0:04:05   51785.8      0.70      79.3       9.8 output_register_bank_reg[51]/D
+    0:04:05   51781.2      0.70      79.1       9.8 output_register_bank_reg[51]/D
+    0:04:06   51782.6      0.70      79.1       9.8 multiplier/M1/mult_125/net109843
+    0:04:06   51788.2      0.70      79.1       9.8 multiplier/add_1_root_add_0_root_add_113_8/n180
+    0:04:06   51789.6      0.70      79.1       9.8 preadder/u_add1/add_1_root_add_49_2/n131
+    0:04:07   51793.8      0.70      79.1       9.8 multiplier/net81541      
+    0:04:07   51796.6      0.70      79.1       9.8 add_192/n96              
+    0:04:07   51796.2      0.70      79.1       9.8 multiplier/net80387      
+    0:04:07   51799.9      0.70      79.2       9.8 add_207_2/n718           
+    0:04:08   51802.3      0.70      79.2       9.8 multiplier/net81011      
+    0:04:08   51805.1      0.70      79.2       9.8 add_207/n498             
+    0:04:08   51806.5      0.70      79.2       9.8 multiplier/M3/mult_125/n95
+    0:04:08   51809.3      0.70      79.2       9.8 multiplier/add_0_root_add_0_root_add_112_3/A[27]
+    0:04:08   51810.7      0.70      79.2       9.8 multiplier/IN2[26]       
+    0:04:09   51823.4      0.70      79.2       9.8 sub_add_200_b0/n260      
+    0:04:09   51826.2      0.70      79.2       9.8 multiplier/M1/mult_125/net109828
+    0:04:09   51827.6      0.70      79.2       9.8 multiplier/M5/mult_125/net97451
+    0:04:09   51826.2      0.70      79.2       9.8 multiplier/net81524      
+    0:04:09   51826.2      0.70      79.2       9.7 multiplier/add_0_root_add_0_root_add_112_3/n160
+    0:04:10   51828.6      0.70      79.2       9.7 multiplier/M1/mult_125/net109847
+    0:04:10   51825.7      0.70      79.2       9.7 multiplier/M1/mult_125/net101888
+    0:04:10   51829.5      0.70      79.2       9.7 multiplier/net81703      
+    0:04:10   51830.9      0.70      79.2       9.7 add_192/net99581         
+    0:04:10   51828.1      0.70      79.2       9.7 sub_192/net102911        
+    0:04:11   51830.4      0.70      79.2       9.7 multiplier/M5/mult_125/net94580
+    0:04:11   51830.9      0.70      79.2       9.7 add_207_2/n471           
+    0:04:11   51833.7      0.70      79.2       9.7 sub_192/n277             
+    0:04:12   51839.3      0.70      79.2       9.7 multiplier/net81563      
+    0:04:12   51843.6      0.70      79.2       9.7 multiplier/M1/mult_125/n23
+    0:04:12   51841.2      0.70      79.2       9.7 multiplier/M5/mult_125/net102055
+    0:04:12   51836.5      0.70      79.2       9.7 multiplier/M2/mult_133/net101458
+    0:04:12   51832.8      0.70      79.2       9.7 multiplier/M4/mult_133/net103968
+    0:04:12   51830.4      0.70      79.2       9.7 multiplier/M6/mult_133/net101293
+    0:04:12   51828.6      0.70      79.2       9.7 multiplier/M8/mult_133/net32785
+    0:04:12   51826.7      0.70      79.2       9.7 multiplier/M8/mult_133/net101552
+    0:04:12   51823.9      0.70      79.2       9.7 multiplier/add_0_root_add_0_root_add_112_3/n40
+    0:04:12   51820.6      0.70      79.2       9.7 multiplier/add_0_root_add_0_root_add_112_3/net102084
+    0:04:12   51817.3      0.70      79.2       9.7 sub_192/n288             
+    0:04:12   51813.5      0.70      79.2       9.7 add_192/n339             
+    0:04:12   51810.7      0.70      79.2       9.7 add_192/n357             
+    0:04:13   51810.3      0.70      79.2       9.7 multiplier/net81365      
+    0:04:13   51809.3      0.70      79.2       9.7 multiplier/net98271      
+    0:04:13   51807.4      0.70      79.2       9.7 sub_add_200_b0/n376      
+    0:04:13   51806.0      0.70      79.2       9.7 multiplier/add_0_root_add_0_root_add_113_8/net102251
+    0:04:13   51804.6      0.70      79.2       9.7 multiplier/add_1_root_add_0_root_add_113_8/net102323
+    0:04:13   51802.3      0.70      79.2       9.7 add_207_2/n427           
+    0:04:13   51800.9      0.70      79.2       9.7 add_207/n539             
+    0:04:13   51799.5      0.70      79.2       9.7 add_192/net102331        
+    0:04:14   51798.0      0.70      79.2       9.7 sub_192/net104159        
+    0:04:14   51804.1      0.70      79.2       9.7 alt756/net80138          
+    0:04:15   51806.0      0.70      79.2       9.7 net82149                 
+    0:04:15   51806.5      0.70      79.2       9.7 net82316                 
+    0:04:16   51806.0      0.70      79.2       9.7 alt756/net80141          
+    0:04:16   51802.3      0.70      79.2       9.6 alt756/net80138          
+    0:04:20   51802.3      0.70      79.1       9.6 output_register_bank_reg[63]/D
+    0:04:21   51800.9      0.70      79.2       9.6 output_register_bank_reg[63]/D
+    0:04:23   51804.6      0.70      79.2       9.6 multiplier/M1/mult_125/n260
+    0:04:24   51873.1      0.77      85.2       9.4 multiplier/net80896      
+    0:04:24   51941.2      0.82      92.3       9.2 multiplier/M6/mult_133/net31124
+    0:04:25   51986.2      0.86      95.2       9.1 add_192/n89              
+    0:04:25   52033.2      0.96     109.3       9.0 multiplier/add_1_root_add_0_root_add_113_8/n150
+    0:04:26   52086.7      1.03     111.0       8.9 multiplier/add_0_root_add_0_root_add_113_8/n265
+    0:04:26   52137.8      1.04     112.5       8.8 multiplier/net80997      
+    0:04:26   52183.8      1.10     121.1       8.8 add_207_2/n628           
+    0:04:27   52250.9      1.13     125.7       8.6 add_207_2/n559           
+    0:04:27   52324.6      1.13     125.8       8.5 multiplier/net80523      
+    0:04:27   52411.4      1.16     130.4       8.3 preadder/u_add1/add_1_root_add_49_2/n38
+    0:04:27   52480.9      1.16     130.9       8.2 preadder/u_add2/add_1_root_add_49_2/n176
+    0:04:27   52556.4      1.16     131.4       8.1 add_207/net103023        
+    0:04:28   52651.7      1.20     137.5       7.9 multiplier/net99472      
+    0:04:28   52749.8      1.26     140.8       7.8 multiplier/add_0_root_add_0_root_add_113_8/n129
+    0:04:29   52844.6      1.36     158.4       7.6 sub_add_200_b0/n306      
+    0:04:29   52909.8      1.37     159.9       7.5 add_207_2/n521           
+    0:04:29   52970.8      1.37     160.9       7.4 multiplier/add_1_root_add_0_root_add_113_8/n19
+    0:04:29   53037.5      1.40     163.5       7.4 multiplier/net109159     
+    0:04:29   53104.6      1.40     163.5       7.3 multiplier/M5/mult_125/n193
+    0:04:30   53162.3      1.40     163.6       7.2 multiplier/add_0_root_add_0_root_add_112_3/n149
+    0:04:30   53213.9      1.49     176.5       7.1 multiplier/add_0_root_add_0_root_add_112_3/n186
+    0:04:30   53276.3      1.53     180.6       7.0 add_192/n96              
+    0:04:31   53332.2      1.54     181.7       6.9 multiplier/M1/mult_125/net87112
+    0:04:31   53410.1      1.54     182.1       6.8 sub_add_200_b0/n211      
+    0:04:31   53503.5      1.55     184.2       6.7 multiplier/net81428      
+    0:04:32   53578.1      1.60     191.6       6.6 multiplier/add_1_root_add_0_root_add_113_8/n158
+    0:04:32   53636.3      1.61     192.6       6.5 sub_add_200_b0/n294      
+    0:04:32   53710.4      1.61     192.8       6.4 sub_add_200_b0/n346      
+    0:04:32   53793.0      1.62     194.1       6.3 add_207_2/n515           
+    0:04:32   53868.6      1.62     194.1       6.3 multiplier/add_0_root_add_0_root_add_113_8/net104336
+    0:04:33   53948.9      1.62     194.2       6.2 multiplier/M6/mult_133/net30661
+    0:04:33   54023.0      1.62     194.2       6.1 add_192/n267             
+    0:04:33   54088.7      1.62     194.5       6.0 add_207/net101030        
+    0:04:33   54150.2      1.63     195.4       5.9 multiplier/net81514      
+    0:04:33   54217.8      1.63     195.4       5.9 add_207/n312             
+    0:04:33   54283.9      1.63     195.4       5.8 multiplier/net80484      
+    0:04:34   54341.7      1.67     196.3       5.7 multiplier/add_1_root_add_0_root_add_113_8/n30
+    0:04:34   54413.9      1.68     196.3       5.6 multiplier/net80949      
+    0:04:34   54482.9      1.69     198.0       5.6 multiplier/net80846      
+    0:04:34   54556.1      1.73     202.0       5.5 multiplier/add_0_root_add_0_root_add_113_8/n90
+    0:04:35   54628.9      1.73     203.9       5.4 sub_add_200_b0/net97593  
+    0:04:35   54697.4      1.79     210.3       5.4 multiplier/net81321      
+    0:04:35   54764.5      1.79     210.8       5.3 multiplier/net81071      
+    0:04:35   54829.3      1.79     211.5       5.3 add_207_2/n2             
+    0:04:35   54864.9      1.81     213.8       5.2 multiplier/net81464      
+    0:04:36   54944.7      1.84     214.2       5.1 add_207/net99220         
+    0:04:36   54998.7      1.84     213.9       5.0 multiplier/add_0_root_add_0_root_add_113_8/n140
+    0:04:36   55085.5      1.83     215.3       4.9 multiplier/net80684      
+    0:04:37   55170.4      1.86     220.5       4.8 add_207/n579             
+    0:04:37   55259.1      1.87     221.3       4.7 multiplier/add_0_root_add_0_root_add_113_8/n197
+    0:04:37   55342.2      1.89     222.6       4.6 sub_add_200_b0/n178      
+    0:04:38   55422.9      1.88     224.7       4.5 multiplier/M5/mult_125/n444
+    0:04:38   55464.7      1.88     224.5       4.4 add_207/n505             
+    0:04:39   55551.0      1.91     228.6       4.3 multiplier/net81338      
+    0:04:39   55634.6      1.93     229.4       4.2 multiplier/M6/mult_133/net30929
+    0:04:39   55742.5      1.95     232.1       4.2 multiplier/add_0_root_add_0_root_add_113_8/n67
+    0:04:39   55850.5      1.98     232.9       4.2 add_207/n415             
+    0:04:40   55958.4      1.98     232.9       4.2 multiplier/M6/mult_133/net30881
+    0:04:40   56059.8      1.98     232.9       4.1 add_207/n781             
+    0:04:40   56166.8      2.02     237.5       4.1 multiplier/M2/mult_133/n364
+    0:04:40   56241.8      2.03     240.0       4.0 add_207_2/n583           
+    0:04:41   56316.5      2.06     244.6       3.9 multiplier/M5/mult_125/n263
+    0:04:41   56424.4      2.06     244.5       3.8 multiplier/M2/mult_133/n13
+    0:04:41   56509.4      2.06     245.2       3.8 add_207_2/n380           
+    0:04:41   56546.0      2.08     249.0       3.7 multiplier/M1/mult_125/n20
+    0:04:42   56637.5      2.08     249.0       3.7 multiplier/M5/mult_125/n78
+    0:04:42   56730.9      2.12     253.3       3.6 multiplier/M2/mult_133/n109
+    0:04:42   56833.2      2.12     253.4       3.5 multiplier/M6/mult_133/net30738
+    0:04:42   56927.0      2.14     257.1       3.5 multiplier/add_0_root_add_0_root_add_112_3/n77
+    0:04:42   57024.6      2.14     257.3       3.4 sub_192/n259             
+    0:04:43   57106.3      2.16     258.3       3.3 add_192/n38              
+    0:04:43   57178.6      2.16     257.9       3.3 multiplier/net81332      
+    0:04:44   57258.8      2.16     258.5       3.2 multiplier/net112042     
+    0:04:44   57346.6      2.25     268.1       3.1 multiplier/add_0_root_add_0_root_add_113_8/n259
+    0:04:44   57444.2      2.25     269.0       3.0 add_207_2/n366           
+    0:04:44   57509.9      2.25     269.2       3.0 add_207/n125             
+    0:04:45   57509.4      2.25     269.4       3.0 add_207_2/n604           
+    0:04:45   57508.5      2.25     269.4       3.0 add_207/n468             
+    0:04:46   57507.6      2.25     269.4       3.0 multiplier/M1/mult_125/n229
+    0:04:46   57569.0      2.25     269.4       2.9 preadder/u_add2/add_1_root_add_49_2/n130
+    0:04:46   57570.9      2.25     269.2       2.9 add_192/n168             
+    0:04:47   57558.7      2.25     269.3       2.9 multiplier/net80861      
+    0:04:47   57557.8      2.25     268.8       2.9 add_207_2/n598           
+    0:04:48   57556.4      2.25     268.8       2.9 preadder/u_add2/add_1_root_add_49_2/n171
+    0:04:48   57550.3      2.25     269.0       2.9 add_207_2/n459           
+    0:04:48   57551.2      2.27     269.3       2.9 net81969                 
+    0:04:48   57604.7      2.29     271.0       2.8 net82227                 
+    0:04:48   57698.6      2.32     272.3       2.7 net95900                 
+    0:04:49   57786.3      2.32     273.8       2.6 N973                     
+    0:04:49   57849.7      2.32     275.2       2.5 net31753                 
+    0:04:49   57928.5      2.32     275.9       2.5 alt756/net80158          
+    0:04:50   58028.9      2.35     280.0       2.4 net82305                 
+    0:04:50   58129.4      2.36     282.8       2.4 alt753/net80337          
+    0:04:51   58228.9      2.36     282.8       2.4 net94511                 
+    0:04:51   58321.8      2.38     284.7       2.3 net82029                 
+    0:04:52   58422.7      2.38     285.7       2.3 net91052                 
+    0:04:52   58513.3      2.38     285.7       2.2 net107983                
+    0:04:52   58552.2      2.38     285.7       2.2 net95120                 
+    0:04:53   58554.6      2.38     285.7       2.2 net31731                 
+    0:04:53   58600.1      2.40     288.5       2.2 net51774                 
+    0:04:54   58602.0      2.40     288.4       2.2 net81879                 
+    0:04:54   58600.6      2.40     288.4       2.2 net82030                 
+    0:04:54   58600.1      2.39     287.7       2.2 output_register_bank_reg[57]/D
+    0:04:55   58593.0      2.34     282.7       2.2 output_register_bank_reg[59]/D
+    0:04:55   58573.8      2.32     280.6       2.2 output_register_bank_reg[63]/D
+    0:04:56   58552.7      2.30     278.5       2.2 output_register_bank_reg[59]/D
+    0:04:56   58546.6      2.29     278.3       2.2 output_register_bank_reg[58]/D
+    0:04:57   58543.3      2.27     276.1       2.2 output_register_bank_reg[62]/D
+    0:04:57   58536.7      2.27     276.0       2.2 output_register_bank_reg[62]/D
+    0:04:57   58531.1      2.26     274.7       2.2 output_register_bank_reg[50]/D
+    0:04:58   58522.6      2.25     274.6       2.2 output_register_bank_reg[49]/D
+    0:04:58   58515.1      2.23     272.8       2.2 output_register_bank_reg[57]/D
+    0:04:58   58510.0      2.23     272.8       2.2 output_register_bank_reg[50]/D
+    0:04:58   58502.5      2.22     272.4       2.2 output_register_bank_reg[57]/D
+    0:04:59   58493.6      2.21     270.7       2.2 output_register_bank_reg[57]/D
+    0:04:59   58476.7      2.19     267.9       2.2 output_register_bank_reg[50]/D
+    0:05:00   58479.0      2.17     265.0       2.2 output_register_bank_reg[50]/D
+    0:05:00   58468.2      2.15     264.2       2.2 output_register_bank_reg[62]/D
+    0:05:01   58451.8      2.14     263.4       2.2 output_register_bank_reg[50]/D
+    0:05:01   58435.8      2.14     262.9       2.2 output_register_bank_reg[50]/D
+    0:05:01   58425.5      2.14     262.6       2.2 output_register_bank_reg[50]/D
+    0:05:02   58420.3      2.13     261.9       2.2 output_register_bank_reg[50]/D
+    0:05:02   58412.8      2.13     261.2       2.2 output_register_bank_reg[50]/D
+    0:05:02   58416.6      2.12     259.7       2.2 output_register_bank_reg[50]/D
+    0:05:03   58403.4      2.11     258.6       2.2 output_register_bank_reg[50]/D
+    0:05:03   58382.8      2.10     258.1       2.2 output_register_bank_reg[57]/D
+    0:05:03   58377.2      2.09     257.0       2.2 output_register_bank_reg[50]/D
+    0:05:03   58386.1      2.09     256.5       2.2 output_register_bank_reg[50]/D
+    0:05:04   58378.1      2.08     255.0       2.2 output_register_bank_reg[50]/D
+    0:05:04   58357.0      2.07     252.5       2.2 output_register_bank_reg[50]/D
+    0:05:05   58375.8      2.06     251.3       2.2 output_register_bank_reg[50]/D
+    0:05:05   58367.8      2.05     249.9       2.2 output_register_bank_reg[50]/D
+    0:05:05   58367.3      2.04     249.5       2.2 output_register_bank_reg[50]/D
+    0:05:06   58359.8      2.03     248.4       2.2 output_register_bank_reg[57]/D
+    0:05:06   58355.6      2.03     247.8       2.2 output_register_bank_reg[50]/D
+    0:05:06   58352.3      2.03     247.3       2.2 output_register_bank_reg[50]/D
+    0:05:06   58349.9      2.02     246.7       2.2 output_register_bank_reg[50]/D
+    0:05:07   58335.9      2.02     245.6       2.2 output_register_bank_reg[50]/D
+    0:05:07   58331.6      2.01     244.9       2.2 output_register_bank_reg[50]/D
+    0:05:07   58325.5      1.98     240.2       2.2 output_register_bank_reg[59]/D
+    0:05:08   58319.9      1.98     238.5       2.2 output_register_bank_reg[50]/D
+    0:05:08   58310.1      1.96     237.3       2.2 output_register_bank_reg[50]/D
+    0:05:08   58311.0      1.95     236.5       2.2 output_register_bank_reg[50]/D
+    0:05:08   58307.7      1.95     236.3       2.2 output_register_bank_reg[62]/D
+    0:05:09   58312.4      1.95     236.3       2.2 output_register_bank_reg[59]/D
+    0:05:09   58312.9      1.95     236.2       2.2 output_register_bank_reg[62]/D
+    0:05:09   58307.7      1.95     236.2       2.2 output_register_bank_reg[50]/D
+    0:05:09   58306.8      1.95     235.5       2.2 output_register_bank_reg[41]/D
+    0:05:10   58304.9      1.95     235.3       2.2 output_register_bank_reg[57]/D
+    0:05:10   58301.1      1.94     235.1       2.2 output_register_bank_reg[50]/D
+    0:05:10   58295.5      1.94     235.0       2.2 output_register_bank_reg[50]/D
+    0:05:11   58291.3      1.94     234.4       2.2 output_register_bank_reg[59]/D
+    0:05:11   58282.8      1.93     234.0       2.2 output_register_bank_reg[51]/D
+    0:05:12   58274.4      1.92     233.4       2.2 output_register_bank_reg[57]/D
+    0:05:12   58271.6      1.92     232.7       2.2 output_register_bank_reg[51]/D
+    0:05:12   58266.9      1.91     232.5       2.2 output_register_bank_reg[58]/D
+    0:05:12   58267.8      1.91     232.3       2.2 output_register_bank_reg[50]/D
+    0:05:13   58263.1      1.90     232.2       2.2 output_register_bank_reg[50]/D
+    0:05:13   58262.2      1.90     232.2       2.2 output_register_bank_reg[61]/D
+    0:05:13   58262.7      1.90     231.7       2.2 output_register_bank_reg[59]/D
+    0:05:13   58261.2      1.90     231.6       2.2 output_register_bank_reg[59]/D
+    0:05:13   58261.2      1.90     231.6       2.2 output_register_bank_reg[50]/D
+    0:05:14   58263.1      1.90     231.3       2.2 output_register_bank_reg[59]/D
+    0:05:14   58261.7      1.90     231.3       2.2 output_register_bank_reg[61]/D
+    0:05:14   58260.8      1.89     231.0       2.2 output_register_bank_reg[50]/D
+    0:05:14   58261.7      1.89     230.9       2.2 output_register_bank_reg[50]/D
+    0:05:15   58258.0      1.89     230.8       2.2 output_register_bank_reg[57]/D
+    0:05:15   58259.4      1.89     230.7       2.2 output_register_bank_reg[50]/D
+    0:05:15   58262.2      1.89     230.5       2.2 output_register_bank_reg[50]/D
+    0:05:15   58262.2      1.89     230.3       2.2 output_register_bank_reg[57]/D
+    0:05:16   58261.7      1.88     230.0       2.2 output_register_bank_reg[59]/D
+    0:05:16   58265.0      1.88     229.8       2.2 output_register_bank_reg[59]/D
+    0:05:16   58262.7      1.88     229.1       2.2 output_register_bank_reg[57]/D
+    0:05:16   58263.1      1.88     229.1       2.1 output_register_bank_reg[59]/D
+    0:05:17   58259.8      1.88     228.9       2.1 output_register_bank_reg[57]/D
+    0:05:17   58246.2      1.87     228.8       2.1 output_register_bank_reg[57]/D
+    0:05:17   58236.8      1.87     228.2       2.1 output_register_bank_reg[57]/D
+    0:05:17   58232.6      1.87     228.0       2.1 output_register_bank_reg[57]/D
+    0:05:17   58229.8      1.87     227.6       2.1 output_register_bank_reg[57]/D
+    0:05:18   58220.9      1.86     227.0       2.1 output_register_bank_reg[41]/D
+    0:05:18   58214.8      1.86     226.9       2.1 output_register_bank_reg[59]/D
+    0:05:18   58207.7      1.86     227.0       2.1 output_register_bank_reg[57]/D
+    0:05:18   58212.9      1.86     227.2       2.1 output_register_bank_reg[59]/D
+    0:05:18   58211.5      1.86     226.9       2.1 output_register_bank_reg[57]/D
+    0:05:19   58210.6      1.86     226.9       2.1 output_register_bank_reg[57]/D
+    0:05:19   58210.6      1.86     226.7       2.1 output_register_bank_reg[59]/D
+    0:05:19   58204.9      1.86     226.7       2.1 output_register_bank_reg[63]/D
+    0:05:19   58208.7      1.85     226.3       2.1 output_register_bank_reg[40]/D
+    0:05:20   58204.9      1.85     226.1       2.1 output_register_bank_reg[59]/D
+    0:05:20   58198.4      1.85     225.6       2.1 output_register_bank_reg[50]/D
+    0:05:20   58199.8      1.85     225.3       2.1 output_register_bank_reg[59]/D
+    0:05:21   58194.6      1.85     225.3       2.1 output_register_bank_reg[50]/D
+    0:05:21   58194.6      1.85     225.3       2.1 output_register_bank_reg[50]/D
+    0:05:21   58191.8      1.84     225.2       2.1 output_register_bank_reg[50]/D
+    0:05:21   58192.3      1.84     225.1       2.1 output_register_bank_reg[50]/D
+    0:05:21   58197.0      1.84     225.2       2.1 output_register_bank_reg[50]/D
+    0:05:22   58197.4      1.84     225.2       2.1 output_register_bank_reg[50]/D
+    0:05:22   58200.2      1.84     225.2       2.1 output_register_bank_reg[50]/D
+    0:05:22   58196.5      1.84     225.2       2.1 output_register_bank_reg[51]/D
+    0:05:22   58196.0      1.84     224.9       2.1 output_register_bank_reg[59]/D
+    0:05:22   58198.4      1.84     224.6       2.1 output_register_bank_reg[59]/D
+    0:05:23   58195.5      1.84     224.6       2.1 output_register_bank_reg[59]/D
+    0:05:23   58196.0      1.84     224.0       2.1 output_register_bank_reg[59]/D
+    0:05:23   58190.9      1.83     223.8       2.1 output_register_bank_reg[59]/D
+    0:05:23   58192.7      1.83     223.7       2.1 output_register_bank_reg[52]/D
+    0:05:23   58189.9      1.83     223.7       2.1 output_register_bank_reg[59]/D
+    0:05:24   58189.9      1.83     223.6       2.1 output_register_bank_reg[59]/D
+    0:05:24   58188.5      1.83     223.6       2.1 output_register_bank_reg[59]/D
+    0:05:24   58188.5      1.83     223.6       2.1 output_register_bank_reg[59]/D
+    0:05:24   58181.9      1.83     223.6       2.1 output_register_bank_reg[58]/D
+    0:05:25   58178.2      1.83     223.2       2.1 output_register_bank_reg[41]/D
+    0:05:25   58177.2      1.83     223.1       2.1 output_register_bank_reg[59]/D
+    0:05:25   58172.1      1.83     223.1       2.1 output_register_bank_reg[59]/D
+    0:05:25   58169.3      1.83     222.9       2.1 output_register_bank_reg[59]/D
+    0:05:25   58166.9      1.82     222.4       2.1 output_register_bank_reg[59]/D
+    0:05:25   58167.4      1.82     222.4       2.1 output_register_bank_reg[59]/D
+    0:05:26   58155.7      1.82     222.3       2.1 output_register_bank_reg[59]/D
+    0:05:26   58153.3      1.82     222.3       2.1 output_register_bank_reg[59]/D
+    0:05:27   58148.6      1.82     222.3       2.1 output_register_bank_reg[59]/D
+    0:05:27   58145.8      1.82     222.1       2.1 output_register_bank_reg[40]/D
+    0:05:27   58141.6      1.82     221.6       2.1 output_register_bank_reg[59]/D
+    0:05:27   58143.0      1.82     221.5       2.1 output_register_bank_reg[59]/D
+    0:05:27   58140.2      1.82     221.5       2.1 output_register_bank_reg[59]/D
+    0:05:27   58137.8      1.81     221.4       2.1 output_register_bank_reg[59]/D
+    0:05:28   58138.8      1.81     221.0       2.1 output_register_bank_reg[41]/D
+    0:05:28   58138.3      1.81     221.0       2.1 output_register_bank_reg[59]/D
+    0:05:28   58143.5      1.81     220.9       2.1 output_register_bank_reg[59]/D
+    0:05:28   58147.7      1.81     220.8       2.1 output_register_bank_reg[59]/D
+    0:05:29   58137.4      1.81     220.7       2.1 output_register_bank_reg[59]/D
+    0:05:29   58141.1      1.81     220.7       2.1 output_register_bank_reg[53]/D
+    0:05:29   58133.1      1.81     220.4       2.1 output_register_bank_reg[55]/D
+    0:05:29   58128.4      1.81     220.3       2.1 output_register_bank_reg[55]/D
+    0:05:29   58126.1      1.81     220.3       2.1 output_register_bank_reg[40]/D
+    0:05:30   58107.3      1.80     220.0       2.1 output_register_bank_reg[62]/D
+    0:05:30   58107.3      1.80     219.9       2.1 output_register_bank_reg[40]/D
+    0:05:30   58107.3      1.80     219.9       2.1 output_register_bank_reg[59]/D
+    0:05:30   58105.9      1.80     219.8       2.1 output_register_bank_reg[50]/D
+    0:05:31   58103.6      1.80     219.7       2.1 output_register_bank_reg[62]/D
+    0:05:31   58095.1      1.80     219.7       2.1 output_register_bank_reg[61]/D
+    0:05:31   58095.6      1.80     219.6       2.1 output_register_bank_reg[45]/D
+    0:05:31   58094.2      1.80     219.6       2.1 output_register_bank_reg[50]/D
+    0:05:31   58098.4      1.80     219.6       2.1 output_register_bank_reg[53]/D
+    0:05:32   58098.4      1.80     219.6       2.1 output_register_bank_reg[49]/D
+    0:05:32   58092.8      1.80     219.5       2.1 output_register_bank_reg[51]/D
+    0:05:32   58090.0      1.80     219.4       2.1 output_register_bank_reg[60]/D
+    0:05:32   58089.5      1.80     219.2       2.1 output_register_bank_reg[62]/D
+    0:05:33   58088.5      1.79     218.9       2.1 output_register_bank_reg[62]/D
+    0:05:33   58090.0      1.79     218.3       2.1 output_register_bank_reg[40]/D
+    0:05:33   58091.4      1.79     218.2       2.1 output_register_bank_reg[62]/D
+    0:05:33   58091.8      1.79     218.2       2.1 output_register_bank_reg[56]/D
+    0:05:33   58088.5      1.79     218.1       2.1 output_register_bank_reg[56]/D
+    0:05:33   58084.3      1.79     218.0       2.1 output_register_bank_reg[56]/D
+    0:05:34   58077.8      1.78     217.7       2.1 output_register_bank_reg[62]/D
+    0:05:34   58074.5      1.78     217.4       2.1 output_register_bank_reg[56]/D
+    0:05:34   58065.5      1.78     217.0       2.1 output_register_bank_reg[45]/D
+    0:05:34   58062.3      1.78     216.9       2.1 output_register_bank_reg[62]/D
+    0:05:34   58057.6      1.78     216.8       2.1 output_register_bank_reg[56]/D
+    0:05:35   58054.8      1.77     216.5       2.1 output_register_bank_reg[56]/D
+    0:05:35   58057.6      1.77     216.2       2.1 output_register_bank_reg[56]/D
+    0:05:35   58062.3      1.77     216.2       2.1 output_register_bank_reg[56]/D
+    0:05:35   58058.0      1.77     216.0       2.1 output_register_bank_reg[62]/D
+    0:05:35   58050.1      1.77     215.7       2.1 output_register_bank_reg[56]/D
+    0:05:36   58054.3      1.77     215.6       2.1 output_register_bank_reg[61]/D
+    0:05:36   58055.2      1.77     215.4       2.1 output_register_bank_reg[57]/D
+    0:05:36   58051.0      1.77     215.3       2.1 output_register_bank_reg[61]/D
+    0:05:36   58048.7      1.76     215.2       2.1 output_register_bank_reg[61]/D
+    0:05:36   58041.1      1.76     214.8       2.1 output_register_bank_reg[61]/D
+    0:05:36   58043.0      1.76     214.8       2.1 output_register_bank_reg[61]/D
+    0:05:37   58040.2      1.76     214.8       2.1 output_register_bank_reg[59]/D
+    0:05:37   58042.6      1.76     214.8       2.1 output_register_bank_reg[61]/D
+    0:05:37   58039.7      1.76     214.8       2.1 output_register_bank_reg[61]/D
+    0:05:37   58037.4      1.76     214.6       2.1 output_register_bank_reg[40]/D
+    0:05:37   58035.0      1.76     214.3       2.1 output_register_bank_reg[61]/D
+    0:05:37   58035.0      1.76     214.2       2.1 output_register_bank_reg[50]/D
+    0:05:38   58033.6      1.76     214.1       2.1 output_register_bank_reg[50]/D
+    0:05:38   58027.1      1.76     213.9       2.1 output_register_bank_reg[50]/D
+    0:05:38   58027.1      1.76     213.8       2.1 output_register_bank_reg[50]/D
+    0:05:38   58030.4      1.75     213.7       2.1 output_register_bank_reg[50]/D
+    0:05:39   58029.9      1.75     213.6       2.1 output_register_bank_reg[59]/D
+    0:05:39   58034.1      1.75     213.5       2.1 output_register_bank_reg[61]/D
+    0:05:39   58037.9      1.75     213.5       2.1 output_register_bank_reg[61]/D
+    0:05:39   58038.8      1.75     213.2       2.1 output_register_bank_reg[51]/D
+    0:05:39   58037.4      1.75     213.0       2.1 output_register_bank_reg[51]/D
+    0:05:40   58034.6      1.75     213.0       2.1 output_register_bank_reg[61]/D
+    0:05:40   58040.2      1.75     212.9       2.1 output_register_bank_reg[51]/D
+    0:05:40   58037.4      1.74     212.7       2.1 output_register_bank_reg[50]/D
+    0:05:40   58037.4      1.74     212.7       2.1 output_register_bank_reg[50]/D
+    0:05:41   58035.0      1.74     212.5       2.1 output_register_bank_reg[53]/D
+    0:05:41   58037.4      1.74     212.4       2.1 output_register_bank_reg[50]/D
+    0:05:41   58028.9      1.74     212.2       2.1 output_register_bank_reg[53]/D
+    0:05:41   58028.0      1.74     212.1       2.1 output_register_bank_reg[50]/D
+    0:05:41   58028.0      1.74     212.0       2.1 output_register_bank_reg[40]/D
+    0:05:41   58021.4      1.74     212.0       2.1 output_register_bank_reg[53]/D
+    0:05:42   58015.8      1.74     211.4       2.1 output_register_bank_reg[50]/D
+    0:05:42   58021.9      1.74     211.4       2.1 output_register_bank_reg[51]/D
+    0:05:42   58032.7      1.74     211.4       2.1 output_register_bank_reg[46]/D
+    0:05:42   58029.4      1.73     211.2       2.1 output_register_bank_reg[50]/D
+    0:05:42   58022.4      1.73     211.1       2.1 output_register_bank_reg[50]/D
+    0:05:42   58028.9      1.73     211.1       2.1 output_register_bank_reg[56]/D
+    0:05:43   58032.2      1.73     211.0       2.1 output_register_bank_reg[61]/D
+    0:05:43   58040.2      1.73     210.9       2.1 output_register_bank_reg[40]/D
+    0:05:43   58043.0      1.73     210.9       2.1 output_register_bank_reg[61]/D
+    0:05:43   58044.4      1.73     210.9       2.1 output_register_bank_reg[61]/D
+    0:05:44   58044.4      1.73     210.9       2.1 output_register_bank_reg[61]/D
+    0:05:44   58047.2      1.73     210.9       2.1 output_register_bank_reg[63]/D
+    0:05:44   58042.1      1.73     210.8       2.1 output_register_bank_reg[50]/D
+    0:05:44   58042.6      1.73     210.8       2.1 output_register_bank_reg[63]/D
+    0:05:44   58050.1      1.73     210.8       2.1 output_register_bank_reg[63]/D
+    0:05:44   58050.1      1.73     210.7       2.1 output_register_bank_reg[63]/D
+    0:05:45   58046.3      1.73     210.6       2.1 output_register_bank_reg[51]/D
+    0:05:45   58048.7      1.73     210.4       2.1 output_register_bank_reg[63]/D
+    0:05:45   58051.5      1.73     210.4       2.1 output_register_bank_reg[62]/D
+    0:05:45   58048.2      1.72     210.3       2.1 output_register_bank_reg[63]/D
+    0:05:45   58048.2      1.72     210.2       2.1 output_register_bank_reg[53]/D
+    0:05:45   58058.0      1.72     210.1       2.1 output_register_bank_reg[63]/D
+    0:05:46   58059.0      1.72     209.8       2.1 output_register_bank_reg[50]/D
+    0:05:46   58053.3      1.72     209.7       2.1 output_register_bank_reg[59]/D
+    0:05:46   58061.8      1.72     209.5       2.1 output_register_bank_reg[61]/D
+    0:05:46   58060.4      1.72     209.3       2.1 output_register_bank_reg[50]/D
+    0:05:46   58057.1      1.72     209.3       2.1 output_register_bank_reg[63]/D
+    0:05:47   58054.8      1.71     209.2       2.1 output_register_bank_reg[63]/D
+    0:05:47   58051.0      1.71     209.1       2.1 output_register_bank_reg[63]/D
+    0:05:47   58046.8      1.71     209.0       2.1 output_register_bank_reg[59]/D
+    0:05:47   58049.1      1.71     209.0       2.1 output_register_bank_reg[50]/D
+    0:05:47   58047.7      1.71     208.9       2.1 output_register_bank_reg[50]/D
+    0:05:47   58047.7      1.71     208.9       2.1 output_register_bank_reg[40]/D
+    0:05:47   58049.1      1.71     208.8       2.1 output_register_bank_reg[40]/D
+    0:05:48   58044.4      1.71     208.7       2.1 output_register_bank_reg[59]/D
+    0:05:48   58043.5      1.71     208.4       2.1 output_register_bank_reg[61]/D
+    0:05:48   58045.8      1.71     208.0       2.1 output_register_bank_reg[50]/D
+    0:05:48   58044.4      1.71     208.0       2.1 output_register_bank_reg[62]/D
+    0:05:48   58041.6      1.71     208.0       2.1 output_register_bank_reg[59]/D
+    0:05:49   58034.1      1.71     208.0       2.1 output_register_bank_reg[57]/D
+    0:05:49   58031.3      1.71     208.0       2.1 output_register_bank_reg[59]/D
+    0:05:49   58025.7      1.70     207.8       2.1 output_register_bank_reg[50]/D
+    0:05:49   58027.5      1.70     207.7       2.1 output_register_bank_reg[55]/D
+    0:05:49   58026.1      1.70     207.5       2.1 output_register_bank_reg[50]/D
+    0:05:49   58020.5      1.70     207.2       2.1 output_register_bank_reg[50]/D
+    0:05:49   58008.3      1.70     207.2       2.1 output_register_bank_reg[57]/D
+    0:05:50   57999.8      1.70     207.2       2.1 output_register_bank_reg[55]/D
+    0:05:50   58005.0      1.70     207.2       2.1 output_register_bank_reg[63]/D
+    0:05:50   58007.8      1.70     207.1       2.1 output_register_bank_reg[40]/D
+    0:05:50   58004.5      1.70     206.9       2.1 output_register_bank_reg[55]/D
+    0:05:50   58005.5      1.70     206.9       2.1 output_register_bank_reg[55]/D
+    0:05:50   58009.7      1.70     206.9       2.1 output_register_bank_reg[55]/D
+    0:05:51   58004.1      1.70     206.6       2.1 output_register_bank_reg[55]/D
+    0:05:51   57998.4      1.69     206.5       2.1 output_register_bank_reg[55]/D
+    0:05:51   58000.3      1.69     206.4       2.1 output_register_bank_reg[55]/D
+    0:05:51   57997.0      1.69     206.4       2.1 output_register_bank_reg[55]/D
+    0:05:51   57997.0      1.69     206.3       2.1 output_register_bank_reg[55]/D
+    0:05:52   58002.2      1.69     206.3       2.1 output_register_bank_reg[55]/D
+    0:05:52   58008.3      1.69     206.1       2.1 output_register_bank_reg[55]/D
+    0:05:52   58008.8      1.69     206.0       2.1 output_register_bank_reg[55]/D
+    0:05:52   58010.2      1.69     206.0       2.1 output_register_bank_reg[55]/D
+    0:05:53   58010.2      1.69     206.0       2.1 output_register_bank_reg[55]/D
+    0:05:53   58014.4      1.69     206.0       2.1 output_register_bank_reg[59]/D
+    0:05:53   58016.7      1.69     206.0       2.1 output_register_bank_reg[63]/D
+    0:05:53   58016.7      1.69     206.0       2.1 output_register_bank_reg[40]/D
+    0:05:53   58012.5      1.69     205.7       2.1 output_register_bank_reg[63]/D
+    0:05:54   58009.7      1.69     205.7       2.1 output_register_bank_reg[63]/D
+    0:05:54   58009.7      1.69     205.6       2.1 output_register_bank_reg[40]/D
+    0:05:54   58009.7      1.69     205.6       2.1 output_register_bank_reg[59]/D
+    0:05:54   58013.5      1.69     205.6       2.1 output_register_bank_reg[40]/D
+    0:05:55   58013.0      1.69     205.5       2.1 output_register_bank_reg[59]/D
+    0:05:55   58011.1      1.69     205.5       2.1 output_register_bank_reg[59]/D
+    0:05:55   58016.3      1.68     205.4       2.1 output_register_bank_reg[63]/D
+    0:05:55   58014.9      1.68     205.4       2.1 output_register_bank_reg[59]/D
+    0:05:56   58018.2      1.68     205.4       2.1 output_register_bank_reg[63]/D
+    0:05:56   58018.2      1.68     205.3       2.1 output_register_bank_reg[50]/D
+    0:05:56   58017.7      1.68     205.2       2.1 output_register_bank_reg[50]/D
+    0:05:56   58019.1      1.68     205.2       2.1 output_register_bank_reg[50]/D
+    0:05:56   58021.0      1.68     205.1       2.1 output_register_bank_reg[50]/D
+    0:05:56   58021.0      1.68     205.1       2.1 output_register_bank_reg[50]/D
+    0:05:56   58022.4      1.68     205.0       2.1 output_register_bank_reg[63]/D
+    0:05:56   58018.6      1.68     205.0       2.1 output_register_bank_reg[40]/D
+    0:05:57   58021.0      1.70     206.5       2.1 multiplier/net81382      
+    0:06:00   58015.8      1.70     207.4       2.1 multiplier/net81540      
+    0:06:00   58014.9      1.70     207.2       2.1 add_207_2/n627           
+    0:06:01   58013.5      1.70     207.2       2.1 add_207/n524             
+    0:06:02   58017.2      1.75     208.5       2.1 net97003                 
+    0:06:02   58018.6      1.75     208.5       2.1 net81867                 
+    0:06:03   58020.0      1.75     208.4       2.1 net82003                 
+    0:06:03   58019.6      1.74     208.2       2.1 output_register_bank_reg[51]/D
+    0:06:04   58023.8      1.74     207.6       2.1 output_register_bank_reg[55]/D
+    0:06:04   58024.3      1.73     207.4       2.1 output_register_bank_reg[51]/D
+    0:06:04   58022.8      1.73     207.4       2.1 output_register_bank_reg[51]/D
+    0:06:04   58009.7      1.73     206.8       2.1 output_register_bank_reg[51]/D
+    0:06:04   58012.0      1.72     205.5       2.1 output_register_bank_reg[51]/D
+    0:06:05   58021.0      1.71     205.2       2.1 output_register_bank_reg[51]/D
+    0:06:05   58019.1      1.69     204.7       2.1 output_register_bank_reg[55]/D
+    0:06:05   58018.6      1.69     205.3       2.1 output_register_bank_reg[51]/D
+    0:06:05   58019.1      1.69     205.3       2.1 output_register_bank_reg[51]/D
+    0:06:06   58017.2      1.69     205.2       2.1 output_register_bank_reg[40]/D
+    0:06:06   58014.9      1.69     205.1       2.1 output_register_bank_reg[51]/D
+    0:06:06   58016.3      1.69     205.0       2.1 output_register_bank_reg[62]/D
+    0:06:06   58014.4      1.68     204.5       2.1 output_register_bank_reg[53]/D
+    0:06:06   58012.5      1.68     204.5       2.1 output_register_bank_reg[51]/D
+    0:06:07   58005.5      1.68     204.5       2.1 output_register_bank_reg[51]/D
+    0:06:07   57998.0      1.68     203.8       2.1 output_register_bank_reg[62]/D
+    0:06:07   58000.3      1.68     203.4       2.1 output_register_bank_reg[51]/D
+    0:06:07   57995.2      1.68     202.9       2.1 output_register_bank_reg[62]/D
+    0:06:08   57988.1      1.67     202.8       2.1 output_register_bank_reg[51]/D
+    0:06:08   57989.5      1.67     202.6       2.1 output_register_bank_reg[51]/D
+    0:06:08   57989.5      1.67     202.6       2.1 output_register_bank_reg[51]/D
+    0:06:08   57989.5      1.67     202.5       2.1 output_register_bank_reg[57]/D
+    0:06:08   57978.7      1.67     202.5       2.1 output_register_bank_reg[51]/D
+    0:06:08   57979.2      1.67     202.5       2.1 output_register_bank_reg[60]/D
+    0:06:08   57979.2      1.67     202.4       2.1 output_register_bank_reg[62]/D
+    0:06:08   57980.6      1.67     202.4       2.1 output_register_bank_reg[62]/D
+    0:06:09   57981.1      1.67     202.4       2.1 output_register_bank_reg[59]/D
+    0:06:09   57983.9      1.67     202.4       2.1 output_register_bank_reg[61]/D
+    0:06:09   57983.9      1.67     202.4       2.1 output_register_bank_reg[61]/D
+    0:06:09   57983.4      1.67     202.3       2.1 output_register_bank_reg[59]/D
+    0:06:09   57984.8      1.67     202.3       2.1 output_register_bank_reg[51]/D
+    0:06:10   57983.4      1.67     202.2       2.1 output_register_bank_reg[61]/D
+    0:06:10   57989.5      1.67     202.2       2.1 output_register_bank_reg[61]/D
+    0:06:10   57988.1      1.67     202.1       2.1 output_register_bank_reg[61]/D
+    0:06:10   57988.1      1.67     202.1       2.1 output_register_bank_reg[63]/D
+    0:06:10   57983.9      1.67     202.0       2.1 output_register_bank_reg[63]/D
+    0:06:10   57982.5      1.67     202.0       2.1 output_register_bank_reg[50]/D
+    0:06:10   57975.4      1.67     202.0       2.1 output_register_bank_reg[61]/D
+    0:06:10   57976.9      1.66     202.0       2.1 output_register_bank_reg[63]/D
+    0:06:11   57981.5      1.66     202.0       2.1 output_register_bank_reg[61]/D
+    0:06:11   57981.5      1.66     202.0       2.1 output_register_bank_reg[58]/D
+    0:06:11   57981.5      1.66     201.9       2.1 output_register_bank_reg[63]/D
+    0:06:11   57985.3      1.66     201.8       2.1 output_register_bank_reg[40]/D
+    0:06:12   57989.5      1.66     201.7       2.1 output_register_bank_reg[63]/D
+    0:06:12   57983.4      1.66     201.4       2.1 output_register_bank_reg[50]/D
+    0:06:12   57983.4      1.66     201.2       2.1 output_register_bank_reg[55]/D
+    0:06:12   57985.3      1.66     201.2       2.1 output_register_bank_reg[50]/D
+    0:06:12   57993.7      1.66     201.2       2.1 output_register_bank_reg[50]/D
+    0:06:13   57993.7      1.66     201.1       2.1 output_register_bank_reg[51]/D
+    0:06:13   57993.3      1.66     201.1       2.1 output_register_bank_reg[61]/D
+    0:06:13   57996.6      1.66     201.1       2.1 output_register_bank_reg[63]/D
+    0:06:13   57997.0      1.66     201.1       2.1 output_register_bank_reg[63]/D
+    0:06:13   57998.0      1.66     201.1       2.1 output_register_bank_reg[50]/D
+    0:06:14   57999.8      1.65     201.1       2.1 output_register_bank_reg[63]/D
+    0:06:14   57999.8      1.65     201.1       2.1 output_register_bank_reg[50]/D
+    0:06:14   57999.8      1.65     201.1       2.1 output_register_bank_reg[50]/D
+    0:06:14   57999.8      1.65     201.0       2.1 output_register_bank_reg[40]/D
+    0:06:15   57999.4      1.65     201.0       2.1 output_register_bank_reg[63]/D
+    0:06:15   57997.5      1.65     200.9       2.1 output_register_bank_reg[50]/D
+    0:06:15   57997.5      1.65     200.9       2.1 output_register_bank_reg[63]/D
+    0:06:15   58003.6      1.65     200.9       2.1 output_register_bank_reg[63]/D
+    0:06:15   57998.9      1.65     200.8       2.1 output_register_bank_reg[58]/D
+    0:06:16   57997.5      1.65     200.8       2.1 output_register_bank_reg[50]/D
+    0:06:16   57999.8      1.65     200.8       2.1 output_register_bank_reg[40]/D
+    0:06:16   57998.0      1.65     200.8       2.1 output_register_bank_reg[50]/D
+    0:06:16   57999.4      1.65     200.7       2.1 output_register_bank_reg[40]/D
+    0:06:16   57998.4      1.65     200.7       2.1 output_register_bank_reg[50]/D
+    0:06:16   57998.4      1.65     200.6       2.1 output_register_bank_reg[55]/D
+    0:06:16   57994.2      1.65     200.6       2.1 output_register_bank_reg[50]/D
+    0:06:17   57997.0      1.65     200.6       2.1 output_register_bank_reg[63]/D
+    0:06:17   57998.4      1.65     200.6       2.1 output_register_bank_reg[50]/D
+    0:06:17   58000.3      1.65     199.7       2.1 output_register_bank_reg[50]/D
+    0:06:18   58001.7      1.65     199.7       2.1 output_register_bank_reg[63]/D
+    0:06:18   58006.9      1.65     199.6       2.1 output_register_bank_reg[50]/D
+    0:06:18   58016.7      1.65     198.9       2.1 output_register_bank_reg[50]/D
+    0:06:19   58028.9      1.64     198.7       2.1 output_register_bank_reg[63]/D
+    0:06:19   58036.9      1.64     198.6       2.1 output_register_bank_reg[55]/D
+    0:06:20   58035.5      1.64     198.6       2.1 output_register_bank_reg[63]/D
+    0:06:20   58040.7      1.64     198.5       2.1 output_register_bank_reg[55]/D
+    0:06:20   58053.8      1.64     198.4       2.1 output_register_bank_reg[63]/D
+    0:06:21   58064.6      1.64     198.1       2.1 output_register_bank_reg[63]/D
+    0:06:21   58065.5      1.64     197.9       2.1 output_register_bank_reg[50]/D
+    0:06:22   58076.3      1.63     197.6       2.1 output_register_bank_reg[50]/D
+    0:06:22   58083.4      1.63     197.6       2.1 output_register_bank_reg[50]/D
+    0:06:22   58089.5      1.63     197.6       2.1 output_register_bank_reg[41]/D
+    0:06:23   58091.8      1.63     197.4       2.1 output_register_bank_reg[40]/D
+    0:06:23   58097.5      1.63     197.2       2.1 output_register_bank_reg[50]/D
+    0:06:23   58100.3      1.63     197.1       2.1 output_register_bank_reg[62]/D
+    0:06:24   58109.7      1.63     196.9       2.1 output_register_bank_reg[50]/D
+    0:06:24   58117.6      1.63     196.9       2.1 output_register_bank_reg[50]/D
+    0:06:24   58118.6      1.63     196.7       2.1 output_register_bank_reg[50]/D
+    0:06:25   58120.0      1.62     196.4       2.1 output_register_bank_reg[50]/D
+    0:06:25   58119.0      1.62     196.4       2.1 output_register_bank_reg[50]/D
+    0:06:25   58125.2      1.62     196.3       2.1 output_register_bank_reg[50]/D
+    0:06:25   58129.4      1.62     196.3       2.1 output_register_bank_reg[50]/D
+    0:06:26   58126.6      1.62     196.1       2.1 output_register_bank_reg[50]/D
+    0:06:26   58127.0      1.62     196.0       2.1 output_register_bank_reg[50]/D
+    0:06:26   58135.0      1.62     195.6       2.1 output_register_bank_reg[50]/D
+    0:06:27   58142.5      1.62     195.6       2.1 output_register_bank_reg[50]/D
+    0:06:27   58148.6      1.62     195.5       2.1 output_register_bank_reg[50]/D
+    0:06:27   58148.6      1.62     195.5       2.1 output_register_bank_reg[55]/D
+    0:06:27   58153.8      1.62     195.5       2.1 output_register_bank_reg[55]/D
+    0:06:27   58153.8      1.62     195.6       2.1 output_register_bank_reg[55]/D
+    0:06:28   58162.2      1.62     195.5       2.1 output_register_bank_reg[50]/D
+    0:06:28   58167.4      1.62     195.5       2.1 output_register_bank_reg[62]/D
+    0:06:28   58171.1      1.62     195.5       2.1 output_register_bank_reg[63]/D
+    0:06:28   58172.5      1.62     195.5       2.1 output_register_bank_reg[55]/D
+    0:06:29   58168.8      1.62     195.0       2.1 output_register_bank_reg[55]/D
+    0:06:29   58169.3      1.61     195.0       2.1 output_register_bank_reg[55]/D
+    0:06:29   58173.0      1.61     194.9       2.1 output_register_bank_reg[55]/D
+    0:06:30   58172.5      1.61     194.8       2.1 output_register_bank_reg[55]/D
+    0:06:30   58168.3      1.61     194.6       2.1 output_register_bank_reg[55]/D
+    0:06:31   58177.2      1.61     194.5       2.1 output_register_bank_reg[55]/D
+    0:06:31   58178.7      1.61     194.5       2.1 output_register_bank_reg[55]/D
+    0:06:31   58176.3      1.61     194.4       2.1 output_register_bank_reg[55]/D
+    0:06:32   58176.8      1.61     194.4       2.1 output_register_bank_reg[62]/D
+    0:06:32   58178.7      1.61     194.0       2.1 output_register_bank_reg[55]/D
+    0:06:32   58189.9      1.61     193.9       2.1 output_register_bank_reg[55]/D
+    0:06:33   58191.8      1.61     193.8       2.1 output_register_bank_reg[55]/D
+    0:06:33   58196.5      1.60     193.5       2.1 output_register_bank_reg[50]/D
+    0:06:33   58202.1      1.60     193.3       2.1 output_register_bank_reg[55]/D
+    0:06:33   58204.9      1.60     193.3       2.1 output_register_bank_reg[55]/D
+    0:06:34   58207.3      1.60     193.2       2.1 output_register_bank_reg[63]/D
+    0:06:34   58207.3      1.60     193.2       2.1 output_register_bank_reg[50]/D
+    0:06:35   58213.4      1.60     193.2       2.1 output_register_bank_reg[40]/D
+    0:06:35   58213.4      1.60     193.2       2.1 output_register_bank_reg[58]/D
+    0:06:35   58216.7      1.60     193.2       2.1 output_register_bank_reg[50]/D
+    0:06:35   58218.5      1.60     193.2       2.1 output_register_bank_reg[58]/D
+    0:06:36   58222.3      1.60     193.2       2.1 output_register_bank_reg[60]/D
+    0:06:36   58224.6      1.60     193.2       2.1 output_register_bank_reg[51]/D
+    0:06:36   58236.8      1.60     193.1       2.1 output_register_bank_reg[63]/D
+    0:06:37   58236.8      1.60     193.1       2.1 output_register_bank_reg[50]/D
+    0:06:37   58236.8      1.60     193.1       2.1 output_register_bank_reg[56]/D
+    0:06:37   58238.3      1.60     193.1       2.1 output_register_bank_reg[40]/D
+    0:06:38   58237.3      1.60     193.0       2.1 output_register_bank_reg[63]/D
+    0:06:38   58244.4      1.60     193.0       2.1 output_register_bank_reg[50]/D
+    0:06:38   58249.5      1.60     192.9       2.1 output_register_bank_reg[62]/D
+    0:06:38   58251.4      1.60     192.9       2.1 output_register_bank_reg[50]/D
+    0:06:39   58261.2      1.60     192.9       2.1 output_register_bank_reg[50]/D
+    0:06:39   58261.2      1.60     192.9       2.1 output_register_bank_reg[50]/D
+    0:06:39   58258.4      1.60     192.9       2.1 output_register_bank_reg[55]/D
+    0:06:39   58256.6      1.59     192.7       2.1 output_register_bank_reg[50]/D
+    0:06:43   58257.0      1.59     192.7       2.1                          
+    0:06:43   58262.2      1.59     192.7       2.1                          
+    0:06:43   58259.4      1.59     192.7       2.1                          
+    0:06:43   58256.6      1.59     192.7       2.1                          
+    0:06:43   58251.4      1.59     192.7       2.1                          
+    0:06:43   58250.0      1.59     192.7       2.1                          
+    0:06:44   58253.3      1.59     192.6       2.1                          
+    0:06:44   58251.9      1.59     192.5       2.1                          
+    0:06:44   58257.0      1.59     192.5       2.1                          
+    0:06:44   58251.4      1.59     192.5       2.1                          
+    0:06:44   58251.9      1.59     192.5       2.1                          
+    0:06:44   58245.3      1.59     192.4       2.1                          
+    0:06:44   58248.1      1.59     192.3       2.1                          
+    0:06:44   58242.5      1.59     192.3       2.1                          
+    0:06:44   58239.7      1.59     192.2       2.1                          
+    0:06:45   58236.4      1.59     192.2       2.1                          
+    0:06:45   58228.9      1.59     192.1       2.1                          
+    0:06:45   58231.7      1.59     192.1       2.1                          
+    0:06:45   58235.0      1.59     191.8       2.1                          
+    0:06:45   58237.3      1.59     191.8       2.1                          
+    0:06:45   58235.4      1.59     191.9       2.1                          
+    0:06:45   58233.1      1.59     191.9       2.1                          
+    0:06:45   58227.5      1.59     191.8       2.1                          
+    0:06:45   58225.1      1.59     191.8       2.1                          
+    0:06:45   58220.9      1.59     191.7       2.1                          
+    0:06:46   58219.0      1.59     191.5       2.1                          
+    0:06:46   58219.5      1.59     191.5       2.1                          
+    0:06:46   58215.3      1.59     191.4       2.1                          
+    0:06:46   58211.5      1.59     191.4       2.1                          
+    0:06:46   58211.0      1.59     191.3       2.1                          
+    0:06:46   58199.8      1.59     191.2       2.1                          
+    0:06:46   58197.0      1.59     191.2       2.1                          
+    0:06:46   58185.7      1.59     191.1       2.1                          
+    0:06:46   58191.8      1.59     191.0       2.1                          
+    0:06:47   58190.9      1.59     191.0       2.1                          
+    0:06:47   58194.1      1.59     190.6       2.1                          
+    0:06:47   58194.6      1.59     190.4       2.1                          
+    0:06:47   58198.8      1.59     190.2       2.1                          
+    0:06:47   58191.8      1.59     190.2       2.1                          
+    0:06:48   58186.2      1.59     190.1       2.1                          
+    0:06:48   58183.3      1.59     190.0       2.1                          
+    0:06:48   58182.4      1.59     189.8       2.1                          
+    0:06:48   58183.8      1.59     189.7       2.1                          
+    0:06:48   58178.2      1.59     189.7       2.1                          
+    0:06:48   58181.9      1.59     189.6       2.1                          
+    0:06:48   58181.9      1.59     189.5       2.1                          
+    0:06:48   58177.7      1.59     189.5       2.1                          
+    0:06:48   58177.7      1.59     189.5       2.1                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:06:48   58177.7      1.59     189.5       2.1                          
+    0:06:48   58177.7      1.59     189.5       2.1                          
+    0:06:50   55095.3      1.60     189.7       2.1                          
+    0:06:51   53891.6      1.60     189.7       2.1                          
+    0:06:52   53513.3      1.61     189.6       2.1                          
+    0:06:52   53435.9      1.61     189.6       2.1                          
+    0:06:52   53405.9      1.62     192.5       2.1                          
+    0:06:52   53389.9      1.64     192.7       2.1                          
+    0:06:52   53389.9      1.64     192.7       2.1                          
+    0:06:53   53389.9      1.64     192.7       2.1                          
+    0:06:53   53217.7      1.65     193.5       2.1                          
+    0:06:54   53173.1      1.65     193.5       2.1                          
+    0:06:54   53172.2      1.65     193.5       2.1                          
+    0:06:54   53172.2      1.65     193.5       2.1                          
+    0:06:54   53172.2      1.65     193.5       2.1                          
+    0:06:54   53172.2      1.65     193.5       2.1                          
+    0:06:54   53172.2      1.65     193.5       2.1                          
+    0:06:54   53172.2      1.65     193.5       2.1                          
+    0:06:54   53174.0      1.62     193.2       2.1 output_register_bank_reg[37]/D
+    0:06:54   53170.3      1.62     193.1       2.1 output_register_bank_reg[55]/D
+    0:06:55   53175.9      1.62     192.9       2.1 output_register_bank_reg[50]/D
+    0:06:55   53174.0      1.62     192.9       2.1 output_register_bank_reg[55]/D
+    0:06:55   53174.5      1.62     192.8       2.1 output_register_bank_reg[55]/D
+    0:06:55   53178.3      1.62     192.8       2.1 output_register_bank_reg[63]/D
+    0:06:56   53177.3      1.61     192.6       2.1                          
+    0:06:56   53172.6      1.61     192.6       2.1                          
+    0:06:56   53157.6      1.61     192.6       2.1                          
+    0:06:56   53119.6      1.61     192.6       2.1                          
+    0:06:57   53083.9      1.61     192.6       2.1                          
+    0:06:57   53038.9      1.61     192.6       2.1                          
+    0:06:57   53016.8      1.61     192.6       2.1                          
+    0:06:57   52988.7      1.61     192.6       2.1                          
+    0:06:57   52951.6      1.61     192.5       2.1                          
+    0:06:57   52931.9      1.61     192.5       2.1                          
+    0:06:57   52908.9      1.61     192.4       2.1                          
+    0:06:57   52892.9      1.61     192.4       2.1                          
+    0:06:57   52855.9      1.61     192.3       2.1                          
+    0:06:57   52833.8      1.61     192.2       2.1                          
+    0:06:58   52808.0      1.61     192.2       2.1                          
+    0:06:58   52790.1      1.61     192.2       2.1                          
+    0:06:58   52754.5      1.61     192.1       2.1                          
+    0:06:58   52721.6      1.61     192.1       2.1                          
+    0:06:58   52699.6      1.61     192.1       2.1                          
+    0:06:58   52684.1      1.61     192.1       2.1                          
+    0:06:58   52654.1      1.61     192.1       2.1                          
+    0:06:58   52621.2      1.61     192.1       2.1                          
+    0:06:58   52598.7      1.61     192.1       2.1                          
+    0:06:59   52558.3      1.61     192.0       2.1                          
+    0:06:59   52537.2      1.61     192.0       2.1                          
+    0:06:59   52509.0      1.61     192.0       2.1                          
+    0:06:59   52493.6      1.61     192.0       2.1                          
+    0:06:59   52470.6      1.61     192.0       2.1                          
+    0:06:59   52446.2      1.61     192.0       2.1                          
+    0:06:59   52400.6      1.61     192.0       2.1                          
+    0:06:59   52383.3      1.61     192.0       2.1                          
+    0:07:00   52364.0      1.61     192.0       2.1                          
+    0:07:00   52341.5      1.61     192.0       2.1                          
+    0:07:00   52306.3      1.61     192.0       2.1                          
+    0:07:00   52276.3      1.61     192.0       2.1                          
+    0:07:00   52244.4      1.61     192.0       2.1                          
+    0:07:00   52218.5      1.61     192.0       2.1                          
+    0:07:01   52174.0      1.61     192.0       2.1                          
+    0:07:01   52117.2      1.61     192.0       2.1                          
+    0:07:01   52097.9      1.61     191.9       2.1                          
+    0:07:01   52086.7      1.61     191.9       2.1                          
+    0:07:01   52055.7      1.61     191.9       2.1                          
+    0:07:02   52052.9      1.61     191.8       2.1                          
+    0:07:02   52064.6      1.61     191.7       2.1                          
+    0:07:02   52067.4      1.61     191.5       2.1                          
+    0:07:03   52068.8      1.61     191.3       2.1                          
+    0:07:03   52074.5      1.61     191.3       2.1                          
+    0:07:04   52080.1      1.61     191.3       2.1                          
+    0:07:04   52083.4      1.60     191.2       2.1                          
+    0:07:04   52086.2      1.60     191.2       2.1                          
+    0:07:04   52089.0      1.60     191.0       2.1                          
+    0:07:05   52086.2      1.60     190.9       2.1                          
+    0:07:05   52083.4      1.60     190.9       2.1                          
+    0:07:05   52082.9      1.60     190.8       2.1                          
+    0:07:05   52085.7      1.60     190.8       2.1                          
+    0:07:06   52084.3      1.60     190.7       2.1                          
+    0:07:06   52081.5      1.60     190.3       2.1                          
+    0:07:06   52086.7      1.60     190.3       2.1                          
+    0:07:07   52091.4      1.60     190.3       2.1                          
+    0:07:07   52093.2      1.60     190.2       2.1                          
+    0:07:07   52098.4      1.60     190.1       2.1                          
+    0:07:07   52098.4      1.60     190.1       2.1                          
+    0:07:08   52101.2      1.60     190.0       2.1                          
+    0:07:08   52098.4      1.60     190.0       2.1                          
+    0:07:08   52095.6      1.60     190.0       2.1                          
+    0:07:08   52094.6      1.60     189.8       2.1                          
+    0:07:08   52094.6      1.60     189.8       2.1                          
+    0:07:08   52099.3      1.60     189.6       2.1                          
+    0:07:08   52107.8      1.60     189.3       2.1                          
+    0:07:08   52109.2      1.60     189.2       2.1                          
+    0:07:08   52109.2      1.60     189.1       2.1                          
+    0:07:08   52109.2      1.60     189.0       2.1                          
+    0:07:09   52110.6      1.60     188.9       2.1                          
+    0:07:09   52111.5      1.60     188.8       2.1                          
+    0:07:09   52111.5      1.60     188.8       2.1                          
+    0:07:09   52112.9      1.60     188.8       2.1                          
+    0:07:09   52111.5      1.60     188.8       2.1                          
+    0:07:09   52113.9      1.60     188.7       2.1                          
+    0:07:09   52118.1      1.60     188.7       2.1                          
+    0:07:10   52120.9      1.60     188.6       2.1                          
+    0:07:10   52119.5      1.60     188.6       2.1                          
+    0:07:10   52123.7      1.60     188.6       2.1                          
+    0:07:10   52123.7      1.60     188.6       2.1                          
+    0:07:10   52126.6      1.60     188.6       2.1                          
+    0:07:10   52129.4      1.60     188.5       2.1                          
+    0:07:10   52132.2      1.60     188.5       2.1                          
+    0:07:10   52136.4      1.60     188.5       2.1                          
+    0:07:10   52140.6      1.60     188.4       2.1                          
+    0:07:10   52143.9      1.60     188.4       2.1                          
+    0:07:10   52147.7      1.60     188.3       2.1                          
+    0:07:10   52140.6      1.60     188.3       2.1                          
+    0:07:10   52134.1      1.60     187.8       2.1                          
+    0:07:11   52140.2      1.60     187.8       2.1                          
+    0:07:11   52142.0      1.60     187.6       2.1                          
+    0:07:11   52137.4      1.60     187.5       2.1                          
+    0:07:11   52140.2      1.60     187.5       2.1                          
+    0:07:11   52134.5      1.60     187.5       2.1                          
+    0:07:11   52138.8      1.60     187.4       2.1                          
+    0:07:11   52143.0      1.59     187.3       2.1 output_register_bank_reg[62]/D
+    0:07:11   52140.2      1.59     187.3       2.1 output_register_bank_reg[61]/D
+    0:07:12   52137.8      1.59     187.3       2.1 output_register_bank_reg[62]/D
+    0:07:12   52143.5      1.59     187.2       2.1 output_register_bank_reg[61]/D
+    0:07:12   52146.3      1.59     187.2       2.1 output_register_bank_reg[62]/D
+    0:07:13   52152.4      1.59     187.2       2.1 output_register_bank_reg[55]/D
+    0:07:13   52152.4      1.59     187.1       2.1 output_register_bank_reg[62]/D
+    0:07:13   52150.0      1.59     187.1       2.1 output_register_bank_reg[50]/D
+    0:07:13   52150.5      1.59     187.0       2.1 output_register_bank_reg[62]/D
+    0:07:14   52154.2      1.59     187.0       2.1 output_register_bank_reg[50]/D
+    0:07:14   52150.0      1.59     187.0       2.1 output_register_bank_reg[62]/D
+    0:07:14   52151.9      1.59     187.0       2.1 output_register_bank_reg[50]/D
+    0:07:15   52151.9      1.59     187.0       2.1 output_register_bank_reg[50]/D
+    0:07:15   52151.0      1.58     186.9       2.1 output_register_bank_reg[50]/D
+    0:07:15   52151.0      1.58     186.9       2.1 output_register_bank_reg[55]/D
+    0:07:16   52152.4      1.58     186.8       2.1 output_register_bank_reg[55]/D
+    0:07:16   52154.7      1.58     186.8       2.1 output_register_bank_reg[55]/D
+    0:07:16   52154.7      1.58     186.7       2.1 output_register_bank_reg[55]/D
+    0:07:17   52157.5      1.58     186.7       2.1 output_register_bank_reg[62]/D
+    0:07:17   52157.5      1.58     186.7       2.1 output_register_bank_reg[62]/D
+    0:07:17   52160.3      1.58     186.6       2.1 output_register_bank_reg[60]/D
+    0:07:17   52163.2      1.58     186.6       2.1 output_register_bank_reg[62]/D
+    0:07:17   52163.2      1.58     186.6       2.1 output_register_bank_reg[62]/D
+    0:07:18   52168.8      1.58     186.6       2.1 output_register_bank_reg[55]/D
+    0:07:18   52171.1      1.58     186.6       2.1 output_register_bank_reg[55]/D
+    0:07:19   52179.6      1.58     186.5       2.1 output_register_bank_reg[59]/D
+    0:07:19   52188.0      1.58     186.4       2.1 output_register_bank_reg[59]/D
+    0:07:19   52193.7      1.58     186.4       2.1 output_register_bank_reg[59]/D
+    0:07:19   52198.4      1.58     186.4       2.1 output_register_bank_reg[59]/D
+    0:07:20   52206.3      1.58     186.4       2.1 output_register_bank_reg[55]/D
+    0:07:21   52222.8      1.58     186.6       2.1 output_register_bank_reg[55]/D
+    0:07:21   52224.6      1.58     186.7       2.1 output_register_bank_reg[55]/D
+    0:07:21   52229.3      1.58     186.7       2.1 output_register_bank_reg[59]/D
+    0:07:21   52236.8      1.58     186.7       2.1 output_register_bank_reg[55]/D
+    0:07:21   52242.5      1.57     186.6       2.1 output_register_bank_reg[61]/D
+    0:07:22   52250.0      1.57     186.5       2.1 output_register_bank_reg[61]/D
+    0:07:22   52253.7      1.57     186.4       2.1 output_register_bank_reg[55]/D
+    0:07:22   52258.9      1.57     186.4       2.1 output_register_bank_reg[55]/D
+    0:07:22   52273.4      1.57     186.2       2.1 output_register_bank_reg[55]/D
+    0:07:23   52273.9      1.57     186.2       2.1 output_register_bank_reg[55]/D
+    0:07:23   52273.9      1.57     186.2       2.1 output_register_bank_reg[55]/D
+    0:07:24   52279.1      1.57     186.2       2.1 output_register_bank_reg[55]/D
+    0:07:25   52281.4      1.57     186.2       2.1 output_register_bank_reg[55]/D
+    0:07:25   52286.6      1.57     186.2       2.1 output_register_bank_reg[55]/D
+    0:07:25   52279.5      1.57     186.2       2.1 output_register_bank_reg[55]/D
+    0:07:25   52283.8      1.57     186.1       2.1 output_register_bank_reg[55]/D
+    0:07:25   52288.0      1.57     186.1       2.1 output_register_bank_reg[55]/D
+    0:07:26   52292.7      1.57     186.1       2.1 output_register_bank_reg[55]/D
+    0:07:26   52296.9      1.57     186.0       2.1 output_register_bank_reg[58]/D
+    0:07:26   52305.4      1.57     186.0       2.1 output_register_bank_reg[62]/D
+    0:07:26   52312.4      1.57     185.9       2.1 output_register_bank_reg[55]/D
+    0:07:28   52313.8      1.57     185.9       2.1 output_register_bank_reg[55]/D
+Loading db file '/home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 2 -sort_by group } >> Report.timing.max.txt
+uplevel #0 { report_timing -path_type end -from [all_inputs] } >> Report.timing.all.txt
+uplevel #0 { report_timing -path_type end } >> Report.timing.all.txt
+uplevel #0 { report_timing -path_type end -to [all_outputs] } >> Report.timing.all.txt
+uplevel #0 { report_area } >> Report.area.txt
+uplevel #0 { report_power -analysis_effort low } >> Report.power.txt
+uplevel #0 { report_design -nosplit } >> Report.design.txt
+#write -f verilog -output synthesized.v
+exit
+
+Thank you...
+\rm -rf *.syn *.pvl *.mr *.svf command.log 

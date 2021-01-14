@@ -1,0 +1,444 @@
+Error: Current design is not defined. (UID-4)
+0
+Information: Updating design information... (UID-85)
+Warning: Design 'dsp_slice_combined' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : dsp_slice_combined
+Version: K-2015.06-SP4
+Date   : Thu Aug 13 14:50:26 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: mode_flopped_2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_out_fp_flopped_1_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mode_flopped_2_reg[0]/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  mode_flopped_2_reg[0]/Q (DFFPOSX1)                      0.11       0.11 f
+  U7609/Y (INVX1)                                         0.01       0.11 r
+  U6239/Y (AND2X2)                                        0.04       0.15 r
+  U4650/Y (INVX1)                                         0.02       0.17 f
+  U6269/Y (INVX1)                                         0.01       0.17 r
+  U7720/Y (AOI22X1)                                       0.02       0.20 f
+  U3621/Y (BUFX2)                                         0.04       0.23 f
+  U5911/Y (AND2X2)                                        0.03       0.27 f
+  U5912/Y (INVX1)                                        -0.01       0.26 r
+  mult_ip_1_actual_reg[9]/Q (LATCH)                       0.05       0.31 r
+  multiplier/IN1[9] (Multiplier_combined)                 0.00       0.31 r
+  multiplier/U80/Y (AND2X2)                               0.03       0.34 r
+  multiplier/U579/Y (INVX1)                               0.02       0.36 f
+  multiplier/U1798/Y (NAND3X1)                            0.03       0.39 r
+  multiplier/M1/b[0] (multiplier_basic_1_0)               0.00       0.39 r
+  multiplier/M1/mult_152/b[0] (multiplier_basic_1_0_DW_mult_uns_1)
+                                                          0.00       0.39 r
+  multiplier/M1/mult_152/U414/Y (BUFX2)                   0.04       0.43 r
+  multiplier/M1/mult_152/U339/Y (INVX1)                   0.02       0.45 f
+  multiplier/M1/mult_152/U340/Y (INVX1)                   0.00       0.45 r
+  multiplier/M1/mult_152/U365/Y (AND2X2)                  0.04       0.48 r
+  multiplier/M1/mult_152/U184/YC (HAX1)                   0.07       0.55 r
+  multiplier/M1/mult_152/U179/YS (FAX1)                   0.10       0.65 f
+  multiplier/M1/mult_152/U178/YS (FAX1)                   0.07       0.72 r
+  multiplier/M1/mult_152/U356/Y (INVX1)                   0.02       0.74 f
+  multiplier/M1/mult_152/U354/Y (AND2X2)                  0.04       0.77 f
+  multiplier/M1/mult_152/U101/Y (OAI21X1)                 0.04       0.81 r
+  multiplier/M1/mult_152/U93/Y (AOI21X1)                  0.02       0.84 f
+  multiplier/M1/mult_152/U415/Y (BUFX2)                   0.04       0.87 f
+  multiplier/M1/mult_152/U87/Y (OAI21X1)                  0.04       0.91 r
+  multiplier/M1/mult_152/U492/Y (INVX2)                   0.02       0.93 f
+  multiplier/M1/mult_152/U80/Y (OAI21X1)                  0.05       0.98 r
+  multiplier/M1/mult_152/U70/Y (XNOR2X1)                  0.04       1.02 f
+  multiplier/M1/mult_152/product[9] (multiplier_basic_1_0_DW_mult_uns_1)
+                                                          0.00       1.02 f
+  multiplier/M1/c[9] (multiplier_basic_1_0)               0.00       1.02 f
+  multiplier/U2046/Y (NAND3X1)                            0.03       1.05 r
+  multiplier/U532/Y (BUFX2)                               0.03       1.09 r
+  multiplier/U2047/Y (OAI21X1)                            0.01       1.10 f
+  multiplier/U2048/Y (AOI21X1)                            0.02       1.12 r
+  multiplier/U986/Y (BUFX2)                               0.04       1.16 r
+  multiplier/U2049/Y (XOR2X1)                             0.04       1.19 r
+  multiplier/U2053/Y (OAI21X1)                            0.03       1.22 f
+  multiplier/U475/Y (AND2X2)                              0.03       1.25 f
+  multiplier/U310/Y (OR2X2)                               0.04       1.29 f
+  multiplier/U2060/Y (NAND3X1)                            0.03       1.32 r
+  multiplier/U627/Y (BUFX2)                               0.04       1.35 r
+  multiplier/U612/Y (AND2X2)                              0.03       1.39 r
+  multiplier/U614/Y (INVX1)                               0.02       1.40 f
+  multiplier/U681/Y (AND2X2)                              0.03       1.44 f
+  multiplier/U364/Y (NOR3X1)                              0.04       1.48 r
+  multiplier/U300/Y (INVX2)                               0.02       1.50 f
+  multiplier/U2087/Y (AND2X2)                             0.04       1.53 f
+  multiplier/U2089/Y (AOI21X1)                            0.03       1.56 r
+  multiplier/U635/Y (BUFX2)                               0.04       1.60 r
+  multiplier/U2101/Y (NAND3X1)                            0.01       1.61 f
+  multiplier/U637/Y (BUFX2)                               0.04       1.65 f
+  multiplier/U624/Y (AND2X2)                              0.03       1.68 f
+  multiplier/U626/Y (INVX1)                               0.00       1.68 r
+  multiplier/U479/Y (AND2X2)                              0.03       1.71 r
+  multiplier/U1003/Y (INVX1)                              0.02       1.72 f
+  multiplier/U2102/Y (AOI21X1)                            0.03       1.75 r
+  multiplier/U66/Y (INVX1)                                0.02       1.77 f
+  multiplier/U64/Y (NOR3X1)                               0.03       1.80 r
+  multiplier/U1451/Y (AND2X2)                             0.04       1.84 r
+  multiplier/U1453/Y (INVX1)                              0.02       1.86 f
+  multiplier/U14/Y (INVX1)                                0.01       1.87 r
+  multiplier/U2128/Y (NOR3X1)                             0.03       1.89 f
+  multiplier/U2131/Y (OAI21X1)                            0.05       1.94 r
+  multiplier/U1424/Y (AND2X2)                             0.03       1.98 r
+  multiplier/U536/Y (INVX1)                               0.02       1.99 f
+  multiplier/U1272/Y (OAI21X1)                            0.02       2.01 r
+  multiplier/U2146/Y (OAI21X1)                            0.02       2.04 f
+  multiplier/U2147/Y (NAND3X1)                            0.03       2.07 r
+  multiplier/U623/Y (BUFX2)                               0.03       2.10 r
+  multiplier/U649/Y (AND2X2)                              0.03       2.13 r
+  multiplier/U651/Y (INVX1)                               0.02       2.15 f
+  multiplier/U2159/Y (OAI21X1)                            0.04       2.19 r
+  multiplier/U2160/Y (AOI21X1)                            0.02       2.21 f
+  multiplier/U648/Y (BUFX2)                               0.04       2.25 f
+  multiplier/U2168/Y (NAND3X1)                            0.03       2.27 r
+  multiplier/U533/Y (BUFX2)                               0.03       2.31 r
+  multiplier/U2169/Y (OAI21X1)                            0.01       2.32 f
+  multiplier/U505/Y (AND2X2)                              0.03       2.35 f
+  multiplier/U506/Y (INVX1)                               0.00       2.35 r
+  multiplier/U606/Y (AND2X2)                              0.03       2.38 r
+  multiplier/U607/Y (INVX1)                               0.01       2.40 f
+  multiplier/U507/Y (AND2X2)                              0.03       2.43 f
+  multiplier/U343/Y (OR2X2)                               0.04       2.47 f
+  multiplier/U1499/Y (AND2X2)                             0.03       2.50 f
+  multiplier/U2179/Y (NAND3X1)                            0.03       2.53 r
+  multiplier/U489/Y (BUFX2)                               0.03       2.56 r
+  multiplier/U552/Y (AND2X2)                              0.03       2.59 r
+  multiplier/U15/Y (OAI21X1)                              0.01       2.61 f
+  multiplier/U362/Y (OR2X2)                               0.07       2.68 f
+  multiplier/OUT1[29] (Multiplier_combined)               0.00       2.68 f
+  M2/MpC[29] (FPMult_b)                                   0.00       2.68 f
+  M2/add_36/A[46] (FPMult_b_DW01_add_2)                   0.00       2.68 f
+  M2/add_36/U331/Y (AND2X2)                               0.04       2.72 f
+  M2/add_36/U332/Y (INVX1)                                0.00       2.72 r
+  M2/add_36/U469/Y (OR2X2)                                0.04       2.75 r
+  M2/add_36/U8/Y (OAI21X1)                                0.02       2.77 f
+  M2/add_36/U5/Y (XNOR2X1)                                0.04       2.81 f
+  M2/add_36/SUM[47] (FPMult_b_DW01_add_2)                 0.00       2.81 f
+  M2/U44/Y (BUFX4)                                        0.05       2.86 f
+  M2/U8/Y (INVX1)                                         0.00       2.87 r
+  M2/U9/Y (AND2X2)                                        0.03       2.90 r
+  M2/U10/Y (INVX1)                                        0.01       2.91 f
+  M2/U45/Y (OAI21X1)                                      0.03       2.94 r
+  M2/NormM[0] (FPMult_b)                                  0.00       2.94 r
+  M3/NormM[0] (FPMult_c)                                  0.00       2.94 r
+  M3/add_33/A[0] (FPMult_c_DW01_inc_1)                    0.00       2.94 r
+  M3/add_33/U189/Y (AND2X2)                               0.04       2.97 r
+  M3/add_33/U158/Y (AND2X2)                               0.03       3.01 r
+  M3/add_33/U195/Y (AND2X2)                               0.03       3.04 r
+  M3/add_33/U170/Y (AND2X2)                               0.03       3.07 r
+  M3/add_33/U176/Y (AND2X2)                               0.04       3.11 r
+  M3/add_33/SUM[23] (FPMult_c_DW01_inc_1)                 0.00       3.11 r
+  M3/U228/Y (AND2X2)                                      0.04       3.16 r
+  M3/U71/Y (AND2X2)                                       0.03       3.19 r
+  M3/U72/Y (INVX1)                                        0.01       3.20 f
+  M3/U269/Y (OAI21X1)                                     0.03       3.23 r
+  M3/U210/Y (XNOR2X1)                                     0.03       3.26 f
+  M3/Z[27] (FPMult_c)                                     0.00       3.26 f
+  U4665/Y (AND2X1)                                        0.03       3.29 f
+  mult_out_fp_flopped_1_reg[27]/D (DFFPOSX1)              0.00       3.29 f
+  data arrival time                                                  3.29
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  mult_out_fp_flopped_1_reg[27]/CLK (DFFPOSX1)            0.00       3.00 r
+  library setup time                                     -0.06       2.94
+  data required time                                                 2.94
+  --------------------------------------------------------------------------
+  data required time                                                 2.94
+  data arrival time                                                 -3.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.35
+
+
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'dsp_slice_combined' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : dsp_slice_combined
+Version: O-2018.06-SP5
+Date   : Thu Sep  3 01:49:25 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: mode_flopped_2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_out_fp_flopped_1_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mode_flopped_2_reg[0]/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  mode_flopped_2_reg[0]/Q (DFFPOSX1)                      0.10       0.10 f
+  U3352/Y (INVX1)                                         0.01       0.11 r
+  U3350/Y (INVX2)                                         0.03       0.14 f
+  U3363/Y (INVX8)                                         0.02       0.16 r
+  U3716/Y (NAND2X1)                                       0.06       0.22 f
+  U4159/Y (OAI21X1)                                       0.07       0.29 r
+  multiplier/IN1[19] (Multiplier_combined)                0.00       0.29 r
+  multiplier/U371/Y (NAND2X1)                             0.03       0.31 f
+  multiplier/U14/Y (AND2X2)                               0.04       0.35 f
+  multiplier/U22/Y (NAND2X1)                              0.04       0.39 r
+  multiplier/M1/b[0] (multiplier_basic_1_0)               0.00       0.39 r
+  multiplier/M1/mult_152/b[0] (multiplier_basic_1_0_DW_mult_uns_1)
+                                                          0.00       0.39 r
+  multiplier/M1/mult_152/U294/Y (INVX4)                   0.03       0.42 f
+  multiplier/M1/mult_152/U205/Y (NOR2X1)                  0.04       0.46 r
+  multiplier/M1/mult_152/U172/YC (HAX1)                   0.07       0.53 r
+  multiplier/M1/mult_152/U163/YC (FAX1)                   0.09       0.62 r
+  multiplier/M1/mult_152/U154/YS (FAX1)                   0.10       0.72 r
+  multiplier/M1/mult_152/U153/YS (FAX1)                   0.08       0.81 f
+  multiplier/M1/mult_152/U77/Y (NOR2X1)                   0.05       0.85 r
+  multiplier/M1/mult_152/U73/Y (NOR2X1)                   0.03       0.88 f
+  multiplier/M1/mult_152/U72/Y (AOI21X1)                  0.04       0.93 r
+  multiplier/M1/mult_152/U317/Y (INVX2)                   0.03       0.96 f
+  multiplier/M1/mult_152/U62/Y (XNOR2X1)                  0.12       1.07 r
+  multiplier/M1/mult_152/product[10] (multiplier_basic_1_0_DW_mult_uns_1)
+                                                          0.00       1.07 r
+  multiplier/M1/c[10] (multiplier_basic_1_0)              0.00       1.07 r
+  multiplier/U830/Y (INVX2)                               0.03       1.10 f
+  multiplier/U835/Y (OAI21X1)                             0.09       1.20 r
+  multiplier/U923/YS (FAX1)                               0.09       1.28 r
+  multiplier/U1097/Y (NAND2X1)                            0.03       1.31 f
+  multiplier/U1098/Y (NAND2X1)                            0.06       1.37 r
+  multiplier/U1106/Y (NAND2X1)                            0.05       1.42 f
+  multiplier/U1107/Y (NAND2X1)                            0.06       1.48 r
+  multiplier/U1111/Y (NAND2X1)                            0.04       1.52 f
+  multiplier/U39/Y (AND2X2)                               0.04       1.56 f
+  multiplier/U1133/Y (OAI21X1)                            0.08       1.64 r
+  multiplier/U1137/Y (NAND2X1)                            0.04       1.68 f
+  multiplier/U1163/Y (AOI21X1)                            0.02       1.70 r
+  multiplier/U1164/Y (AOI21X1)                            0.02       1.72 f
+  multiplier/U1165/Y (OAI21X1)                            0.03       1.75 r
+  multiplier/U1166/Y (INVX2)                              0.02       1.77 f
+  multiplier/U1212/Y (NAND3X1)                            0.04       1.81 r
+  multiplier/U1222/Y (NAND3X1)                            0.02       1.83 f
+  multiplier/U1225/Y (NAND3X1)                            0.09       1.92 r
+  multiplier/U1236/Y (OAI21X1)                            0.04       1.96 f
+  multiplier/U1238/Y (NAND2X1)                            0.03       1.99 r
+  multiplier/U1251/Y (NAND2X1)                            0.02       2.01 f
+  multiplier/U1252/Y (OAI21X1)                            0.07       2.08 r
+  multiplier/U1287/Y (NAND3X1)                            0.04       2.12 f
+  multiplier/U1288/Y (AND2X2)                             0.04       2.16 f
+  multiplier/U1291/Y (NAND3X1)                            0.06       2.21 r
+  multiplier/U1301/Y (NAND2X1)                            0.03       2.25 f
+  multiplier/U1309/Y (NAND2X1)                            0.05       2.30 r
+  multiplier/U1310/YS (FAX1)                              0.11       2.41 f
+  multiplier/U1334/Y (NAND3X1)                            0.05       2.46 r
+  multiplier/U1335/Y (NAND2X1)                            0.03       2.48 f
+  multiplier/U1347/Y (NAND2X1)                            0.04       2.52 r
+  multiplier/U1356/Y (NAND3X1)                            0.03       2.55 f
+  multiplier/U36/Y (AND2X2)                               0.04       2.59 f
+  multiplier/U1358/Y (NOR2X1)                             0.03       2.62 r
+  multiplier/U1361/Y (NAND3X1)                            0.02       2.64 f
+  multiplier/U1371/Y (NAND3X1)                            0.05       2.68 r
+  multiplier/OUT1[29] (Multiplier_combined)               0.00       2.68 r
+  M2/MpC[29] (FPMult_b)                                   0.00       2.68 r
+  M2/add_36/A[46] (FPMult_b_DW01_add_7)                   0.00       2.68 r
+  M2/add_36/U313/Y (AND2X2)                               0.03       2.72 r
+  M2/add_36/U12/Y (NAND2X1)                               0.01       2.73 f
+  M2/add_36/U315/Y (INVX1)                                0.01       2.74 r
+  M2/add_36/U9/Y (NAND2X1)                                0.01       2.75 f
+  M2/add_36/U8/Y (OAI21X1)                                0.05       2.80 r
+  M2/add_36/U5/Y (XNOR2X1)                                0.04       2.84 r
+  M2/add_36/SUM[47] (FPMult_b_DW01_add_7)                 0.00       2.84 r
+  M2/U5/Y (INVX2)                                         0.03       2.88 f
+  M2/U6/Y (INVX8)                                         0.05       2.92 r
+  M2/U25/Y (MUX2X1)                                       0.06       2.99 r
+  M2/NormM[8] (FPMult_b)                                  0.00       2.99 r
+  M3/NormM[8] (FPMult_c)                                  0.00       2.99 r
+  M3/add_33/A[8] (FPMult_c_DW01_inc_1)                    0.00       2.99 r
+  M3/add_33/U93/Y (NAND2X1)                               0.03       3.02 f
+  M3/add_33/U78/Y (NOR2X1)                                0.04       3.07 r
+  M3/add_33/U49/Y (NAND2X1)                               0.02       3.09 f
+  M3/add_33/U48/Y (NOR2X1)                                0.09       3.18 r
+  M3/add_33/U4/Y (NAND2X1)                                0.04       3.21 f
+  M3/add_33/U141/Y (INVX1)                                0.02       3.23 r
+  M3/add_33/SUM[23] (FPMult_c_DW01_inc_1)                 0.00       3.23 r
+  M3/U3/Y (INVX1)                                         0.02       3.25 f
+  M3/U104/Y (OAI21X1)                                     0.07       3.32 r
+  M3/U108/Y (NAND2X1)                                     0.03       3.35 f
+  M3/U109/Y (XOR2X1)                                      0.03       3.39 f
+  M3/Z[25] (FPMult_c)                                     0.00       3.39 f
+  U3359/Y (AND2X1)                                        0.03       3.42 f
+  mult_out_fp_flopped_1_reg[25]/D (DFFPOSX1)              0.00       3.42 f
+  data arrival time                                                  3.42
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  mult_out_fp_flopped_1_reg[25]/CLK (DFFPOSX1)            0.00       3.00 r
+  library setup time                                     -0.06       2.94
+  data required time                                                 2.94
+  --------------------------------------------------------------------------
+  data required time                                                 2.94
+  data arrival time                                                 -3.42
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.47
+
+
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'dsp_slice_combined' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : dsp_slice_combined
+Version: K-2015.06-SP4
+Date   : Fri Sep 11 21:58:12 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P1V_0C   Library: fast_vdd1v0
+Wire Load Model Mode: top
+
+  Startpoint: mode_flopped_2_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_out_fp_flopped_1_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mode_flopped_2_reg[2]/CK (DFFQXL)                       0.00 #     0.00 r
+  mode_flopped_2_reg[2]/Q (DFFQXL)                        0.10       0.10 f
+  U5023/Y (INVX1)                                         0.09       0.19 r
+  U6114/Y (AND2X1)                                        0.08       0.27 r
+  U4979/Y (INVX1)                                         0.08       0.35 f
+  U4322/Y (NOR2XL)                                        0.16       0.52 r
+  U6652/Y (AOI22XL)                                       0.09       0.60 f
+  U6451/Y (NAND2XL)                                       0.03       0.63 r
+  U5733/Y (INVXL)                                         0.03       0.65 f
+  U8258/Y (NOR2XL)                                        0.03       0.69 r
+  U6686/Y (NAND2XL)                                       0.03       0.72 f
+  U4277/Y (AOI32XL)                                       0.04       0.75 r
+  U5968/Y (XOR2XL)                                        0.04       0.79 f
+  U12303/S (ADDFX1)                                       0.07       0.87 r
+  U12308/Y (XNOR2X1)                                      0.03       0.90 f
+  U12310/Y (XNOR2X1)                                      0.03       0.93 f
+  U12311/Y (MXI2XL)                                       0.03       0.96 r
+  U12344/Y (XNOR2X1)                                      0.05       1.01 f
+  U12346/Y (XNOR2X1)                                      0.03       1.05 r
+  U12347/Y (MXI2XL)                                       0.02       1.07 f
+  U12420/Y (XNOR2X1)                                      0.05       1.11 r
+  U4729/Y (OAI211X1)                                      0.03       1.14 f
+  U5467/Y (AOI21XL)                                       0.03       1.17 r
+  U12715/CO (ADDFX1)                                      0.05       1.22 r
+  U7295/Y (INVXL)                                         0.01       1.23 f
+  U8683/Y (OAI21XL)                                       0.02       1.25 r
+  U12707/Y (XNOR2X1)                                      0.05       1.30 f
+  U12708/Y (XNOR2X1)                                      0.03       1.33 r
+  U12710/Y (MXI2XL)                                       0.02       1.35 f
+  U12713/Y (AOI211XL)                                     0.06       1.41 r
+  U15040/Y (XNOR2X1)                                      0.05       1.46 f
+  U6473/Y (INVXL)                                         0.01       1.47 r
+  U15041/Y (MXI2XL)                                       0.03       1.49 f
+  U15077/S (ADDFX1)                                       0.07       1.56 r
+  U5623/Y (INVXL)                                         0.01       1.57 f
+  U5346/Y (NOR2XL)                                        0.02       1.59 r
+  U5777/Y (INVXL)                                         0.01       1.60 f
+  U7075/Y (NAND2XL)                                       0.01       1.61 r
+  U15105/Y (XNOR2X1)                                      0.03       1.64 f
+  U15106/Y (MXI2XL)                                       0.03       1.67 r
+  U16806/Y (XNOR2X1)                                      0.05       1.72 f
+  U16807/Y (XNOR2X1)                                      0.03       1.75 f
+  U16809/Y (MXI2XL)                                       0.02       1.77 r
+  U5989/Y (NAND2BXL)                                      0.02       1.79 r
+  U8707/Y (NAND2XL)                                       0.02       1.81 f
+  U4534/Y (OAI211X1)                                      0.02       1.83 r
+  U5998/Y (OAI21XL)                                       0.02       1.85 f
+  U4324/Y (OAI211XL)                                      0.03       1.89 r
+  U8789/Y (AOI21XL)                                       0.03       1.92 f
+  U7321/Y (NOR2XL)                                        0.03       1.95 r
+  U6013/Y (NAND2XL)                                       0.03       1.98 f
+  U6014/Y (NOR2XL)                                        0.02       2.00 r
+  U5469/Y (NAND2XL)                                       0.02       2.02 f
+  U5468/Y (CLKXOR2X1)                                     0.05       2.07 r
+  U4471/Y (INVX1)                                         0.05       2.11 f
+  U7593/Y (MX2XL)                                         0.04       2.15 r
+  U7595/Y (AOI22XL)                                       0.02       2.18 f
+  U7596/Y (NOR2XL)                                        0.03       2.21 r
+  U6135/Y (NAND2XL)                                       0.02       2.23 f
+  U6137/Y (NOR2XL)                                        0.03       2.26 r
+  U6139/Y (NAND2XL)                                       0.03       2.29 f
+  U7599/Y (NOR2XL)                                        0.03       2.31 r
+  U7601/Y (NAND2XL)                                       0.03       2.34 f
+  U7602/Y (NOR2XL)                                        0.03       2.37 r
+  U8896/Y (NAND2XL)                                       0.03       2.40 f
+  U7604/Y (NOR2XL)                                        0.03       2.42 r
+  U7605/Y (NAND2XL)                                       0.02       2.45 f
+  U7607/Y (NOR2XL)                                        0.03       2.47 r
+  U7608/Y (NAND2XL)                                       0.03       2.50 f
+  U7610/Y (NOR2XL)                                        0.03       2.53 r
+  U7611/Y (NAND2XL)                                       0.03       2.56 f
+  U7613/Y (NOR2XL)                                        0.03       2.58 r
+  U6140/Y (NAND2XL)                                       0.02       2.61 f
+  U6141/Y (NOR2XL)                                        0.03       2.63 r
+  U6145/Y (NAND2XL)                                       0.03       2.66 f
+  U6146/Y (NOR2XL)                                        0.03       2.69 r
+  U6148/Y (NAND2XL)                                       0.03       2.72 f
+  U7618/Y (NOR2XL)                                        0.03       2.74 r
+  U5476/Y (INVXL)                                         0.01       2.75 f
+  U5474/Y (NOR2XL)                                        0.03       2.79 r
+  U5478/Y (AOI21XL)                                       0.04       2.82 f
+  U8838/Y (OAI21XL)                                       0.03       2.86 r
+  U6154/Y (AOI21XL)                                       0.03       2.89 f
+  U18251/Y (MXI2XL)                                       0.02       2.91 r
+  U4391/Y (NOR2BX1)                                       0.02       2.93 r
+  mult_out_fp_flopped_1_reg[28]/D (DFFQXL)                0.00       2.93 r
+  data arrival time                                                  2.93
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  mult_out_fp_flopped_1_reg[28]/CK (DFFQXL)               0.00       3.00 r
+  library setup time                                     -0.02       2.98
+  data required time                                                 2.98
+  --------------------------------------------------------------------------
+  data required time                                                 2.98
+  data arrival time                                                 -2.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+1

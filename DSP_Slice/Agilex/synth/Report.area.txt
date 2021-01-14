@@ -1,0 +1,62 @@
+Error: Current design is not defined. (UID-4)
+0
+ 
+****************************************
+Report : area
+Design : dsp_slice_combined
+Version: K-2015.06-SP4
+Date   : Thu Aug 13 14:50:40 2020
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                         5643
+Number of nets:                         33201
+Number of cells:                        27815
+Number of combinational cells:          25975
+Number of sequential cells:              1766
+Number of macros/black boxes:               0
+Number of buf/inv:                      11124
+Number of references:                      38
+
+Combinational area:              65379.120569
+Buf/Inv area:                    18131.405127
+Noncombinational area:           12278.764980
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 77657.885550
+Total area:                 undefined
+1
+ 
+****************************************
+Report : area
+Design : dsp_slice_combined
+Version: K-2015.06-SP4
+Date   : Fri Sep 11 21:58:21 2020
+****************************************
+
+Library(s) Used:
+
+    fast_vdd1v0 (File: /home/projects/ljohn/aarora1/cadence_gpdk/gsclib045_all_v4.4/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.modif.db)
+
+Number of ports:                          445
+Number of nets:                         17054
+Number of cells:                        16423
+Number of combinational cells:          15102
+Number of sequential cells:              1321
+Number of macros/black boxes:               0
+Number of buf/inv:                       1926
+Number of references:                      64
+
+Combinational area:              24845.616554
+Buf/Inv area:                     1318.068029
+Noncombinational area:            7228.512161
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 32074.128716
+Total area:                 undefined
+1

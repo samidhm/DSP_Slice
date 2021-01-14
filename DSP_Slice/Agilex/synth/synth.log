@@ -1,0 +1,1325 @@
+design_vision -64bit -f synth.cmd
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+               Version K-2015.06-SP4 for linux64 - Dec 01, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/ecelrc/students/aarora1/.synopsys_dv_prefs.tcl
+analyze -format verilog {
+../Slice_combined_4_1.v
+../Multiplier_combined.v
+../Pre_adder_combined.v
+../FpAddSub_single.v
+../FpAddSub_a.v
+../FpAddSub_b.v
+../FpAddSub_c.v
+../FpAddSub_d.v
+../FpMult_b.v
+../FpMult_c.v
+../fp16_to_fp32.v
+../fp16_multiplier.v
+../fp16_addsub.v
+}
+Running PRESTO HDLC
+Compiling source file ../Slice_combined_4_1.v
+Compiling source file ../Multiplier_combined.v
+Compiling source file ../Pre_adder_combined.v
+Compiling source file ../FpAddSub_single.v
+Compiling source file ../FpAddSub_a.v
+Compiling source file ../FpAddSub_b.v
+Compiling source file ../FpAddSub_c.v
+Compiling source file ../FpAddSub_d.v
+Compiling source file ../FpMult_b.v
+Compiling source file ../FpMult_c.v
+Compiling source file ../fp16_to_fp32.v
+Compiling source file ../fp16_multiplier.v
+Compiling source file ../fp16_addsub.v
+Warning:  ../fp16_addsub.v:960: delay controls are ignored for synthesis. (VER-176)
+Warning:  ../fp16_addsub.v:989: The statements in initial blocks are ignored. (VER-281)
+Presto compilation completed successfully.
+Loading db file '/home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Loading db file '/usr/local/packages/synopsys_2015/syn/libraries/syn/dw_foundation.sldb'
+1
+elaborate dsp_slice_combined -architecture verilog -library DEFAULT
+Loading db file '/usr/local/packages/synopsys_2015/syn/libraries/syn/gtech.db'
+Loading db file '/usr/local/packages/synopsys_2015/syn/libraries/syn/standard.sldb'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 62 in file
+		'../Slice_combined_4_1.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| internal_coeffa_flopped_1_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| internal_coeffb_flopped_1_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    loadconst_flopped_1_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   accumulate_flopped_1_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     negate_flopped_1_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       sub_flopped_1_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mode_flopped_1_reg       | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|     stream_flopped_1_reg      | Flip-flop |  116  |  Y  | N  | N  | N  | N  | N  | N  |
+|   mux9_select_flopped_1_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 90 in file
+		'../Slice_combined_4_1.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| stream_flopped_3_reg | Flip-flop |  72   |  Y  | N  | N  | N  | N  | N  | N  |
+| stream_flopped_4_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| stream_flopped_2_reg | Flip-flop |  100  |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 188 in file
+		'../Slice_combined_4_1.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|   adder_a_flopped_2_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   adder_a_flopped_3_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| fp16_bot_mult_flopped_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+| fp16_top_mult_flopped_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   adder_a_flopped_1_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 275 in file
+		'../Slice_combined_4_1.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| mult_out_fp_flopped_1_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 301 in file
+		'../Slice_combined_4_1.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| mux1_out_flopped_2_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| mux1_out_flopped_3_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| mux1_out_flopped_1_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 318 in file
+		'../Slice_combined_4_1.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| mux2_out_flopped_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 344 in file
+		'../Slice_combined_4_1.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| resulta_flopped_1_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 362 in file
+		'../Slice_combined_4_1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   coeffbank_b_reg   | Flip-flop |  144  |  Y  | N  | N  | N  | N  | N  | N  |
+|   coeffbank_a_reg   | Flip-flop |  144  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 399 in file
+		'../Slice_combined_4_1.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    mult_ip_2_reg    | Latch |  37   |  Y  | N  | N  | N  | -  | -  | -  |
+|    mode_bit_reg     | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|    mult_ip_1_reg    | Latch |  37   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 430 in file
+		'../Slice_combined_4_1.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| mult_ip_2_flopped_reg | Flip-flop |  37   |  Y  | N  | N  | N  | N  | N  | N  |
+| mode_bit_flopped_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| mult_ip_1_flopped_reg | Flip-flop |  37   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 451 in file
+		'../Slice_combined_4_1.v'.
+============================================================================
+|    Register Name     | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================
+| mult_ip_1_actual_reg | Latch |  37   |  Y  | N  | N  | N  | -  | -  | -  |
+| mult_ip_2_actual_reg | Latch |  37   |  Y  | N  | N  | N  | -  | -  | -  |
+============================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 484 in file
+		'../Slice_combined_4_1.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    mode_flopped_2_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+| mux9_select_flopped_2_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  loadconst_flopped_2_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| accumulate_flopped_2_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   negate_flopped_2_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     sub_flopped_2_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 503 in file
+		'../Slice_combined_4_1.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    mode_flopped_3_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+| mux9_select_flopped_3_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  loadconst_flopped_3_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| accumulate_flopped_3_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   negate_flopped_3_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     sub_flopped_3_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 524 in file
+		'../Slice_combined_4_1.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| mult_out_flopped_1_reg | Flip-flop |  74   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 533 in file
+		'../Slice_combined_4_1.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|   temp_signal_reg   | Latch |  54   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 555 in file
+		'../Slice_combined_4_1.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    mode_flopped_4_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+| mux9_select_flopped_4_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  loadconst_flopped_4_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| accumulate_flopped_4_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   negate_flopped_4_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 576 in file
+		'../Slice_combined_4_1.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+|  mult_out_flopped_3_reg  | Flip-flop |  72   |  Y  | N  | N  | N  | N  | N  | N  |
+| negate_out_flopped_1_reg | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine dsp_slice_combined line 598 in file
+		'../Slice_combined_4_1.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+|  double_acc_flopped_reg  | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+| output_register_bank_reg | Flip-flop |  100  |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+Statistics for MUX_OPs
+============================================================
+|    block name/line     | Inputs | Outputs | # sel inputs |
+============================================================
+| dsp_slice_combined/414 |   8    |   18    |      3       |
+| dsp_slice_combined/415 |   8    |   18    |      3       |
+============================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'dsp_slice_combined'.
+Information: Building the design 'FPMult_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fp16_to_fp32'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fp16_to_fp32 line 11 in file
+		'../fp16_to_fp32.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     k_temp_reg      | Latch |   4   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FPMult_b'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPMult_c'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_single_32'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'pre_adder_combined'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplier_combined'. (HDL-193)
+
+Inferred memory devices in process
+	in routine Multiplier_combined line 38 in file
+		'../Multiplier_combined.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     mult9_a_reg     | Latch |   9   |  Y  | N  | N  | N  | -  | -  | -  |
+|     mult9_b_reg     | Latch |   9   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FPMult_PrepModule'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPMult_ExecuteModule'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPMult_NormalizeModule'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPMult_RoundModule'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_PrealignModule_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_AlignModule_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_AlignShift1_16'. (HDL-193)
+
+Statistics for case statements in always block at line 485 in file
+	'../fp16_addsub.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           486            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_AlignShift2_16'. (HDL-193)
+
+Statistics for case statements in always block at line 535 in file
+	'../fp16_addsub.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           536            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_ExecutionModule_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_NormalizeModule_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_NormalizeShift1_16'. (HDL-193)
+
+Statistics for case statements in always block at line 697 in file
+	'../fp16_addsub.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           698            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 712 in file
+	'../fp16_addsub.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           713            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FPAddSub_NormalizeShift1_16 line 697 in file
+		'../fp16_addsub.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|      Lvl2_reg       | Latch |  13   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_NormalizeShift2_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_RoundModule_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_ExceptionModule_16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_a_32'. (HDL-193)
+
+Statistics for case statements in always block at line 117 in file
+	'../FpAddSub_a.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           118            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 145 in file
+	'../FpAddSub_a.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           146            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FpAddSub_b_32'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_c_32'. (HDL-193)
+
+Statistics for case statements in always block at line 49 in file
+	'../FpAddSub_c.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            50            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 64 in file
+	'../FpAddSub_c.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            65            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FPAddSub_d_32'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'pre_adder_building'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'multiplier_basic_1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'multiplier_basic_2'. (HDL-193)
+Presto compilation completed successfully.
+1
+link
+
+  Linking design 'dsp_slice_combined'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  gscl45nm (library)          /home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db
+  dw_foundation.sldb (library) /usr/local/packages/synopsys_2015/syn/libraries/syn/dw_foundation.sldb
+
+1
+#set_implementation pparch u_add
+#set_implementation pparch u_mult
+set_dp_smartgen_options -all_options auto -hierarchy -smart_compare true -optimize_for speed -sop2pos_transformation false
+1
+create_clock -name "clk" -period 3 -waveform { 0 1.5 }  { clk  }
+1
+#set_operating_conditions -library fast_vdd1v0 typical
+remove_wire_load_model
+1
+compile -exact_map
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.4 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.4 |     *     |
+============================================================================
+
+
+Information: There are 270 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'multiplier_basic_1_0'
+  Processing 'multiplier_basic_2_0'
+  Processing 'Multiplier_combined'
+  Processing 'pre_adder_building_0'
+  Processing 'pre_adder_combined'
+  Processing 'FPAddSub_d_32'
+  Processing 'FPAddSub_c_32'
+  Processing 'FpAddSub_b_32'
+  Processing 'FPAddSub_a_32'
+  Processing 'FPAddSub_single_32'
+  Processing 'FPMult_c'
+  Processing 'FPMult_b'
+  Processing 'fp16_to_fp32'
+  Processing 'FPAddSub_ExceptionModule_16'
+  Processing 'FPAddSub_RoundModule_16'
+  Processing 'FPAddSub_NormalizeShift2_16'
+  Processing 'FPAddSub_NormalizeShift1_16'
+  Processing 'FPAddSub_NormalizeModule_16'
+  Processing 'FPAddSub_ExecutionModule_16'
+  Processing 'FPAddSub_AlignShift2_16'
+  Processing 'FPAddSub_AlignShift1_16'
+  Processing 'FPAddSub_AlignModule_16'
+  Processing 'FPAddSub_PrealignModule_16'
+  Processing 'FPAddSub_16'
+  Processing 'FPMult_RoundModule_0'
+  Processing 'FPMult_NormalizeModule_0'
+  Processing 'FPMult_ExecuteModule_0'
+  Processing 'FPMult_PrepModule_0'
+  Processing 'FPMult_16_0'
+  Processing 'dsp_slice_combined'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'dsp_slice_combined_DW01_inc_0'
+  Processing 'dsp_slice_combined_DW01_add_0'
+  Processing 'dsp_slice_combined_DW01_sub_0'
+  Processing 'dsp_slice_combined_DW01_add_1'
+  Processing 'dsp_slice_combined_DW01_add_2'
+  Processing 'Multiplier_combined_DW01_add_0'
+  Processing 'pre_adder_building_1_DW01_add_0'
+  Processing 'pre_adder_building_0_DW01_add_0'
+  Processing 'FPAddSub_d_32_DW01_add_0'
+  Processing 'FPAddSub_d_32_DW01_inc_0'
+  Processing 'FPAddSub_c_32_DW01_inc_0'
+  Processing 'FPAddSub_c_32_DW01_sub_0'
+  Processing 'FpAddSub_b_32_DW01_add_0'
+  Processing 'FpAddSub_b_32_DW01_sub_0'
+  Mapping 'FPAddSub_a_32_DW_cmp_0'
+  Processing 'FPMult_c_DW01_inc_0'
+  Processing 'FPMult_c_DW01_sub_0'
+  Processing 'FPMult_c_DW01_sub_1'
+  Processing 'FPMult_b_DW01_add_0'
+  Processing 'fp16_to_fp32_DW01_add_0'
+  Processing 'fp16_to_fp32_DW01_sub_0'
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'fp16_to_fp32'. (DDB-72)
+  Processing 'FPAddSub_RoundModule_16_DW01_add_0'
+  Processing 'FPAddSub_RoundModule_16_DW01_inc_0'
+  Processing 'FPAddSub_NormalizeShift2_16_DW01_inc_0'
+  Processing 'FPAddSub_NormalizeShift2_16_DW01_sub_0'
+  Processing 'FPAddSub_ExecutionModule_16_DW01_add_0'
+  Processing 'FPAddSub_ExecutionModule_16_DW01_sub_0'
+  Mapping 'FPAddSub_AlignModule_16_DW_cmp_0'
+  Processing 'FPMult_NormalizeModule_1_DW01_sub_0'
+  Processing 'FPMult_NormalizeModule_1_DW01_sub_1'
+  Processing 'FPMult_ExecuteModule_1_DW01_add_0'
+  Processing 'FPMult_NormalizeModule_0_DW01_sub_0'
+  Processing 'FPMult_NormalizeModule_0_DW01_sub_1'
+  Processing 'FPMult_ExecuteModule_0_DW01_add_0'
+  Processing 'dsp_slice_combined_DW01_add_3'
+  Processing 'dsp_slice_combined_DW01_add_4'
+  Processing 'dsp_slice_combined_DW01_add_5'
+  Mapping 'multiplier_basic_1_1_DW_mult_uns_0'
+  Processing 'FPAddSub_PrealignModule_16_DW01_add_0'
+  Processing 'FPAddSub_PrealignModule_16_DW01_sub_0'
+  Processing 'FPAddSub_PrealignModule_16_DW01_inc_0'
+  Processing 'FPAddSub_PrealignModule_16_DW01_sub_1'
+  Processing 'FPAddSub_PrealignModule_16_DW01_add_1'
+  Processing 'FPAddSub_PrealignModule_16_DW01_inc_1'
+  Processing 'FPAddSub_a_32_DW01_add_0'
+  Processing 'FPAddSub_a_32_DW01_sub_0'
+  Processing 'FPAddSub_a_32_DW01_inc_0'
+  Processing 'FPAddSub_a_32_DW01_sub_1'
+  Processing 'FPAddSub_a_32_DW01_add_1'
+  Mapping 'multiplier_basic_1_0_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_0_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_3_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_1_DW_mult_uns_0'
+  Mapping 'multiplier_basic_1_3_DW_mult_uns_0'
+  Mapping 'multiplier_basic_2_2_DW_mult_uns_0'
+  Mapping 'multiplier_basic_1_4_DW_mult_uns_0'
+  Mapping 'multiplier_basic_1_2_DW_mult_uns_0'
+  Processing 'Multiplier_combined_DW01_add_1'
+  Processing 'Multiplier_combined_DW01_add_2'
+  Processing 'Multiplier_combined_DW01_add_3'
+  Processing 'Multiplier_combined_DW01_add_4'
+  Processing 'Multiplier_combined_DW01_add_5'
+  Processing 'Multiplier_combined_DW01_add_6'
+  Processing 'Multiplier_combined_DW01_add_7'
+  Processing 'Multiplier_combined_DW01_add_8'
+  Processing 'Multiplier_combined_DW01_add_9'
+  Processing 'Multiplier_combined_DW01_add_10'
+  Processing 'Multiplier_combined_DW01_add_11'
+  Processing 'Multiplier_combined_DW01_add_12'
+  Processing 'Multiplier_combined_DW01_add_13'
+  Processing 'Multiplier_combined_DW01_add_14'
+  Processing 'Multiplier_combined_DW01_add_15'
+  Processing 'FPMult_b_DW01_add_1'
+  Mapping 'FPMult_b_DW_mult_uns_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'FPAddSub_AlignModule_16'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:48   66508.7      0.32      17.2      38.4                          
+    0:00:48   66508.7      0.32      17.2      38.4                          
+    0:00:48   66508.7      0.32      17.2      38.4                          
+    0:00:48   66508.7      0.32      17.2      38.4                          
+    0:00:48   66508.7      0.32      17.2      38.4                          
+    0:00:52   63063.6      0.56      33.9      35.6                          
+    0:00:53   63104.9      0.41      24.0      35.6                          
+    0:00:54   63102.1      0.40      19.6      35.6                          
+    0:00:55   63119.0      0.35      17.1      35.5                          
+    0:00:55   63118.5      0.34      16.2      35.5                          
+    0:00:56   63135.9      0.35      16.2      35.5                          
+    0:00:56   63143.4      0.32      14.8      35.5                          
+    0:00:56   63156.5      0.30      14.1      35.5                          
+    0:00:57   63156.0      0.38      17.8      35.5                          
+    0:00:57   63163.1      0.29      13.9      35.5                          
+    0:00:57   63165.0      0.29      13.8      35.5                          
+    0:00:57   63170.1      0.29      13.8      35.5                          
+    0:00:57   63172.5      0.29      13.8      35.5                          
+    0:00:58   63178.6      0.28      13.3      35.5                          
+    0:00:58   63184.2      0.28      13.3      35.5                          
+    0:00:58   63193.1      0.27      12.5      35.5                          
+    0:00:58   63191.2      0.26      12.5      35.5                          
+    0:00:58   63194.5      0.26      12.5      35.5                          
+    0:00:59   63197.3      0.26      12.5      35.5                          
+    0:00:59   63197.3      0.26      12.5      35.5                          
+    0:00:59   63197.3      0.26      12.5      35.5                          
+    0:01:05   64738.5      0.44      22.9      30.1                          
+    0:01:12   65945.6      0.47      26.4      26.4                          
+    0:01:18   66952.2      0.50      31.1      23.7                          
+    0:01:22   67842.0      0.51      32.3      21.4                          
+    0:01:25   68589.6      0.53      34.8      19.6                          
+    0:01:28   69163.6      0.55      36.2      18.3                          
+    0:01:30   69632.9      0.55      35.9      17.3                          
+    0:01:31   69909.3      0.56      36.2      16.8                          
+    0:01:32   70128.9      0.56      36.2      16.4                          
+    0:01:33   70327.9      0.56      36.2      16.0                          
+    0:01:34   70475.2      0.56      36.2      15.8                          
+    0:01:34   70601.5      0.56      36.2      15.6                          
+    0:01:34   70704.7      0.57      37.4      15.5                          
+    0:01:35   70776.5      0.57      37.4      15.4                          
+    0:01:35   70831.4      0.57      37.4      15.3                          
+    0:01:35   70831.4      0.57      37.4      15.3                          
+    0:01:35   70888.7      0.46      29.6      15.3 mult_out_fp_flopped_1_reg[26]/D
+    0:01:36   70893.9      0.42      27.3      15.4 mult_out_fp_flopped_1_reg[27]/D
+    0:01:36   70900.0      0.37      23.7      15.4 mult_out_fp_flopped_1_reg[27]/D
+    0:01:37   70969.4      0.37      22.8      15.4 mult_out_fp_flopped_1_reg[27]/D
+    0:01:37   70982.1      0.36      21.7      15.4 resulta_flopped_1_reg[30]/D
+    0:01:38   70998.0      0.36      21.3      15.4 mult_out_fp_flopped_1_reg[29]/D
+    0:01:38   71006.0      0.34      20.4      15.4 mult_out_fp_flopped_1_reg[29]/D
+    0:01:38   70992.9      0.32      18.9      15.4 resulta_flopped_1_reg[29]/D
+    0:01:39   70994.8      0.32      18.8      15.4                          
+    0:01:39   71015.9      0.30      18.0      15.4                          
+    0:01:39   71049.2      0.29      16.4      15.4                          
+    0:01:39   71086.7      0.28      15.8      15.4                          
+    0:01:40   71107.4      0.27      14.6      15.4                          
+    0:01:40   71133.7      0.26      14.1      15.4                          
+    0:01:40   71162.8      0.26      13.8      15.4                          
+    0:01:40   71185.8      0.25      12.8      15.4                          
+    0:01:40   71197.0      0.24      12.3      15.4                          
+    0:01:41   71213.5      0.23      11.5      15.4                          
+    0:01:41   71235.0      0.22      11.3      15.4                          
+    0:01:41   71262.3      0.22      11.0      15.4                          
+    0:01:41   71282.4      0.21      10.9      15.4                          
+    0:01:41   71291.4      0.21      10.8      15.4                          
+    0:01:41   71296.1      0.21      10.7      15.4                          
+    0:01:42   71311.1      0.20      10.4      15.4                          
+    0:01:42   71322.8      0.20      10.2      15.4                          
+    0:01:42   71333.1      0.20      10.1      15.4                          
+    0:01:42   71360.3      0.19       9.4      15.5                          
+    0:01:42   71378.2      0.19       9.2      15.5                          
+    0:01:42   71396.5      0.18       8.9      15.5                          
+    0:01:43   71404.5      0.17       8.6      15.4                          
+    0:01:43   71423.2      0.17       8.3      15.4                          
+    0:01:43   71449.5      0.16       7.9      15.5                          
+    0:01:43   71457.0      0.15       7.6      15.5                          
+    0:01:43   71478.1      0.15       7.3      15.5                          
+    0:01:43   71486.1      0.14       7.2      15.5                          
+    0:01:44   71491.8      0.14       7.2      15.5                          
+    0:01:44   71504.9      0.14       7.0      15.5                          
+    0:01:44   71527.9      0.14       6.8      15.5                          
+    0:01:44   71554.6      0.14       6.8      15.5                          
+    0:01:44   71568.2      0.13       6.5      15.5                          
+    0:01:44   71588.9      0.13       6.3      15.5                          
+    0:01:45   71611.0      0.13       6.1      15.5                          
+    0:01:45   71635.4      0.12       6.0      15.5                          
+    0:01:45   71649.0      0.12       5.9      15.5                          
+    0:01:45   71667.3      0.12       5.6      15.5                          
+    0:01:45   71677.6      0.11       5.4      15.5                          
+    0:01:46   71685.1      0.11       5.2      15.5                          
+    0:01:46   71697.3      0.11       5.1      15.5                          
+    0:01:46   71710.4      0.10       5.0      15.5                          
+    0:01:46   71730.2      0.10       4.9      15.5                          
+    0:01:47   71752.2      0.10       4.7      15.5                          
+    0:01:47   71761.1      0.09       4.3      15.5                          
+    0:01:47   71765.4      0.09       4.1      15.5                          
+    0:01:47   71767.7      0.08       4.0      15.5                          
+    0:01:48   71774.3      0.08       4.0      15.5                          
+    0:01:48   71793.0      0.08       3.6      15.5                          
+    0:01:48   71803.4      0.08       3.6      15.5                          
+    0:01:48   71800.6      0.07       3.4      15.5                          
+    0:01:48   71810.9      0.07       3.3      15.5                          
+    0:01:48   71817.0      0.07       3.2      15.5                          
+    0:01:49   71824.5      0.07       3.1      15.5                          
+    0:01:49   71837.6      0.06       2.8      15.5                          
+    0:01:49   71847.0      0.06       2.7      15.5                          
+    0:01:49   71853.6      0.06       2.6      15.5                          
+    0:01:49   71867.7      0.05       2.4      15.5                          
+    0:01:49   71866.3      0.05       2.2      15.5                          
+    0:01:49   71884.1      0.05       1.9      15.5                          
+    0:01:50   71886.0      0.04       1.7      15.5                          
+    0:01:50   71891.1      0.04       1.6      15.5                          
+    0:01:50   71909.0      0.03       1.4      15.5                          
+    0:01:50   71909.4      0.03       1.2      15.5                          
+    0:01:51   71914.6      0.03       1.0      15.5                          
+    0:01:51   71920.2      0.03       0.9      15.5                          
+    0:01:51   71917.4      0.02       0.7      15.5                          
+    0:01:51   71920.7      0.02       0.5      15.5                          
+    0:01:51   71918.3      0.02       0.4      15.5                          
+    0:01:51   71930.1      0.01       0.3      15.5                          
+    0:01:52   71940.4      0.01       0.2      15.5                          
+    0:01:52   71929.6      0.01       0.1      15.5                          
+    0:01:52   71938.1      0.00       0.0      15.5                          
+    0:01:52   71945.1      0.00       0.0      15.5                          
+    0:01:52   71939.0      0.00       0.0      15.5                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:52   71939.0      0.00       0.0      15.5                          
+    0:01:52   71939.0      0.00       0.0      15.5                          
+    0:01:52   71939.0      0.00       0.0      15.5                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:53   71939.0      0.00       0.0      15.5                          
+    0:01:53   72069.0      0.00       0.0      15.2 sub_538/n1               
+    0:01:53   72160.0      0.00       0.0      15.0 Adder/M3/NormM[4]        
+    0:01:53   72230.9      0.00       0.0      14.8 multiplier/add_0_root_add_0_root_add_141_3/n74
+    0:01:53   72337.9      0.00       0.0      14.6 Adder/M3/net100591       
+    0:01:53   72463.7      0.00       0.0      14.4 Adder/M1/net79967        
+    0:01:53   72519.5      0.00       0.0      14.3 multiplier/M7/mult_152/n49
+    0:01:53   72605.9      0.00       0.0      14.2 Adder/M2/add_33/n100     
+    0:01:53   72691.8      0.00       0.0      14.1 r415/n336                
+    0:01:53   72789.8      0.00       0.0      13.9 multiplier/net79246      
+    0:01:53   72887.0      0.00       0.0      13.8 fp16_adder/RoundModule/add_847/net100495
+    0:01:54   72971.9      0.00       0.0      13.7 M3/add_33/n76            
+    0:01:54   73057.8      0.00       0.0      13.6 multiplier/M3/mult_152/net48537
+    0:01:54   73156.4      0.00       0.0      13.4 multiplier/add_0_root_add_0_root_add_142_11/n287
+    0:01:54   73259.6      0.00       0.0      13.3 multiplier/M3/mult_152/net48913
+    0:01:54   73338.9      0.00       0.0      13.2 multiplier/M2/mult_160/net45671
+    0:01:54   73408.4      0.00       0.0      13.1 multiplier/M6/mult_160/net48074
+    0:01:54   73445.4      0.00       0.0      13.1 multiplier/net78481      
+    0:01:54   73505.5      0.00       0.0      13.0 multiplier/M4/mult_160/net46582
+    0:01:54   73597.0      0.00       0.0      12.9 preadder/u_add2/add_1_root_add_49_2/n95
+    0:01:55   73728.0      0.00       0.0      12.8 add_538/n120             
+    0:01:55   73863.1      0.00       0.0      12.7 r416/n263                
+    0:01:55   73984.2      0.00       0.0      12.5 r416/n252                
+    0:01:55   74059.8      0.00       0.0      12.4 Adder/M1/net80018        
+    0:01:55   74167.7      0.00       0.0      12.3 Adder/M2/net79744        
+    0:01:55   74251.7      0.00       0.0      12.2 multiplier/add_1_root_add_0_root_add_142_11/n159
+    0:01:55   74358.7      0.00       0.0      12.1 multiplier/net78913      
+    0:01:55   74416.0      0.00       0.0      12.1 add_546/n375             
+    0:01:56   74537.0      0.00       0.0      12.0 multiplier/net79413      
+    0:01:56   74657.7      0.00       0.0      11.9 r416/n601                
+    0:01:56   74715.4      0.00       0.0      11.8 multiplier/M5/mult_152/n306
+    0:01:56   74821.0      0.00       0.0      11.7 multiplier/add_0_root_add_0_root_add_142_11/n308
+    0:01:56   74905.4      0.00       0.0      11.7 r415/n517                
+    0:01:56   74982.4      0.00       0.0      11.6 Adder/M3/net79638        
+    0:01:56   75052.8      0.00       0.0      11.5 multiplier/M2/mult_160/net45602
+    0:01:57   75135.4      0.00       0.0      11.5 multiplier/net78865      
+    0:01:57   75192.7      0.00       0.0      11.4 M2/add_36/n40            
+    0:01:57   75260.7      0.00       0.0      11.4 multiplier/M9/mult_152/net44408
+    0:01:57   75354.1      0.00       0.0      11.3 multiplier/M1/mult_152/net101226
+    0:01:57   75507.1      0.00       0.0      11.2 M2/add_36/n245           
+    0:01:57   75609.9      0.00       0.0      11.1 multiplier/net79096      
+    0:01:57   75665.7      0.00       0.0      11.1 Adder/M3/net79614        
+    0:01:57   75734.7      0.00       0.0      11.0 Adder/M4/add_56/n110     
+    0:01:58   75807.0      0.00       0.0      11.0 Adder/M2/net79782        
+    0:01:58   75952.0      0.00       0.0      10.8 add_546/n396             
+    0:01:58   76057.6      0.00       0.0      10.8 Adder/M2/add_33/n77      
+    0:01:58   76126.1      0.00       0.0      10.7 multiplier/add_0_root_add_0_root_add_142_11/n167
+    0:01:58   76196.0      0.00       0.0      10.7 multiplier/M3/mult_152/net48487
+    0:01:58   76265.9      0.00       0.0      10.6 Adder/M2/add_33/n114     
+    0:01:58   76331.2      0.00       0.0      10.6 add_538/n288             
+    0:01:58   76393.6      0.00       0.0      10.5 multiplier/net101258     
+    0:01:58   76467.3      0.00       0.0      10.4 Adder/M2/add_33/n9       
+    0:01:58   76633.9      0.00       0.0      10.2 r415/n33                 
+    0:01:59   76805.2      0.00       0.0      10.0 multiplier/net78826      
+    0:01:59   76987.3      0.00       0.0       9.8 Adder/M2/add_33/n6       
+    0:01:59   77147.3      0.00       0.0       9.6 multiplier/M3/mult_152/net48502
+    0:01:59   77279.2      0.00       0.0       9.4 multiplier/M5/mult_152/n59
+    0:01:59   77415.7      0.00       0.0       9.3 multiplier/net78725      
+    0:01:59   77504.9      0.00       0.0       9.3 r415/n429                
+    0:01:59   77644.3      0.00       0.0       9.2 r416/n373                
+    0:01:59   77742.8      0.00       0.0       9.1 multiplier/M9/mult_152/net44394
+    0:01:59   77789.8      0.00       0.0       9.0 multiplier/M3/mult_152/net48523
+    0:01:59   77925.4      0.00       0.0       8.9 add_546/n314             
+    0:02:00   78064.8      0.00       0.0       8.8 Adder/M2/sub_33/n233     
+    0:02:00   78170.4      0.00       0.0       8.8 M3/net80192              
+    0:02:00   78270.8      0.00       0.0       8.7 multiplier/net79303      
+    0:02:00   78351.5      0.00       0.0       8.6 multiplier/M3/mult_152/net48623
+    0:02:00   78419.1      0.00       0.0       8.6 Adder/M1/lt_78/n49       
+    0:02:00   78455.7      0.00       0.0       8.6 Adder/M3/net79535        
+    0:02:00   78510.1      0.00       0.0       8.5 multiplier/net78697      
+    0:02:00   78634.5      0.00       0.0       8.5 M3/net80125              
+    0:02:01   78787.0      0.00       0.0       8.4 sub_538/n286             
+    0:02:01   78914.2      0.00       0.0       8.3 fp16mult1/RoundModule/n31
+    0:02:01   79023.1      0.00       0.0       8.3 Adder/M2/sub_33/net104906
+    0:02:01   79131.0      0.00       0.0       8.2 multiplier/add_0_root_add_0_root_add_142_11/net104498
+    0:02:01   79287.3      0.00       0.0       8.1 r416/n349                
+    0:02:01   79366.6      0.00       0.0       8.1 fp16_adder/AlignShift1/net80721
+    0:02:01   79431.4      0.00       0.0       8.0 multiplier/net78946      
+    0:02:01   79467.0      0.00       0.0       8.0 multiplier/M3/mult_152/net48726
+    0:02:01   79582.5      0.00       0.0       8.0 Adder/M4/add_56/n47      
+    0:02:01   79677.8      0.00       0.0       7.9 add_546/n305             
+    0:02:02   79835.4      0.00       0.0       7.8 Adder/M3/net79541        
+    0:02:02   79927.9      0.00       0.0       7.8 Adder/M4/add_56/n110     
+    0:02:02   80031.6      0.00       0.0       7.8 multiplier/M6/mult_160/net101556
+    0:02:02   80095.0      0.00       0.0       7.7 multiplier/add_1_root_add_0_root_add_142_11/n64
+    0:02:02   80166.3      0.00       0.0       7.7 fp_converter/net80318    
+    0:02:02   80174.7      0.00       0.0       7.7 Adder/M1/net79940        
+    0:02:02   80244.7      0.00       0.0       7.7 M3/add_33/n46            
+    0:02:02   80306.1      0.00       0.0       7.7 multiplier/net79318      
+    0:02:02   80347.0      0.00       0.0       7.7 Adder/M3/net79624        
+    0:02:03   80378.9      0.00       0.0       7.7 Adder/M1/net79999        
+    0:02:03   80471.8      0.00       0.0       7.6 preadder/n63             
+    0:02:03   80589.1      0.00       0.0       7.6 multiplier/M3/mult_152/net48830
+    0:02:03   80726.6      0.00       0.0       7.6 multiplier/M4/mult_160/net46246
+    0:02:03   80868.8      0.00       0.0       7.6 Adder/M1/lt_78/n9        
+    0:02:03   81006.3      0.00       0.0       7.5 Adder/M2/add_33/n32      
+    0:02:03   81143.4      0.00       0.0       7.5 add_538/n84              
+    0:02:03   81252.7      0.00       0.0       7.5 multiplier/add_0_root_add_0_root_add_142_11/n57
+    0:02:03   81371.9      0.00       0.0       7.5 r415/n343                
+    0:02:03   81516.5      0.00       0.0       7.5 r416/n310                
+    0:02:04   81633.3      0.00       0.0       7.5 multiplier/M3/mult_152/net48658
+    0:02:04   81775.5      0.00       0.0       7.5 multiplier/M9/mult_152/net44390
+    0:02:04   81898.9      0.00       0.0       7.5 multiplier/M4/mult_160/net46640
+    0:02:04   82034.1      0.00       0.0       7.4 multiplier/M6/mult_160/net48358
+    0:02:04   82178.7      0.00       0.0       7.4 multiplier/M8/mult_160/net47208
+    0:02:04   82310.5      0.00       0.0       7.4 preadder/u_add2/add_1_root_add_49_2/n129
+    0:02:04   82439.6      0.00       0.0       7.4 sub_538/n313             
+    0:02:04   82495.0      0.00       0.0       7.4 multiplier/net78358      
+    0:02:04   82601.5      0.00       0.0       7.4 add_546/n246             
+    0:02:04   82704.7      0.00       0.0       7.3 fp16_adder/AlignShift1/Mmin[8]
+    0:02:05   82798.1      0.00       0.0       7.3 add_546/n272             
+    0:02:05   82905.6      0.00       0.0       7.3 fp16_adder/PrealignModule/InputExc[4]
+    0:02:05   82931.4      0.00       0.0       7.3 multiplier/M2/mult_160/net45758
+    0:02:05   82941.7      0.00       0.0       7.3 M2/mult_36/n98           
+    0:02:05   82948.8      0.00       0.0       7.3 Adder/M3/net105730       
+    0:02:05   82953.5      0.00       0.0       7.2 Adder/M2/add_33/n165     
+    0:02:05   82963.3      0.00       0.0       7.2 Adder/M1/net105762       
+    0:02:05   82975.1      0.00       0.0       7.2 multiplier/net79260      
+    0:02:05   82976.5      0.00       0.0       7.2 multiplier/net108539     
+    0:02:05   82981.6      0.00       0.0       7.2 multiplier/add_0_root_add_0_root_add_142_11/n32
+    0:02:06   82981.2      0.00       0.0       7.2 multiplier/M1/mult_152/net105433
+    0:02:06   83005.6      0.00       0.0       7.2 multiplier/net53475      
+    0:02:07   83033.2      0.00       0.0       7.2 multiplier/mult6_b[4]    
+    0:02:07   83072.7      0.00       0.0       7.1 fp16_adder/NormalizeModule/net80522
+    0:02:07   83070.8      0.00       0.0       7.1 fp16_adder/AlignModule/net100991
+    0:02:08   83069.4      0.00       0.0       7.1 Adder/M1/net80077        
+    0:02:09   83083.5      0.00       0.0       7.1 N938                     
+    0:02:09   83413.4      0.00       0.0       7.0 N971                     
+    0:02:10   83690.3      0.00       0.0       6.9 N2390                    
+    0:02:10   84054.0      0.00       0.0       6.8 N2416                    
+    0:02:10   84134.2      0.00       0.0       6.8 net81097                 
+    0:02:10   84254.4      0.00       0.0       6.7 n1403                    
+    0:02:10   84386.7      0.00       0.0       6.6 net82249                 
+    0:02:10   84574.4      0.00       0.0       6.6 n1390                    
+    0:02:10   84708.6      0.00       0.0       6.6 net81925                 
+    0:02:10   84849.4      0.00       0.0       6.6 net81583                 
+    0:02:10   84988.8      0.00       0.0       6.5 net82217                 
+    0:02:10   85132.0      0.00       0.0       6.5 net81584                 
+    0:02:11   85271.3      0.00       0.0       6.5 net82218                 
+    0:02:11   85457.2      0.00       0.0       6.4 net81541                 
+    0:02:11   85601.7      0.00       0.0       6.4 net81613                 
+    0:02:11   85743.9      0.00       0.0       6.4 net81886                 
+    0:02:11   85868.8      0.00       0.0       6.4 net81434                 
+    0:02:11   86003.4      0.00       0.0       6.4 N1359                    
+    0:02:11   86086.5      0.00       0.0       6.4 net81406                 
+    0:02:11   86208.5      0.00       0.0       6.4 alt3040/net21606         
+    0:02:11   86318.3      0.00       0.0       6.3 net81319                 
+    0:02:11   86379.4      0.00       0.0       6.3 net116100                
+    0:02:12   86438.5      0.00       0.0       6.2 net116559                
+    0:02:12   86497.6      0.00       0.0       6.1 net116916                
+    0:02:14   86553.0      0.00       0.0       6.1 N1611                    
+    0:02:14   86632.8      0.00       0.0       6.0 N1316                    
+    0:02:14   86635.1      0.00       0.0       6.0 Adder/M1/Mmin_3[0]       
+    0:02:14   86637.9      0.00       0.0       6.0 multiplier/add_0_root_add_0_root_add_142_11/n43
+    0:02:15   86641.2      0.00       0.0       6.0 Adder/M2/sub_33/n248     
+    0:02:15   86648.3      0.00       0.0       6.0 multiplier/add_0_root_add_0_root_add_142_11/n116
+    0:02:15   86655.8      0.00       0.0       6.0 multiplier/net78776      
+    0:02:15   86658.1      0.00       0.0       6.0 Adder/M3/net79644        
+    0:02:15   86658.1      0.00       0.0       6.0 multiplier/net78524      
+    0:02:15   86660.9      0.00       0.0       6.0 Adder/M1/lt_78/n21       
+    0:02:15   86656.2      0.00       0.0       6.0 multiplier/net79118      
+    0:02:15   86661.9      0.00       0.0       6.0 multiplier/add_0_root_add_0_root_add_142_11/n54
+    0:02:16   86660.0      0.00       0.0       6.0 multiplier/net106282     
+    0:02:16   86663.8      0.00       0.0       6.0 multiplier/M2/mult_160/net45669
+    0:02:16   86659.5      0.00       0.0       6.0 multiplier/add_0_root_add_0_root_add_142_11/n227
+    0:02:16   86655.3      0.00       0.0       6.0 Adder/M3/net79675        
+    0:02:16   86652.5      0.00       0.0       6.0 multiplier/add_1_root_add_0_root_add_142_11/net107063
+    0:02:16   86654.8      0.00       0.0       6.0 Adder/M3/net79674        
+    0:02:16   86663.3      0.00       0.0       6.0 multiplier/M3/mult_152/net48706
+    0:02:17   86665.6      0.00       0.0       6.0 fp16_adder/AlignModule/net80794
+    0:02:17   86663.8      0.00       0.0       6.0 Adder/M2/sub_33/n226     
+    0:02:17   86666.1      0.00       0.0       6.0 multiplier/net79276      
+    0:02:17   86668.4      0.00       0.0       6.0 multiplier/add_0_root_add_0_root_add_142_11/n148
+    0:02:17   86665.6      0.00       0.0       6.0 M2/add_1_root_add_39_2/n43
+    0:02:18   86668.0      0.00       0.0       6.0 multiplier/mult3_b[0]    
+    0:02:21   86670.8      0.00       0.0       6.0 net82222                 
+    0:02:24   86679.2      0.00       0.0       6.0 Adder/M2/add_33/B[11]    
+    0:02:24   86698.0      0.00       0.0       5.9 Adder/M2/sub_33/n280     
+    0:02:24   86706.0      0.00       0.0       5.9 Adder/M2/sub_33/n285     
+    0:02:24   86716.3      0.00       0.0       5.9 M3/add_33/n62            
+    0:02:24   86720.5      0.00       0.0       5.9 multiplier/M1/mult_152/n311
+    0:02:24   86721.5      0.00       0.0       5.9 multiplier/add_1_root_add_0_root_add_142_11/n24
+    0:02:24   86723.8      0.00       0.0       5.9 multiplier/M1/mult_152/b[8]
+    0:02:24   86728.0      0.00       0.0       5.9 Adder/M2/sub_33/n276     
+    0:02:24   86732.7      0.00       0.0       5.9 Adder/M1/net80006        
+    0:02:25   86737.9      0.00       0.0       5.9 multiplier/M1/mult_152/b[5]
+    0:02:25   86734.6      0.00       0.0       5.9 Adder/M3/net79653        
+    0:02:25   86730.9      0.00       0.0       5.9 multiplier/M7/mult_152/n307
+    0:02:25   86737.9      0.00       0.0       5.9 multiplier/add_0_root_add_0_root_add_142_11/n113
+    0:02:25   86736.0      0.00       0.0       5.9 Adder/M2/sub_33/net100797
+    0:02:25   86738.4      0.00       0.0       5.9 Adder/M1/net80020        
+    0:02:25   86741.2      0.00       0.0       5.9 Adder/M1/net79992        
+    0:02:26   86740.7      0.00       0.0       5.9 Adder/M1/net79963        
+    0:02:26   86739.3      0.00       0.0       5.9 multiplier/M1/mult_152/n310
+    0:02:26   86735.6      0.00       0.0       5.9 multiplier/M7/mult_152/n311
+    0:02:26   86733.7      0.00       0.0       5.9 Adder/M3/net103461       
+    0:02:26   86733.2      0.00       0.0       5.9 Adder/M2/sub_33/net110174
+    0:02:26   86730.9      0.00       0.0       5.9 Adder/M1/net102227       
+    0:02:26   86723.8      0.00       0.0       5.9 multiplier/net104347     
+    0:02:26   86720.1      0.00       0.0       5.9 multiplier/add_0_root_add_0_root_add_142_11/net102692
+    0:02:27   86721.0      0.00       0.0       5.9 multiplier/add_1_root_add_0_root_add_142_11/net102718
+    0:02:27   86719.6      0.00       0.0       5.9 multiplier/net106479     
+    0:02:28   86721.9      0.00       0.0       5.9 multiplier/mult3_b[4]    
+    0:02:30   86724.8      0.00       0.0       5.9 net82243                 
+    0:02:33   86725.2      0.01       0.0       5.9 mult_out_fp[21]          
+    0:02:34   86729.0      0.01       0.0       5.8 multiplier/net79353      
+    0:02:36   86729.0      0.01       0.0       5.8 mult_out_fp_flopped_1_reg[21]/D
+    0:02:36   86732.7      0.00       0.0       5.8 mult_out_fp_flopped_1_reg[21]/D
+    0:02:36   86736.5      0.00       0.0       5.8 mult_out_fp_flopped_1_reg[18]/D
+    0:02:36   86737.9      0.00       0.0       5.8 mult_out_fp_flopped_1_reg[18]/D
+    0:02:36   86742.1      0.00       0.0       5.8 mult_out_fp_flopped_1_reg[18]/D
+    0:02:36   86747.3      0.00       0.0       5.8 mult_out_fp_flopped_1_reg[18]/D
+    0:02:36   86752.5      0.00       0.0       5.8 mult_out_fp_flopped_1_reg[18]/D
+    0:02:39   86750.6      0.02       0.3       5.8 multiplier/net78892      
+    0:02:39   86811.1      0.09       2.6       5.7 M2/add_1_root_add_39_2/net102239
+    0:02:39   86860.9      0.13       4.1       5.6 multiplier/net101466     
+    0:02:40   86953.3      0.20       7.7       5.4 multiplier/M1/mult_152/n59
+    0:02:40   87035.9      0.31      12.4       5.3 multiplier/add_1_root_add_0_root_add_142_11/n166
+    0:02:40   87091.3      0.35      15.5       5.2 fp16_adder/AlignModule/net80792
+    0:02:40   87150.9      0.39      19.3       5.1 M3/add_33/n66            
+    0:02:41   87221.3      0.47      23.3       5.0 multiplier/net78914      
+    0:02:41   87291.2      0.58      27.8       5.0 multiplier/net78532      
+    0:02:41   87357.8      0.60      29.1       4.9 multiplier/add_1_root_add_0_root_add_142_11/n60
+    0:02:41   87449.4      0.71      35.6       4.8 M3/net80199              
+    0:02:42   87523.0      0.73      36.3       4.7 multiplier/add_1_root_add_0_root_add_142_11/n92
+    0:02:42   87618.3      0.75      39.7       4.6 M3/net80198              
+    0:02:42   87690.1      0.82      44.2       4.5 Adder/M4/add_56/n66      
+    0:02:43   87755.8      0.82      45.9       4.5 Adder/M3/net79598        
+    0:02:43   87849.2      0.82      47.5       4.4 Adder/M3/net105741       
+    0:02:43   87947.8      0.82      47.6       4.4 Adder/M1/net80006        
+    0:02:43   88048.2      0.83      49.0       4.4 fp_converter/net80348    
+    0:02:44   88150.5      0.85      51.1       4.3 multiplier/net78688      
+    0:02:44   88237.8      0.91      56.9       4.3 M3/add_33/n102           
+    0:02:44   88319.0      0.94      58.6       4.3 Adder/M1/net79974        
+    0:02:44   88317.6      0.94      59.0       4.3 fp16_adder/RoundModule/add_847/SUM[10]
+    0:02:45   88414.7      0.96      61.8       4.2 M3/add_33/n4             
+    0:02:45   88510.0      0.97      63.2       4.1 Adder/M3/NormM[19]       
+    0:02:45   88607.6      0.97      63.9       4.1 Adder/M2/add_33/n120     
+    0:02:45   88700.5      0.95      64.0       4.0 M2/add_36/net106615      
+    0:02:46   88791.1      0.97      64.8       3.9 multiplier/net84535      
+    0:02:46   88861.0      1.07      69.9       3.9 multiplier/add_0_root_add_0_root_add_142_11/n241
+    0:02:47   88948.3      1.07      71.3       3.8 Adder/M4/net79455        
+    0:02:48   88950.7      1.07      71.3       3.8 fp16_adder/AlignShift1/Mmin[2]
+    0:02:48   89052.0      1.07      74.1       3.7 multiplier/net53478      
+    0:02:49   89083.0      1.06      74.1       3.7 fp16_adder/NormalizeShift1/net80496
+    0:02:49   89083.5      1.05      73.6       3.7 multiplier/net78574      
+    0:02:50   89085.8      1.05      73.4       3.7 fp16_adder/AlignShift1/net80719
+    0:02:52   89088.2      1.06      73.9       3.7 net82042                 
+    0:02:52   89186.7      1.08      76.1       3.6 net82236                 
+    0:02:54   89192.3      1.08      76.5       3.6 net82035                 
+    0:02:55   89192.8      1.08      75.9       3.6 net101433                
+    0:02:55   89198.0      1.10      78.6       3.6 mult_out_fp_flopped_1_reg[20]/D
+    0:02:56   89190.9      0.95      71.6       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:02:56   89187.6      0.94      71.0       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:02:57   89172.6      0.91      68.9       3.6 mult_out_fp_flopped_1_reg[20]/D
+    0:02:57   89171.7      0.90      68.5       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:02:57   89165.6      0.86      67.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:02:58   89148.7      0.85      66.7       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:02:58   89140.7      0.83      66.0       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:02:58   89136.0      0.78      64.5       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:02:59   89136.0      0.78      64.4       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:02:59   89133.7      0.77      64.0       3.6 mult_out_fp_flopped_1_reg[18]/D
+    0:02:59   89139.3      0.76      63.9       3.6 mult_out_fp_flopped_1_reg[18]/D
+    0:02:59   89137.0      0.75      63.6       3.6 mult_out_fp_flopped_1_reg[18]/D
+    0:02:59   89138.4      0.73      61.5       3.6 mult_out_fp_flopped_1_reg[18]/D
+    0:03:00   89141.7      0.71      59.1       3.6 resulta_flopped_1_reg[30]/D
+    0:03:00   89140.7      0.70      59.1       3.6 mult_out_fp_flopped_1_reg[4]/D
+    0:03:01   89141.7      0.70      58.8       3.6 mult_out_fp_flopped_1_reg[22]/D
+    0:03:01   89133.7      0.69      58.1       3.6 fp16_top_mult_flopped_reg[7]/D
+    0:03:01   89130.9      0.67      57.4       3.6 mult_out_fp_flopped_1_reg[10]/D
+    0:03:01   89131.8      0.67      57.1       3.6 fp16_top_mult_flopped_reg[7]/D
+    0:03:02   89120.5      0.67      56.8       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:02   89129.5      0.66      56.2       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:02   89117.7      0.66      55.7       3.6 fp16_top_mult_flopped_reg[7]/D
+    0:03:02   89108.8      0.65      55.3       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:02   89109.3      0.65      55.2       3.6 mult_out_fp_flopped_1_reg[5]/D
+    0:03:02   89102.2      0.65      55.1       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:03   89103.6      0.65      55.0       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:03   89103.2      0.64      54.4       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:03   89101.3      0.64      54.1       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:04   89098.0      0.63      53.7       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:04   89092.4      0.63      52.7       3.6 resulta_flopped_1_reg[30]/D
+    0:03:04   89106.9      0.62      52.0       3.6 fp16_top_mult_flopped_reg[3]/D
+    0:03:04   89109.3      0.62      52.1       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:05   89111.6      0.62      51.9       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:05   89112.1      0.62      51.9       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:05   89115.4      0.61      51.7       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:05   89112.1      0.61      51.6       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:05   89112.1      0.61      51.6       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:06   89116.3      0.61      51.5       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:06   89113.5      0.61      51.3       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:06   89116.8      0.60      50.8       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:06   89120.1      0.60      50.7       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:06   89120.1      0.60      50.7       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:07   89125.7      0.60      49.9       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:07   89123.8      0.59      48.7       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:07   89125.2      0.59      48.3       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:07   89110.7      0.59      47.7       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:07   89116.8      0.59      47.9       3.6 mux2_out_flopped_reg[18]/D
+    0:03:08   89119.6      0.59      47.9       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:08   89118.7      0.58      47.8       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:08   89117.7      0.58      47.8       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:08   89122.9      0.58      47.5       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:08   89121.9      0.58      47.3       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:09   89126.2      0.57      46.9       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:09   89127.6      0.57      46.3       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:09   89127.1      0.57      46.3       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:09   89127.6      0.57      46.2       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:09   89124.8      0.56      46.1       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:09   89129.0      0.56      45.7       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:03:10   89128.0      0.56      45.6       3.6 mult_out_fp_flopped_1_reg[27]/D
+    0:03:10   89119.6      0.55      45.3       3.6 mult_out_fp_flopped_1_reg[30]/D
+    0:03:10   89111.6      0.55      45.2       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:10   89112.1      0.55      44.8       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:10   89113.0      0.55      44.8       3.6 mult_out_fp_flopped_1_reg[3]/D
+    0:03:11   89116.8      0.55      44.6       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:11   89120.1      0.54      44.3       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:11   89120.1      0.54      44.0       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:11   89123.8      0.54      43.9       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:11   89106.9      0.54      43.3       3.6 resulta_flopped_1_reg[30]/D
+    0:03:12   89112.6      0.53      43.1       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:12   89114.9      0.53      43.0       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:12   89115.4      0.53      42.7       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:12   89115.8      0.53      42.6       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:12   89120.5      0.52      42.4       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:12   89108.8      0.52      42.0       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:13   89111.2      0.52      42.0       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:13   89102.2      0.52      41.6       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:13   89105.1      0.51      41.3       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:13   89105.1      0.51      41.0       3.6 mux2_out_flopped_reg[17]/D
+    0:03:13   89105.1      0.51      40.9       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:14   89104.6      0.51      40.9       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:14   89093.3      0.50      40.6       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:14   89093.8      0.50      40.6       3.6 fp16_top_mult_flopped_reg[8]/D
+    0:03:14   89082.1      0.50      40.2       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:14   89084.9      0.50      40.1       3.6 fp16_top_mult_flopped_reg[8]/D
+    0:03:14   89086.7      0.50      39.8       3.6 mult_out_fp_flopped_1_reg[17]/D
+    0:03:14   89086.7      0.50      39.8       3.6 mult_out_fp_flopped_1_reg[21]/D
+    0:03:15   89087.7      0.50      39.8       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:15   89091.9      0.49      39.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:15   89095.2      0.49      39.3       3.6 fp16_top_mult_flopped_reg[8]/D
+    0:03:15   89094.7      0.49      39.2       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:15   89088.6      0.49      39.0       3.6 fp16_top_mult_flopped_reg[8]/D
+    0:03:15   89094.7      0.49      38.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:15   89094.3      0.49      38.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:16   89097.1      0.49      38.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:16   89098.0      0.49      38.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:16   89103.6      0.50      39.0       3.6 multiplier/net127276     
+    0:03:18   89102.2      0.50      39.0       3.6 multiplier/M1/mult_152/n26
+    0:03:19   89100.8      0.50      39.0       3.6 multiplier/net79138      
+    0:03:21   89100.4      0.50      38.9       3.6 fp16_adder/NormalizeModule/net80523
+    0:03:21   89099.9      0.50      38.9       3.6 Adder/M3/net79591        
+    0:03:21   89098.0      0.50      38.9       3.6 Adder/M2/sub_33/n249     
+    0:03:21   89096.6      0.50      38.9       3.6 Adder/M1/net79965        
+    0:03:25   89095.2      0.49      38.8       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:25   89096.6      0.49      38.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:25   89099.4      0.48      38.5       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:25   89094.7      0.48      38.1       3.6 resulta_flopped_1_reg[30]/D
+    0:03:25   89092.4      0.48      37.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:26   89091.0      0.48      37.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:26   89086.3      0.48      37.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:26   89087.7      0.48      37.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:26   89089.6      0.47      37.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:27   89092.4      0.47      37.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:27   89100.4      0.47      37.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:27   89116.3      0.47      36.8       3.6 resulta_flopped_1_reg[30]/D
+    0:03:27   89125.7      0.47      36.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:28   89135.1      0.46      35.9       3.6 mux2_out_flopped_reg[17]/D
+    0:03:28   89137.4      0.46      35.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:28   89151.5      0.46      35.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:28   89157.6      0.46      35.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:28   89164.2      0.46      35.5       3.6 mux2_out_flopped_reg[17]/D
+    0:03:29   89165.1      0.45      35.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:29   89167.9      0.45      35.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:29   89173.6      0.45      35.0       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:29   89182.5      0.45      34.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:30   89190.9      0.45      34.2       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:30   89196.6      0.44      34.1       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:30   89207.8      0.44      33.8       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:30   89209.7      0.44      33.8       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:31   89211.1      0.44      33.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:31   89212.1      0.44      33.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:31   89221.0      0.44      33.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:31   89226.1      0.44      33.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:31   89224.7      0.44      33.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:31   89224.7      0.44      33.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:32   89227.5      0.43      33.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:32   89231.3      0.43      33.3       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:32   89232.7      0.43      33.2       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:32   89235.5      0.43      33.2       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:33   89238.3      0.43      33.2       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:33   89244.9      0.43      33.1       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:33   89246.8      0.43      33.1       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:33   89244.4      0.43      32.9       3.6 fp16_top_mult_flopped_reg[6]/D
+    0:03:34   89245.8      0.43      32.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:34   89255.7      0.43      31.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:34   89254.3      0.43      31.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:34   89256.6      0.43      31.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:35   89258.0      0.43      31.8       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:35   89260.4      0.43      31.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:35   89276.8      0.42      31.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:36   89281.5      0.42      31.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:36   89280.1      0.42      31.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:36   89282.9      0.42      31.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:38   89278.7      0.42      31.6       3.6                          
+    0:03:38   89278.7      0.42      31.6       3.6                          
+    0:03:38   89286.2      0.42      31.6       3.6                          
+    0:03:38   89286.2      0.42      31.5       3.6                          
+    0:03:38   89280.6      0.42      31.5       3.6                          
+    0:03:38   89285.3      0.42      31.4       3.6                          
+    0:03:38   89285.3      0.42      31.4       3.6                          
+    0:03:38   89286.2      0.42      31.4       3.6                          
+    0:03:38   89289.5      0.42      31.3       3.6                          
+    0:03:38   89299.3      0.42      31.2       3.6                          
+    0:03:38   89298.4      0.42      31.2       3.6                          
+    0:03:39   89303.1      0.42      31.1       3.6                          
+    0:03:39   89305.0      0.42      31.1       3.6                          
+    0:03:39   89313.0      0.42      31.1       3.6                          
+    0:03:39   89321.9      0.42      31.0       3.6                          
+    0:03:39   89326.1      0.42      30.9       3.6                          
+    0:03:39   89327.5      0.42      30.7       3.6                          
+    0:03:39   89334.5      0.42      30.7       3.6                          
+    0:03:39   89338.8      0.42      30.5       3.6                          
+    0:03:39   89343.9      0.42      30.2       3.6                          
+    0:03:39   89347.7      0.42      30.1       3.6                          
+    0:03:40   89347.7      0.42      30.0       3.6                          
+    0:03:40   89352.4      0.42      29.9       3.6                          
+    0:03:40   89362.2      0.42      29.8       3.6                          
+    0:03:40   89371.6      0.42      29.7       3.6                          
+    0:03:40   89367.9      0.42      29.6       3.6                          
+    0:03:40   89361.8      0.42      29.2       3.6                          
+    0:03:40   89370.7      0.42      28.8       3.6                          
+    0:03:40   89368.3      0.42      28.7       3.6                          
+    0:03:41   89367.9      0.42      28.5       3.6                          
+    0:03:41   89369.7      0.42      28.4       3.6                          
+    0:03:41   89381.5      0.42      28.1       3.6                          
+    0:03:41   89380.1      0.42      28.1       3.6                          
+    0:03:41   89383.8      0.42      28.0       3.6                          
+    0:03:41   89388.5      0.42      28.0       3.6                          
+    0:03:42   89391.8      0.42      27.9       3.6                          
+    0:03:42   89394.1      0.42      27.8       3.6                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:42   89394.1      0.42      27.8       3.6                          
+    0:03:42   89394.1      0.42      27.8       3.6                          
+    0:03:45   83852.6      0.42      25.6       3.6                          
+    0:03:46   80522.5      0.42      24.1       3.6                          
+    0:03:47   79117.4      0.43      25.2       3.6                          
+    0:03:48   78623.2      0.44      25.9       3.6                          
+    0:03:48   78409.7      0.44      25.8       3.6                          
+    0:03:49   78338.8      0.44      25.6       3.6                          
+    0:03:49   78312.6      0.44      25.7       3.6                          
+    0:03:49   78291.9      0.44      25.7       3.6                          
+    0:03:50   78278.3      0.44      25.7       3.6                          
+    0:03:50   78278.3      0.44      25.7       3.6                          
+    0:03:50   78269.9      0.44      25.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:51   78275.5      0.44      25.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:51   78275.0      0.43      25.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:51   78275.0      0.43      25.2       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:51   78273.1      0.42      24.8       3.6 mult_out_fp_flopped_1_reg[22]/D
+    0:03:51   78273.1      0.42      24.7       3.6 mult_out_fp_flopped_1_reg[2]/D
+    0:03:52   78271.7      0.42      24.7       3.6 mult_out_fp_flopped_1_reg[22]/D
+    0:03:52   78267.5      0.41      24.6       3.6 mult_out_fp_flopped_1_reg[20]/D
+    0:03:52   78273.6      0.41      24.6       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:03:52   78272.2      0.41      24.5       3.6 mult_out_fp_flopped_1_reg[8]/D
+    0:03:52   78274.5      0.41      24.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:53   78277.8      0.41      24.4       3.6                          
+    0:03:54   78012.7      0.42      25.6       3.6                          
+    0:03:54   77987.8      0.42      25.6       3.6                          
+    0:03:54   77985.0      0.42      25.6       3.6                          
+    0:03:54   77985.0      0.42      25.6       3.6                          
+    0:03:54   77985.0      0.42      25.6       3.6                          
+    0:03:54   77985.0      0.42      25.6       3.6                          
+    0:03:54   77985.0      0.42      25.6       3.6                          
+    0:03:54   77985.0      0.42      25.6       3.6                          
+    0:03:54   77993.9      0.41      24.9       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:55   77990.6      0.41      24.7       3.6 fp16_top_mult_flopped_reg[9]/D
+    0:03:55   77990.6      0.40      24.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:55   77988.3      0.40      24.7       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:55   77989.7      0.40      24.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:55   77990.6      0.40      24.6       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:56   77988.7      0.40      24.5       3.6 fp16_top_mult_flopped_reg[9]/D
+    0:03:56   77990.1      0.40      24.5       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:56   77991.6      0.40      24.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:56   77991.6      0.40      24.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:56   77992.5      0.40      24.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:57   77992.5      0.40      24.4       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:57   77993.9      0.40      24.4       3.6 mult_out_fp_flopped_1_reg[29]/D
+    0:03:57   77991.6      0.40      24.2       3.6 mult_out_fp_flopped_1_reg[28]/D
+    0:03:57   77989.7      0.40      24.2       3.6                          
+    0:03:57   77966.7      0.40      24.1       3.6                          
+    0:03:57   77943.7      0.40      24.1       3.6                          
+    0:03:58   77939.0      0.40      24.1       3.6                          
+    0:03:58   77930.1      0.40      24.1       3.6                          
+    0:03:58   77912.7      0.40      24.1       3.6                          
+    0:03:58   77907.1      0.40      24.1       3.6                          
+    0:03:58   77890.7      0.40      24.1       3.6                          
+    0:03:58   77861.1      0.40      24.1       3.6                          
+    0:03:58   77824.5      0.40      24.1       3.6                          
+    0:03:58   77798.7      0.40      24.1       3.6                          
+    0:03:58   77787.4      0.40      24.1       3.6                          
+    0:03:58   77772.9      0.40      24.1       3.6                          
+    0:03:59   77753.2      0.40      24.1       3.6                          
+    0:03:59   77737.2      0.40      24.1       3.6                          
+    0:03:59   77728.3      0.40      24.1       3.6                          
+    0:03:59   77715.6      0.40      24.1       3.6                          
+    0:03:59   77691.7      0.40      24.1       3.6                          
+    0:03:59   77673.4      0.40      24.1       3.6                          
+    0:03:59   77636.3      0.40      24.1       3.6                          
+    0:03:59   77607.2      0.40      24.1       3.6                          
+    0:03:59   77581.9      0.40      24.1       3.6                          
+    0:04:00   77565.9      0.40      24.1       3.6                          
+    0:04:00   77558.9      0.40      24.1       3.6                          
+    0:04:00   77546.2      0.40      24.1       3.6                          
+    0:04:00   77544.8      0.40      24.1       3.6                          
+    0:04:00   77538.7      0.39      23.8       3.6                          
+    0:04:00   77538.2      0.38      23.4       3.6                          
+    0:04:00   77532.6      0.38      23.3       3.6                          
+    0:04:00   77533.1      0.38      23.2       3.6                          
+    0:04:01   77535.4      0.38      23.1       3.6                          
+    0:04:01   77534.5      0.38      23.0       3.6                          
+    0:04:01   77530.2      0.37      22.9       3.6                          
+    0:04:01   77530.2      0.37      22.9       3.6                          
+    0:04:01   77537.3      0.37      22.8       3.6                          
+    0:04:01   77537.7      0.37      22.8       3.6                          
+    0:04:01   77543.4      0.37      22.7       3.6                          
+    0:04:01   77548.1      0.37      22.7       3.6                          
+    0:04:01   77549.5      0.37      22.6       3.6                          
+    0:04:02   77549.9      0.37      22.5       3.6                          
+    0:04:02   77549.9      0.37      22.5       3.6                          
+    0:04:02   77552.8      0.37      22.5       3.6                          
+    0:04:02   77550.4      0.37      22.5       3.6                          
+    0:04:02   77552.8      0.37      22.4       3.6                          
+    0:04:02   77554.2      0.37      22.4       3.6                          
+    0:04:02   77555.6      0.37      22.3       3.6                          
+    0:04:02   77561.2      0.37      22.3       3.6                          
+    0:04:02   77567.8      0.37      22.3       3.6                          
+    0:04:02   77567.3      0.37      22.2       3.6                          
+    0:04:02   77575.8      0.37      22.1       3.6                          
+    0:04:02   77583.7      0.37      22.1       3.6                          
+    0:04:03   77583.7      0.37      22.1       3.6                          
+    0:04:03   77587.5      0.37      22.0       3.6                          
+    0:04:03   77600.6      0.37      21.9       3.6                          
+    0:04:03   77609.1      0.36      21.8       3.6                          
+    0:04:03   77611.4      0.36      21.7       3.6                          
+    0:04:03   77617.1      0.36      21.6       3.6                          
+    0:04:03   77623.2      0.36      21.3       3.6                          
+    0:04:04   77618.9      0.36      21.2       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:04   77618.9      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:04   77621.7      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:04   77626.0      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:04   77627.4      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:04   77629.7      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:05   77629.7      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:05   77630.2      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:05   77630.2      0.36      21.3       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:06   77643.3      0.36      21.2       3.6 mult_out_fp_flopped_1_reg[26]/D
+    0:04:06   77647.6      0.36      21.2       3.6 mult_out_fp_flopped_1_reg[29]/D
+    0:04:06   77647.6      0.35      21.2       3.6 mult_out_fp_flopped_1_reg[16]/D
+    0:04:06   77649.9      0.35      21.2       3.6 mult_out_fp_flopped_1_reg[27]/D
+    0:04:06   77649.4      0.35      21.1       3.6 mult_out_fp_flopped_1_reg[27]/D
+    0:04:06   77653.2      0.35      21.1       3.6 mult_out_fp_flopped_1_reg[27]/D
+    0:04:07   77655.5      0.35      21.1       3.6 mult_out_fp_flopped_1_reg[27]/D
+    0:04:08   77657.9      0.35      21.0       3.6                          
+Loading db file '/home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'dsp_slice_combined' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'fp16mult2/PrepModule/net320': 1387 load(s), 1 driver(s)
+1
+uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 2 -sort_by group } >> Report.timing.max.txt
+uplevel #0 { report_timing -path_type end -from [all_inputs] } >> Report.timing.all.txt
+uplevel #0 { report_timing -path_type end } >> Report.timing.all.txt
+uplevel #0 { report_timing -path_type end -to [all_outputs] } >> Report.timing.all.txt
+uplevel #0 { report_area } >> Report.area.txt
+uplevel #0 { report_power -analysis_effort low } >> Report.power.txt
+uplevel #0 { report_design -nosplit } >> Report.design.txt
+exit
+
+Thank you...
+\rm -rf *.syn *.pvl *.mr *.svf command.log 

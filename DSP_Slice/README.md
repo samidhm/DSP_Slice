@@ -1,5 +1,6 @@
 Integer8- contains a basic implementation of a Slice with only Integer8 support.
-Stratix10- 
+Stratix10- with support of fixed point 18*19, 27*27 and FP32
+Agliex- with support of fixed point 9*9, 18*19, 27*27 and FP16, FP32
 
 
 | DSP Slice Variant                                              | Area (um^2) | Ratio |

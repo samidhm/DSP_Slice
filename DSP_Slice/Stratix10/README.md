@@ -3,8 +3,4 @@ Reference: https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literat
 
 FP32: Floating Point 32 mode
 
-
-Fixed: 18X19 and 27X27 modes implemented individually as well as together
-
-
-Combined: All the Floating Point and Fixed Point modes included
+Combined: All the Floating Point and Fixed Point (18X19, 27X27) modes included

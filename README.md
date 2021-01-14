@@ -2,10 +2,15 @@
 
 1. Floating Point Building Blocks  
 
+   1.1 FP16
+   
+      1.1.1 Add_Sub
+      
+      1.1.2 Multiplier
+      
+   1.2 FP32
+   
+   1.3 Converter
+   
 2. DSP Slices
 
-   Multiplier and adder units. 
-   
-   2.1 ieee\_fp16: These are IEEE floating point 16-bit versions of the multiplier and adder units in the DSP48E1-FP directory above (Author: Zhigang Wei)
-   
-   2.2 fixed\_point\_8: These are 8-bit fixed point multiplier and adder units. Super simple. For testing out some synthesis tool quirks.

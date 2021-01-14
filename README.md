@@ -24,14 +24,20 @@
 
    2.1 Integer8
    
-   2.2 Agilex
+   2.2 Intel Arria 10
+   
+         2.2.1 Fixed Point - 18X19, 27X27 and a combined representation 
    
    2.3 Stratix 10
         
         2.3.1 FP32- floating point 32 representation 
         
-        2.3.2 Fixed Point - 18*19, 27*27 and a combined representation
+        2.3.2 Combined - FP32 + Fixed Point modes (18X19, 27X27)
         
-        2.3.3 Combined - FP32 + Fixed Point modes
+   2.4 Agilex 10
+         
+         2.4.1 Combined-  Fixed Point modes (18X19, 27X27, 9X9), Flating Point modes (FP16, FP32)
+         
+      
          
    

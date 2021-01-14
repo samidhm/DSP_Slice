@@ -1,0 +1,32 @@
+Error: Current design is not defined. (UID-4)
+0
+ 
+****************************************
+Report : area
+Design : FPMult_16
+Version: O-2018.06-SP5
+Date   : Mon Aug  3 09:13:14 2020
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                          357
+Number of nets:                          1426
+Number of cells:                         1121
+Number of combinational cells:           1112
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        381
+Number of references:                       6
+
+Combinational area:               3057.958749
+Buf/Inv area:                      663.120883
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  3057.958749
+Total area:                 undefined
+1

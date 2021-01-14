@@ -1,0 +1,16 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP4
+Date:        Sun Aug  9 16:10:36 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'fp32_to_fp16', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'fp32_to_fp16', cell 'C93' does not drive any nets. (LINT-1)
+1

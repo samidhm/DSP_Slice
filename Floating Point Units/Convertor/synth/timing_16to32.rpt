@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fp16_to_fp32
+Version: K-2015.06-SP4
+Date   : Sun Aug  9 16:10:33 2020
+****************************************
+
+Operating Conditions: PVT_1P1V_0C   Library: fast_vdd1v0
+Wire Load Model Mode: top
+
+  Startpoint: a[3] (input port)
+  Endpoint: b[21] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  a[3] (in)                                0.00       0.00 r
+  U143/Y (INVXL)                           0.01       0.01 f
+  U145/Y (AOI221X1)                        0.03       0.04 r
+  U146/Y (AOI221X1)                        0.03       0.07 f
+  U148/Y (OAI21XL)                         0.05       0.12 r
+  U149/Y (INVXL)                           0.04       0.16 f
+  U151/Y (NAND2XL)                         0.02       0.19 r
+  U152/Y (NAND2BXL)                        0.04       0.22 f
+  U153/Y (INVXL)                           0.03       0.26 r
+  U157/Y (AOI22XL)                         0.03       0.29 f
+  U200/Y (OAI211XL)                        0.03       0.32 r
+  U201/Y (OAI211XL)                        0.03       0.35 f
+  U128/Y (OAI2BB1X1)                       0.02       0.37 r
+  b[21] (out)                              0.00       0.37 r
+  data arrival time                                   0.37
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

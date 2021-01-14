@@ -1,0 +1,1593 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : dsp_slice_fp32
+Version: O-2018.06-SP5
+Date   : Wed Jul 15 00:47:55 2020
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+Adder/flags[0] (FPAddSub_single)
+                                    2.83 r        infinity     infinity
+resulta_flopped_1_reg[29]/D (DFFPOSX1)
+                                    2.80 r        infinity     infinity
+resulta_flopped_1_reg[28]/D (DFFPOSX1)
+                                    2.80 r        infinity     infinity
+resulta_flopped_1_reg[30]/D (DFFPOSX1)
+                                    2.80 f        infinity     infinity
+Adder/flags[4] (FPAddSub_single)
+                                    2.78 r        infinity     infinity
+resulta_flopped_1_reg[0]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[1]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[2]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[3]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[4]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[5]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[6]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[7]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[8]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[9]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[10]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[11]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[12]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[14]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[15]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[17]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[18]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[19]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[20]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[21]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[22]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[27]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[31]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[24]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[23]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[25]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[26]/D (DFFPOSX1)
+                                    2.77 r        infinity     infinity
+resulta_flopped_1_reg[13]/D (DFFPOSX1)
+                                    2.69 f        infinity     infinity
+resulta_flopped_1_reg[16]/D (DFFPOSX1)
+                                    2.66 f        infinity     infinity
+Adder/M3/U394/A (OAI21X1)           2.17 f        infinity     infinity
+Adder/M3/U480/A (OAI21X1)           2.17 f        infinity     infinity
+Adder/M3/U484/A (OAI21X1)           2.17 f        infinity     infinity
+Adder/M3/U488/A (OAI21X1)           2.17 f        infinity     infinity
+Adder/M3/U396/C (AOI22X1)           2.16 r        infinity     infinity
+Adder/M3/U393/B (AOI22X1)           2.14 r        infinity     infinity
+Adder/M3/U487/A (AOI22X1)           2.13 r        infinity     infinity
+Adder/M3/U479/A (AOI22X1)           2.13 r        infinity     infinity
+Adder/M3/U483/A (AOI22X1)           2.13 r        infinity     infinity
+Adder/M3/U495/A (AOI22X1)           2.10 r        infinity     infinity
+Adder/M3/U493/C (AOI22X1)           2.09 f        infinity     infinity
+Adder/M3/U494/C (AOI22X1)           2.09 f        infinity     infinity
+Adder/M3/U448/B (AOI22X1)           2.08 f        infinity     infinity
+Adder/M3/U453/B (AOI22X1)           2.08 f        infinity     infinity
+Adder/M3/U457/B (AOI22X1)           2.08 f        infinity     infinity
+Adder/M3/U461/B (AOI22X1)           2.08 f        infinity     infinity
+Adder/flags[1] (FPAddSub_single)
+                                    0.52 r        infinity     infinity
+mux1_out_flopped_1_reg[31]/D (DFFPOSX1)
+                                    0.51 r        infinity     infinity
+mux1_out_flopped_1_reg[18]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[17]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[16]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[15]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[14]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[13]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[12]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[11]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[10]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[9]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[8]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[7]/D (DFFPOSX1)
+                                    0.51 f        infinity     infinity
+mux1_out_flopped_1_reg[30]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[29]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[28]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[27]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[26]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[25]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[24]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[23]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[22]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[21]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[20]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[19]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[6]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[5]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[4]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[3]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[2]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[1]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+mux1_out_flopped_1_reg[0]/D (DFFPOSX1)
+                                    0.40 r        infinity     infinity
+az_flopped_reg[24]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ax_flopped_reg[31]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ax_flopped_reg[29]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ax_flopped_reg[28]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ax_flopped_reg[27]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ax_flopped_reg[26]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ax_flopped_reg[25]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ax_flopped_reg[6]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ax_flopped_reg[5]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ax_flopped_reg[4]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ax_flopped_reg[3]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ax_flopped_reg[2]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ax_flopped_reg[1]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ax_flopped_reg[0]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ay_flopped_reg[31]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[30]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[29]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[28]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[27]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[26]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[25]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[24]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[23]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[22]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[21]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[20]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[19]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[18]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[17]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[16]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[15]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[14]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[13]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[12]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[11]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[10]/D (DFFPOSX1)     0.32 r        infinity     infinity
+ay_flopped_reg[9]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ay_flopped_reg[8]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ay_flopped_reg[7]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ay_flopped_reg[6]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ay_flopped_reg[5]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ay_flopped_reg[4]/D (DFFPOSX1)      0.32 r        infinity     infinity
+ay_flopped_reg[3]/D (DFFPOSX1)      0.32 r        infinity     infinity
+mult_out_flopped_1_reg[30]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[29]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[28]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[27]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[26]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[25]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[7]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[6]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[5]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[4]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[3]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[2]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[1]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_1_reg[0]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[30]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[29]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[28]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[27]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[26]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[7]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[6]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[5]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[4]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[3]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[2]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[1]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mult_out_flopped_2_reg[0]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[30]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[30]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[29]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[29]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[28]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[28]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[27]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[27]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[26]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[26]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[25]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[25]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[7]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[7]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[6]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[6]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[5]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[5]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[4]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[4]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[3]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[3]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[2]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[2]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[1]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[1]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_2_reg[0]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+mux1_out_flopped_3_reg[0]/D (DFFPOSX1)
+                                    0.32 r        infinity     infinity
+az_flopped_reg[31]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[30]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[29]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[28]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[27]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[26]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[25]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[22]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[21]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[20]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[19]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[18]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[17]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[16]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[15]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[14]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[13]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[12]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[11]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[10]/D (DFFPOSX1)     0.31 r        infinity     infinity
+az_flopped_reg[9]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[8]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[7]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[6]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[5]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[4]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[3]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[2]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[1]/D (DFFPOSX1)      0.31 r        infinity     infinity
+az_flopped_reg[0]/D (DFFPOSX1)      0.31 r        infinity     infinity
+funct_flopped_reg[3]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+funct_flopped_reg[2]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+funct_flopped_reg[1]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+funct_flopped_reg[0]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+ax_flopped_reg[30]/D (DFFPOSX1)     0.31 r        infinity     infinity
+ay_flopped_reg[2]/D (DFFPOSX1)      0.31 r        infinity     infinity
+ay_flopped_reg[1]/D (DFFPOSX1)      0.31 r        infinity     infinity
+ay_flopped_reg[0]/D (DFFPOSX1)      0.31 r        infinity     infinity
+mult_out_flopped_1_reg[31]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+mult_out_flopped_2_reg[31]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+mux1_out_flopped_2_reg[31]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+mux1_out_flopped_3_reg[31]/D (DFFPOSX1)
+                                    0.31 r        infinity     infinity
+ax_flopped_reg[8]/D (DFFPOSX1)      0.28 r        infinity     infinity
+ax_flopped_reg[7]/D (DFFPOSX1)      0.28 r        infinity     infinity
+mult_out_flopped_1_reg[9]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[8]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[9]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[8]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[9]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[8]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[8]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+ax_flopped_reg[21]/D (DFFPOSX1)     0.28 r        infinity     infinity
+ax_flopped_reg[20]/D (DFFPOSX1)     0.28 r        infinity     infinity
+ax_flopped_reg[19]/D (DFFPOSX1)     0.28 r        infinity     infinity
+ax_flopped_reg[18]/D (DFFPOSX1)     0.28 r        infinity     infinity
+ax_flopped_reg[17]/D (DFFPOSX1)     0.28 r        infinity     infinity
+ax_flopped_reg[16]/D (DFFPOSX1)     0.28 r        infinity     infinity
+ax_flopped_reg[15]/D (DFFPOSX1)     0.28 r        infinity     infinity
+ax_flopped_reg[14]/D (DFFPOSX1)     0.28 r        infinity     infinity
+mult_out_flopped_1_reg[22]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[21]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[20]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[19]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[18]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[17]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[16]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[15]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_1_reg[14]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[22]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[21]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[20]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[19]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[18]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[17]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[16]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mult_out_flopped_2_reg[15]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[21]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[21]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[20]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[20]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[19]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[19]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[18]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[18]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[17]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[17]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[16]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[16]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[15]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[15]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[14]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_3_reg[14]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+mux1_out_flopped_2_reg[9]/D (DFFPOSX1)
+                                    0.28 r        infinity     infinity
+ax_flopped_reg[24]/D (DFFPOSX1)     0.13 r        infinity     infinity
+ax_flopped_reg[23]/D (DFFPOSX1)     0.13 r        infinity     infinity
+ax_flopped_reg[22]/D (DFFPOSX1)     0.13 r        infinity     infinity
+ax_flopped_reg[13]/D (DFFPOSX1)     0.13 r        infinity     infinity
+ax_flopped_reg[12]/D (DFFPOSX1)     0.13 r        infinity     infinity
+ax_flopped_reg[11]/D (DFFPOSX1)     0.13 r        infinity     infinity
+mult_out_flopped_1_reg[24]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_1_reg[23]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_1_reg[13]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_1_reg[12]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[25]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[24]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[23]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[14]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[13]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[12]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_2_reg[24]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_3_reg[24]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_2_reg[23]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_3_reg[23]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_2_reg[22]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_3_reg[22]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_2_reg[13]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_3_reg[13]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_2_reg[12]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_3_reg[12]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_2_reg[11]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_3_reg[11]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+az_flopped_reg[23]/D (DFFPOSX1)     0.13 r        infinity     infinity
+ax_flopped_reg[10]/D (DFFPOSX1)     0.13 r        infinity     infinity
+ax_flopped_reg[9]/D (DFFPOSX1)      0.13 r        infinity     infinity
+mult_out_flopped_1_reg[11]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_1_reg[10]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[11]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mult_out_flopped_2_reg[10]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_2_reg[10]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+mux1_out_flopped_3_reg[10]/D (DFFPOSX1)
+                                    0.13 r        infinity     infinity
+az_flopped_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+az_flopped_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+funct_flopped_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+funct_flopped_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+funct_flopped_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+funct_flopped_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ax_flopped_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+ay_flopped_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_1_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mult_out_flopped_2_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_1_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_2_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+mux1_out_flopped_3_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[0]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[1]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[2]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[3]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[4]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[5]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[6]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[7]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[8]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[9]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[10]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[11]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[12]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[13]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[14]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[15]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[16]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[17]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[18]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[19]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[20]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[21]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[22]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[23]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[24]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[25]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[26]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[27]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[28]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[29]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[30]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+resulta_flopped_1_reg[31]/CLK (DFFPOSX1)
+                                    0.00 r        infinity     infinity
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : dsp_slice_fp32
+Version: O-2018.06-SP5
+Date   : Wed Jul 15 00:47:57 2020
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+resulta_flopped_1_reg[30]/D (DFFPOSX1)
+                                    2.93 f            2.93         0.00
+resulta_flopped_1_reg[29]/D (DFFPOSX1)
+                                    2.93 f            2.93         0.00
+resulta_flopped_1_reg[28]/D (DFFPOSX1)
+                                    2.93 f            2.93         0.00
+resulta_flopped_1_reg[27]/D (DFFPOSX1)
+                                    2.90 f            2.93         0.03
+resulta_flopped_1_reg[31]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[0]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[1]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[2]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[3]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[4]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[5]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[6]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[7]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[8]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[9]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[10]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[11]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[12]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[14]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[15]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[17]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[18]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[19]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[20]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[21]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[22]/D (DFFPOSX1)
+                                    2.87 f            2.93         0.06
+resulta_flopped_1_reg[23]/D (DFFPOSX1)
+                                    2.85 f            2.93         0.08
+resulta_flopped_1_reg[25]/D (DFFPOSX1)
+                                    2.85 f            2.93         0.08
+resulta_flopped_1_reg[26]/D (DFFPOSX1)
+                                    2.85 f            2.93         0.09
+resulta_flopped_1_reg[24]/D (DFFPOSX1)
+                                    2.84 f            2.93         0.09
+resulta_flopped_1_reg[13]/D (DFFPOSX1)
+                                    2.82 f            2.93         0.11
+mult_out_flopped_1_reg[30]/D (DFFPOSX1)
+                                    2.83 f            2.94         0.11
+mult_out_flopped_1_reg[9]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[8]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[0]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[11]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[17]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[15]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[14]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[21]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[19]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[10]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[13]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[7]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[3]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[5]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[6]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[18]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[20]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[16]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[12]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[4]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[2]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+mult_out_flopped_1_reg[1]/D (DFFPOSX1)
+                                    2.81 f            2.94         0.13
+resulta_flopped_1_reg[16]/D (DFFPOSX1)
+                                    2.79 f            2.93         0.14
+mult_out_flopped_1_reg[29]/D (DFFPOSX1)
+                                    2.77 f            2.94         0.17
+mult_out_flopped_1_reg[25]/D (DFFPOSX1)
+                                    2.75 f            2.94         0.19
+mult_out_flopped_1_reg[28]/D (DFFPOSX1)
+                                    2.70 f            2.94         0.24
+mult_out_flopped_1_reg[26]/D (DFFPOSX1)
+                                    2.68 f            2.94         0.26
+mult_out_flopped_1_reg[24]/D (DFFPOSX1)
+                                    2.68 f            2.94         0.26
+mult_out_flopped_1_reg[27]/D (DFFPOSX1)
+                                    2.67 f            2.94         0.27
+mult_out_flopped_1_reg[22]/D (DFFPOSX1)
+                                    2.66 f            2.94         0.28
+mult_out_flopped_1_reg[23]/D (DFFPOSX1)
+                                    2.66 f            2.94         0.28
+mux1_out_flopped_1_reg[18]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[17]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[16]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[15]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[14]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[13]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[12]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[11]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[10]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[9]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[8]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[7]/D (DFFPOSX1)
+                                    0.68 f            2.94         2.26
+mux1_out_flopped_1_reg[31]/D (DFFPOSX1)
+                                    0.63 f            2.94         2.31
+mux1_out_flopped_1_reg[30]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[29]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[28]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[27]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[26]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[25]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[24]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[23]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[22]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[21]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[20]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[19]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[6]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[5]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[4]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[3]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[2]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[1]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mux1_out_flopped_1_reg[0]/D (DFFPOSX1)
+                                    0.52 f            2.94         2.42
+mult_out_flopped_1_reg[31]/D (DFFPOSX1)
+                                    0.17 f            2.94         2.77
+mult_out_flopped_2_reg[9]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[8]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[9]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[8]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[8]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[11]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[10]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[10]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[10]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[22]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[21]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[20]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[19]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[18]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[17]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[16]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[15]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[21]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[21]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[20]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[20]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[19]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[19]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[18]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[18]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[17]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[17]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[16]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[16]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[15]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[15]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[14]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[14]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[9]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[31]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[30]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[29]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[28]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[27]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[26]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[25]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[24]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[23]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[14]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[13]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[12]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[7]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[6]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[5]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[4]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[3]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[2]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[1]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mult_out_flopped_2_reg[0]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[31]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[31]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[30]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[30]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[29]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[29]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[28]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[28]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[27]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[27]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[26]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[26]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[25]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[25]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[24]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[24]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[23]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[23]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[22]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[22]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[13]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[13]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[12]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[12]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[11]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[11]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[7]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[7]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[6]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[6]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[5]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[5]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[4]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[4]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[3]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[3]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[2]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[2]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[1]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[1]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_2_reg[0]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+mux1_out_flopped_3_reg[0]/D (DFFPOSX1)
+                                    0.13 f            2.94         2.81
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : dsp_slice_fp32
+Version: O-2018.06-SP5
+Date   : Wed Jul 15 00:47:57 2020
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+chainout[31] (out)                  0.76 f        infinity     infinity
+chainout[30] (out)                  0.76 f        infinity     infinity
+chainout[29] (out)                  0.76 f        infinity     infinity
+chainout[28] (out)                  0.76 f        infinity     infinity
+chainout[27] (out)                  0.76 f        infinity     infinity
+chainout[26] (out)                  0.76 f        infinity     infinity
+chainout[25] (out)                  0.76 f        infinity     infinity
+chainout[24] (out)                  0.76 f        infinity     infinity
+chainout[23] (out)                  0.76 f        infinity     infinity
+chainout[22] (out)                  0.76 f        infinity     infinity
+chainout[21] (out)                  0.76 f        infinity     infinity
+chainout[20] (out)                  0.76 f        infinity     infinity
+chainout[19] (out)                  0.76 f        infinity     infinity
+chainout[18] (out)                  0.76 f        infinity     infinity
+chainout[17] (out)                  0.76 f        infinity     infinity
+chainout[16] (out)                  0.76 f        infinity     infinity
+chainout[15] (out)                  0.76 f        infinity     infinity
+chainout[14] (out)                  0.76 f        infinity     infinity
+chainout[13] (out)                  0.76 f        infinity     infinity
+chainout[12] (out)                  0.76 f        infinity     infinity
+chainout[11] (out)                  0.76 f        infinity     infinity
+chainout[10] (out)                  0.76 f        infinity     infinity
+chainout[9] (out)                   0.76 f        infinity     infinity
+chainout[8] (out)                   0.76 f        infinity     infinity
+chainout[7] (out)                   0.76 f        infinity     infinity
+chainout[6] (out)                   0.76 f        infinity     infinity
+chainout[5] (out)                   0.76 f        infinity     infinity
+chainout[4] (out)                   0.76 f        infinity     infinity
+chainout[3] (out)                   0.76 f        infinity     infinity
+chainout[2] (out)                   0.76 f        infinity     infinity
+chainout[1] (out)                   0.76 f        infinity     infinity
+chainout[0] (out)                   0.76 f        infinity     infinity
+resulta_flopped[30] (out)           0.10 f        infinity     infinity
+resulta_flopped[29] (out)           0.10 f        infinity     infinity
+resulta_flopped[28] (out)           0.10 f        infinity     infinity
+resulta_flopped[27] (out)           0.10 f        infinity     infinity
+resulta_flopped[26] (out)           0.10 f        infinity     infinity
+resulta_flopped[25] (out)           0.10 f        infinity     infinity
+resulta_flopped[24] (out)           0.10 f        infinity     infinity
+resulta_flopped[23] (out)           0.10 f        infinity     infinity
+resulta_flopped[22] (out)           0.10 f        infinity     infinity
+resulta_flopped[21] (out)           0.10 f        infinity     infinity
+resulta_flopped[20] (out)           0.10 f        infinity     infinity
+resulta_flopped[19] (out)           0.10 f        infinity     infinity
+resulta_flopped[18] (out)           0.10 f        infinity     infinity
+resulta_flopped[17] (out)           0.10 f        infinity     infinity
+resulta_flopped[16] (out)           0.10 f        infinity     infinity
+resulta_flopped[15] (out)           0.10 f        infinity     infinity
+resulta_flopped[14] (out)           0.10 f        infinity     infinity
+resulta_flopped[13] (out)           0.10 f        infinity     infinity
+resulta_flopped[12] (out)           0.10 f        infinity     infinity
+resulta_flopped[11] (out)           0.10 f        infinity     infinity
+resulta_flopped[10] (out)           0.10 f        infinity     infinity
+resulta_flopped[9] (out)            0.10 f        infinity     infinity
+resulta_flopped[8] (out)            0.10 f        infinity     infinity
+resulta_flopped[7] (out)            0.10 f        infinity     infinity
+resulta_flopped[6] (out)            0.10 f        infinity     infinity
+resulta_flopped[5] (out)            0.10 f        infinity     infinity
+resulta_flopped[4] (out)            0.10 f        infinity     infinity
+resulta_flopped[3] (out)            0.10 f        infinity     infinity
+resulta_flopped[2] (out)            0.10 f        infinity     infinity
+resulta_flopped[1] (out)            0.10 f        infinity     infinity
+resulta_flopped[0] (out)            0.10 f        infinity     infinity
+resulta_flopped[31] (out)           0.10 f        infinity     infinity
+
+1

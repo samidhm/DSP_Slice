@@ -1,0 +1,153 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : dsp_slice_fp32
+Version: O-2018.06-SP5
+Date   : Wed Jul 15 00:47:55 2020
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: funct_flopped_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: resulta_flopped_1_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  funct_flopped_reg[0]/CLK (DFFPOSX1)                     0.00       0.00 r
+  funct_flopped_reg[0]/Q (DFFPOSX1)                       0.11       0.11 f
+  U919/Y (AND2X2)                                         0.04       0.15 f
+  U719/Y (MUX2X1)                                         0.05       0.20 r
+  U706/Y (INVX1)                                          0.03       0.23 f
+  U696/Y (AND2X2)                                         0.05       0.28 f
+  U1435/Y (AOI22X1)                                       0.04       0.31 r
+  U773/Y (BUFX2)                                          0.03       0.35 r
+  U754/Y (AND2X2)                                         0.03       0.38 r
+  U755/Y (INVX1)                                          0.02       0.40 f
+  Adder/b[23] (FPAddSub_single)                           0.00       0.40 f
+  Adder/M1/B[23] (FPAddSub_a)                             0.00       0.40 f
+  Adder/M1/U189/Y (INVX1)                                 0.01       0.40 r
+  Adder/M1/U349/Y (INVX1)                                 0.02       0.42 f
+  Adder/M1/U45/Y (AND2X1)                                 0.03       0.45 f
+  Adder/M1/U400/Y (INVX1)                                 0.01       0.46 r
+  Adder/M1/U523/Y (OAI21X1)                               0.01       0.47 f
+  Adder/M1/U524/Y (OAI21X1)                               0.04       0.51 r
+  Adder/M1/U525/Y (OAI21X1)                               0.03       0.55 f
+  Adder/M1/U526/Y (OAI21X1)                               0.02       0.57 r
+  Adder/M1/U542/Y (AOI22X1)                               0.04       0.61 f
+  Adder/M1/U426/Y (BUFX2)                                 0.04       0.65 f
+  Adder/M1/U543/Y (XOR2X1)                                0.06       0.71 r
+  Adder/M1/U87/Y (MUX2X1)                                 0.03       0.74 f
+  Adder/M1/U105/Y (INVX1)                                 0.01       0.74 r
+  Adder/M1/U424/Y (AND2X2)                                0.04       0.78 r
+  Adder/M1/U187/Y (INVX1)                                 0.02       0.80 f
+  Adder/M1/U416/Y (INVX1)                                 0.02       0.82 r
+  Adder/M1/U232/Y (AND2X2)                                0.03       0.85 r
+  Adder/M1/U357/Y (INVX1)                                 0.01       0.86 f
+  Adder/M1/U549/Y (OAI21X1)                               0.04       0.91 r
+  Adder/M1/U601/Y (AOI22X1)                               0.05       0.95 f
+  Adder/M1/U311/Y (BUFX2)                                 0.04       0.99 f
+  Adder/M1/U255/Y (AND2X2)                                0.04       1.03 f
+  Adder/M1/U14/Y (INVX2)                                  0.02       1.05 r
+  Adder/M1/U602/Y (AOI22X1)                               0.02       1.07 f
+  Adder/M1/U329/Y (BUFX2)                                 0.04       1.11 f
+  Adder/M1/U202/Y (AND2X2)                                0.03       1.14 f
+  Adder/M1/U60/Y (INVX1)                                  0.00       1.14 r
+  Adder/M1/Mmin_3[5] (FPAddSub_a)                         0.00       1.14 r
+  Adder/M2/Mmin[5] (FpAddSub_b)                           0.00       1.14 r
+  Adder/M2/U38/Y (BUFX2)                                  0.04       1.18 r
+  Adder/M2/add_34/B[13] (FpAddSub_b_DW01_add_1)           0.00       1.18 r
+  Adder/M2/add_34/U254/Y (OR2X2)                          0.04       1.21 r
+  Adder/M2/add_34/U321/Y (INVX1)                          0.03       1.24 f
+  Adder/M2/add_34/U275/Y (OR2X1)                          0.04       1.28 f
+  Adder/M2/add_34/U447/Y (INVX1)                          0.01       1.29 r
+  Adder/M2/add_34/U257/Y (AND2X2)                         0.03       1.32 r
+  Adder/M2/add_34/U327/Y (INVX1)                          0.02       1.34 f
+  Adder/M2/add_34/U187/Y (OAI21X1)                        0.04       1.38 r
+  Adder/M2/add_34/U94/Y (AOI21X1)                         0.02       1.40 f
+  Adder/M2/add_34/U497/Y (BUFX2)                          0.05       1.45 f
+  Adder/M2/add_34/U16/Y (OAI21X1)                         0.05       1.50 r
+  Adder/M2/add_34/U258/Y (INVX2)                          0.02       1.52 f
+  Adder/M2/add_34/U262/Y (AND2X1)                         0.03       1.55 f
+  Adder/M2/add_34/U366/Y (INVX1)                          0.00       1.56 r
+  Adder/M2/add_34/U296/Y (AND2X1)                         0.03       1.58 r
+  Adder/M2/add_34/U351/Y (INVX1)                          0.02       1.61 f
+  Adder/M2/add_34/SUM[31] (FpAddSub_b_DW01_add_1)         0.00       1.61 f
+  Adder/M2/U153/Y (MUX2X1)                                0.06       1.67 r
+  Adder/M2/U56/Y (AND2X1)                                 0.03       1.70 r
+  Adder/M2/U66/Y (AND2X2)                                 0.05       1.75 r
+  Adder/M2/U39/Y (AND2X2)                                 0.03       1.78 r
+  Adder/M2/U161/Y (NAND3X1)                               0.01       1.79 f
+  Adder/M2/U62/Y (BUFX2)                                  0.03       1.82 f
+  Adder/M2/U71/Y (OR2X2)                                  0.04       1.86 f
+  Adder/M2/U107/Y (INVX1)                                 0.00       1.86 r
+  Adder/M2/U106/Y (AND2X2)                                0.04       1.90 r
+  Adder/M2/U24/Y (AND2X1)                                 0.03       1.93 r
+  Adder/M2/U184/Y (AOI22X1)                               0.02       1.95 f
+  Adder/M2/U68/Y (BUFX2)                                  0.04       1.99 f
+  Adder/M2/U185/Y (OAI21X1)                               0.02       2.01 r
+  Adder/M2/U188/Y (OR2X2)                                 0.05       2.06 r
+  Adder/M2/Shift[2] (FpAddSub_b)                          0.00       2.06 r
+  Adder/M3/Shift[2] (FPAddSub_c)                          0.00       2.06 r
+  Adder/M3/U106/Y (INVX1)                                 0.02       2.08 f
+  Adder/M3/U331/Y (AND2X2)                                0.03       2.11 f
+  Adder/M3/U128/Y (INVX1)                                 0.01       2.12 r
+  Adder/M3/U134/Y (INVX4)                                 0.03       2.15 f
+  Adder/M3/U473/Y (AOI22X1)                               0.04       2.19 r
+  Adder/M3/U236/Y (BUFX2)                                 0.04       2.23 r
+  Adder/M3/U34/Y (AND2X1)                                 0.05       2.28 r
+  Adder/M3/U15/Y (INVX2)                                  0.02       2.30 f
+  Adder/M3/U477/Y (AOI22X1)                               0.04       2.34 r
+  Adder/M3/U217/Y (BUFX2)                                 0.03       2.37 r
+  Adder/M3/U324/Y (AND2X2)                                0.03       2.41 r
+  Adder/M3/U78/Y (INVX2)                                  0.03       2.43 f
+  Adder/M3/NormM[6] (FPAddSub_c)                          0.00       2.43 f
+  Adder/M4/NormM[6] (FPAddSub_d)                          0.00       2.43 f
+  Adder/M4/add_56/A[6] (FPAddSub_d_DW01_inc_1)            0.00       2.43 f
+  Adder/M4/add_56/U174/Y (AND2X2)                         0.04       2.47 f
+  Adder/M4/add_56/U168/Y (AND2X2)                         0.03       2.51 f
+  Adder/M4/add_56/U183/Y (AND2X2)                         0.03       2.54 f
+  Adder/M4/add_56/U169/Y (AND2X2)                         0.04       2.57 f
+  Adder/M4/add_56/U179/Y (AND2X2)                         0.04       2.61 f
+  Adder/M4/add_56/SUM[23] (FPAddSub_d_DW01_inc_1)         0.00       2.61 f
+  Adder/M4/U27/Y (AND2X2)                                 0.03       2.64 f
+  Adder/M4/U83/Y (NAND3X1)                                0.03       2.67 r
+  Adder/M4/U17/Y (BUFX2)                                  0.04       2.71 r
+  Adder/M4/U15/Y (INVX1)                                  0.02       2.73 f
+  Adder/M4/U18/Y (AND2X2)                                 0.04       2.77 f
+  Adder/M4/U21/Y (AND2X2)                                 0.04       2.81 f
+  Adder/M4/U14/Y (XNOR2X1)                                0.03       2.84 r
+  Adder/M4/U29/Y (OR2X2)                                  0.04       2.88 r
+  Adder/M4/U30/Y (INVX1)                                  0.02       2.89 f
+  Adder/M4/P[30] (FPAddSub_d)                             0.00       2.89 f
+  Adder/result[30] (FPAddSub_single)                      0.00       2.89 f
+  U703/Y (AND2X1)                                         0.03       2.92 f
+  U882/Y (INVX1)                                          0.00       2.92 r
+  U1328/Y (OAI21X1)                                       0.01       2.93 f
+  resulta_flopped_1_reg[30]/D (DFFPOSX1)                  0.00       2.93 f
+  data arrival time                                                  2.93
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  resulta_flopped_1_reg[30]/CLK (DFFPOSX1)                0.00       3.00 r
+  library setup time                                     -0.07       2.93
+  data required time                                                 2.93
+  --------------------------------------------------------------------------
+  data required time                                                 2.93
+  data arrival time                                                 -2.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

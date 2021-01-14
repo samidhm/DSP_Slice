@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : dsp_slice
+Version: O-2018.06-SP5
+Date   : Wed Jul 29 09:28:48 2020
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: accumulate_flopped_3_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: double_acc_flopped_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  accumulate_flopped_3_reg/CLK (DFFPOSX1)                 0.00       0.00 r
+  accumulate_flopped_3_reg/Q (DFFPOSX1)                   0.51       0.51 r
+  M7/accumulate (chainout_add_acc)                        0.00       0.51 r
+  M7/U419/Y (INVX1)                                       0.18       0.68 f
+  M7/U429/Y (AND2X1)                                      0.23       0.91 f
+  M7/U418/Y (INVX1)                                       0.09       1.00 r
+  M7/U414/Y (INVX1)                                       0.12       1.12 f
+  M7/U220/Y (AOI22X1)                                     0.06       1.18 r
+  M7/U241/Y (BUFX2)                                       0.04       1.22 r
+  M7/U74/Y (AND2X1)                                       0.03       1.24 r
+  M7/U75/Y (INVX1)                                        0.02       1.27 f
+  M7/data_out[0] (chainout_add_acc)                       0.00       1.27 f
+  U1110/Y (AND2X1)                                        0.03       1.30 f
+  double_acc_flopped_reg[0]/D (DFFPOSX1)                  0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  double_acc_flopped_reg[0]/CLK (DFFPOSX1)                0.00       3.00 r
+  library setup time                                     -0.06       2.94
+  data required time                                                 2.94
+  --------------------------------------------------------------------------
+  data required time                                                 2.94
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.64
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : dsp_slice_fp32
+Version: O-2018.06-SP5
+Date   : Wed Jul 15 00:47:57 2020
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/projects/ljohn/aarora1/FreePDK45/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                         1851
+Number of nets:                          9281
+Number of cells:                         7487
+Number of combinational cells:           7124
+Number of sequential cells:               292
+Number of macros/black boxes:               0
+Number of buf/inv:                       2880
+Number of references:                      14
+
+Combinational area:              18585.687592
+Buf/Inv area:                     4763.864196
+Noncombinational area:            2329.605148
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 20915.292740
+Total area:                 undefined
+1

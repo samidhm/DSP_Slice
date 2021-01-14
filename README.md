@@ -1,2 +1,4 @@
 # DSP_Slice
-Floating Point building blocks; Stratix-10, Agilex, Arria-10 DSP Slices
+1. Floating Point building blocks
+2. DSP Slices
+  2.1 Stratix-10, Agilex, Arria-10 DSP Slices

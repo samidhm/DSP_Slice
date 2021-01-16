@@ -1,5 +1,9 @@
 Int8 version- Stratix 10
+
+
 Author: Samidh Mehta
+
+
 Date: 23rd June, 2020
 
 All registers are positive edge triggered.

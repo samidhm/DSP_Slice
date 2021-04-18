@@ -10,9 +10,9 @@
        
    1.2 FP32- Floating Point 32 representation
    
-       1.1.1 Add_Sub- single stage and 4 stage pipeline designs
+       1.2.1 Add_Sub- single stage and 4 stage pipeline designs
        
-       1.1.2 Multiplier- single stage and 3 stage pipeline designs
+       1.2.2 Multiplier- single stage and 3 stage pipeline designs
        
    1.3 Converter
       

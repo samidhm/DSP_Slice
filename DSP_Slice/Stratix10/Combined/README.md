@@ -1,4 +1,5 @@
 Author: Samidh Mehta.
+
 Contains the Floating Point 32 and Fixed Point 18*19, 27*27 modes in Stratix 10.
 
 Mode: 

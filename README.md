@@ -36,7 +36,7 @@
         
    2.4 Agilex
          
-         2.4.1 Combined-  Fixed Point modes (18X19, 27X27, 9X9), Flating Point modes (FP16, FP32)
+         2.4.1 Combined-  Fixed Point modes (18X19, 27X27, 9X9), Floating Point modes (FP16, FP32)
          
       
          

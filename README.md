@@ -4,9 +4,9 @@
 
    1.1 FP16- Floating Point 16 representation
    
-       1.1.1 Add_Sub
+       1.1.1 Add_Sub- single stage and 9 stage pipeline designs
        
-       1.1.2 Multiplier
+       1.1.2 Multiplier- single stage and 4 stage pipeline designs 
        
    1.2 FP32- Floating Point 32 representation
    
